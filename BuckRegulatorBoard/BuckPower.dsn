@@ -1,0 +1,122 @@
+(PCB "C:/Users/dustin/Documents/eagle/post 20120323/BuckRegulatorBoard/BuckPower.brd"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad CadSoft)
+    (host_version 'EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft')
+  )
+  (resolution inch 254000)
+  (unit inch)
+  (structure
+    (layer "1#Top"  (type signal))
+    (layer "16#Bottom"  (type signal))
+    (boundary 
+      (rect pcb  0.000000 0.000000 1.637008 1.249606)
+    )
+    (boundary (path signal 0 0.000000 0.000000 1.637008 0.000000))
+    (boundary (path signal 0 1.637008 0.000000 1.637008 1.249606))
+    (boundary (path signal 0 1.637008 1.249606 0.000000 1.249606))
+    (boundary (path signal 0 0.000000 1.249606 0.000000 0.000000))
+    (via
+       "Round1$0.030000"
+    )
+    (rule (width 0.012000)(clearance 0.010000))
+    (rule (clearance 0.020000 (type wire_via)))
+    (rule (clearance 0.040000 (type pin_via)))
+    (rule (clearance 0.030000 (type via_via)))
+    (rule (clearance 0.006000 (type smd_pin)))
+    (rule (clearance 0.020000 (type smd_via)))
+    (rule (clearance 0.006000 (type smd_smd)))
+    (control
+      (via_at_smd on)
+    )
+  )
+  (placement
+    (place_control (flip_style rotate_first))
+    (component "CPOL-RADIAL-100UF-25V$SparkFun" 
+      (place "C1" 1.050000 0.400000 Front 270.000000)
+    )
+    (component "CPOL-RADIAL-100UF-25V$SparkFun" 
+      (place "C2" 0.350000 0.350000 Front 90.000000)
+    )
+    (component "INDUCTOR-1206$SparkFun" 
+      (place "L1" 0.350000 0.700000 Front 270.000000)
+    )
+    (component "DIODE-ZENER$SparkFun" 
+      (place "SCHOTTKEY" 0.700000 0.750000 Front 0.000000)
+    )
+    (component "8DILL$Dustin" 
+      (place "U1" 0.700000 0.450000 Front 270.000000)
+    )
+  )
+  (library
+    (image "8DILL$Dustin"
+      (pin "Octagon1" "1" -0.150000 -0.150000)
+      (pin "Octagon1" "2" -0.050000 -0.150000)
+      (pin "Octagon1" "3" 0.050000 -0.150000)
+      (pin "Octagon1" "4" 0.150000 -0.150000)
+      (pin "Octagon1" "5" 0.150000 0.150000)
+      (pin "Octagon1" "6" 0.050000 0.150000)
+      (pin "Octagon1" "7" -0.050000 0.150000)
+      (pin "Octagon1" "8" -0.150000 0.150000)
+    )
+    (image "CPOL-RADIAL-100UF-25V$SparkFun"
+      (outline(circ "1#Top" 0.255906 0.000000 0.000000))
+      (pin "Square1" "1" 0.050000 0.000000)
+      (pin "Round2" "2" -0.050000 0.000000)
+    )
+    (image "DIODE-ZENER$SparkFun"
+      (pin "Round3" "P$1" -0.140000 0.000000)
+      (pin "Round3" "P$2" 0.140000 0.000000)
+    )
+    (image "INDUCTOR-1206$SparkFun"
+      (pin "Rectangle1" "P$1" -0.100000 0.000000)
+      (pin "Rectangle1" "P$2" 0.100000 0.000000)
+    )
+    (padstack "ViaDefault$0.030000"
+      (shape (circle signal 0.046000 0 0))
+    )
+    (padstack "Round1$0.030000" 
+      (shape (circle "1#Top" 0.046000 0 0))
+      (shape (circle "16#Bottom" 0.046000 0 0))
+      (attach off)
+    )
+    (padstack "Octagon1" 
+      (shape (polygon "1#Top" 0 0.031500 0.013048 0.013048 0.031500 -0.013048 0.031500 -0.031500 0.013048 -0.031500 -0.013048 -0.013048 -0.031500 0.013048 -0.031500 0.031500 -0.013048 ))
+      (shape (polygon "16#Bottom" 0 0.031500 0.013048 0.013048 0.031500 -0.013048 0.031500 -0.031500 0.013048 -0.031500 -0.013048 -0.013048 -0.031500 0.013048 -0.031500 0.031500 -0.013048 ))
+      (attach off)
+    )
+    (padstack "Square1" 
+      (shape (rect signal -0.032500 -0.032500 0.032500 0.032500))
+      (attach off)
+    )
+    (padstack "Round2" 
+      (shape (circle signal 0.065000 0 0))
+      (attach off)
+    )
+    (padstack "Round3" 
+      (shape (circle signal 0.053150 0 0))
+      (attach off)
+    )
+    (padstack "Rectangle1" 
+      (shape (rect "1#Top" -0.040000 -0.070000 0.040000 0.070000))
+      (attach off)
+    )
+  )
+  (network
+    (net "GND"
+      (pins  "C1"-"2" "C2"-"2" "U1"-"4" "U1"-"2" "U1"-"3" "SCHOTTKEY"-"P$2")
+    )
+    (net "N$1"
+      (pins  "L1"-"P$1" "U1"-"7" "SCHOTTKEY"-"P$1")
+    )
+    (net "RAW"
+      (pins  "U1"-"5" "C1"-"1")
+    )
+    (net "VCC"
+      (pins  "C2"-"1" "L1"-"P$2" "U1"-"1")
+    )
+  )
+  (wiring
+  )
+)

@@ -1,0 +1,7 @@
+Codename: Red-Soul
+
+License: http://creativecommons.org/licenses/by/3.0/
+
+Eagle files, code and other files for an Arduino compatible platform that has a built in LCD, Rotary Encoder, LED, Buzzer and several free I/O ports, built in USB programming port and switching power regulator.
+
+The platform can be powered from 9v battery, or 5.5-30v DC wall adapters.

@@ -1,0 +1,205 @@
+(PCB "C:/Users/dustin/Documents/eagle/post 20120323/FTDI/ftdiBreakout.brd"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad CadSoft)
+    (host_version 'EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft')
+  )
+  (resolution mil 254)
+  (unit mil)
+  (structure
+    (layer "1#Top"  (type signal))
+    (layer "16#Bottom"  (type signal))
+    (boundary 
+      (rect pcb  0.000000 0.000000 1437.007874 899.606299)
+    )
+    (boundary (path signal 0 0.000000 0.000000 1437.007874 0.000000))
+    (boundary (path signal 0 1437.007874 0.000000 1437.007874 899.606299))
+    (boundary (path signal 0 1437.007874 899.606299 0.000000 899.606299))
+    (boundary (path signal 0 0.000000 899.606299 0.000000 0.000000))
+    (via
+       "Round1$30.000000"
+    )
+    (rule (width 12.000000)(clearance 10.000000))
+    (rule (clearance 20.000000 (type wire_via)))
+    (rule (clearance 40.000000 (type pin_via)))
+    (rule (clearance 30.000000 (type via_via)))
+    (rule (clearance 6.000000 (type smd_pin)))
+    (rule (clearance 20.000000 (type smd_via)))
+    (rule (clearance 6.000000 (type smd_smd)))
+    (control
+      (via_at_smd on)
+    )
+  )
+  (placement
+    (place_control (flip_style rotate_first))
+    (component "0805POL$Dustin" 
+      (place "C1" 616.216535 271.248031 Front 90.000000)
+    )
+    (component "CPOL-RADIAL-100UF-25V$SparkFun" 
+      (place "C2" 350.000000 712.090551 Front 90.000000)
+    )
+    (component "0805$SparkFun" 
+      (place "C3" 911.846457 735.015748 Front 270.000000)
+    )
+    (component "0805$SparkFun" 
+      (place "C4" 868.661417 613.208661 Front 180.000000)
+    )
+    (component "1X06$SparkFun" 
+      (place "JP1" 1066.476378 223.051181 Front 90.000000)
+    )
+    (component "TSSOP28$Dustin" 
+      (place "U$1" 861.145669 356.330709 Front 180.000000)
+    )
+    (component "0805$Dustin" 
+      (place "U$2" 619.318898 132.937008 Front 0.000000)
+    )
+    (component "USB-MINIB$SparkFun" 
+      (place "X1" 350.000000 350.000000 Front 0.000000)
+    )
+  )
+  (library
+    (image "0805$Dustin"
+      (pin "Rectangle1" "1" -35.433071 0.000000)
+      (pin "Rectangle1" "2" 35.433071 0.000000)
+    )
+    (image "0805POL$Dustin"
+      (pin "Rectangle1" "+" -35.433071 0.000000)
+      (pin "Rectangle1" "-" 35.433071 0.000000)
+    )
+    (image "TSSOP28$Dustin"
+      (outline(circ "1#Top" 11.133858 -66.929134 185.858268))
+      (pin "Rectangle2" "1" -115.000000 182.000000)
+      (pin "Rectangle2" "2" -115.000000 156.000000)
+      (pin "Rectangle2" "3" -115.000000 130.000000)
+      (pin "Rectangle2" "4" -115.000000 104.000000)
+      (pin "Rectangle2" "5" -115.000000 78.000000)
+      (pin "Rectangle2" "6" -115.000000 52.000000)
+      (pin "Rectangle2" "7" -115.000000 26.000000)
+      (pin "Rectangle2" "8" -115.236220 0.000000)
+      (pin "Rectangle2" "9" -115.000000 -26.000000)
+      (pin "Rectangle2" "10" -115.000000 -52.000000)
+      (pin "Rectangle2" "11" -115.000000 -78.000000)
+      (pin "Rectangle2" "12" -115.000000 -104.000000)
+      (pin "Rectangle2" "13" -115.000000 -130.000000)
+      (pin "Rectangle2" "14" -115.000000 -156.000000)
+      (pin "Rectangle2" "15" 115.000000 -156.000000)
+      (pin "Rectangle2" "16" 115.000000 -130.000000)
+      (pin "Rectangle2" "17" 115.000000 -104.000000)
+      (pin "Rectangle2" "18" 115.000000 -78.000000)
+      (pin "Rectangle2" "19" 115.000000 -52.000000)
+      (pin "Rectangle2" "20" 115.000000 -26.000000)
+      (pin "Rectangle2" "21" 115.236220 0.000000)
+      (pin "Rectangle2" "22" 115.000000 26.000000)
+      (pin "Rectangle2" "23" 115.000000 52.000000)
+      (pin "Rectangle2" "24" 115.000000 78.000000)
+      (pin "Rectangle2" "25" 115.000000 104.000000)
+      (pin "Rectangle2" "26" 115.000000 130.000000)
+      (pin "Rectangle2" "27" 115.000000 156.000000)
+      (pin "Rectangle2" "28" 115.000000 182.000000)
+    )
+    (image "1X06$SparkFun"
+      (pin "Round2" "1" 0.000000 0.000000)
+      (pin "Round2" "2" 100.000000 0.000000)
+      (pin "Round2" "3" 200.000000 0.000000)
+      (pin "Round2" "4" 300.000000 0.000000)
+      (pin "Round2" "5" 400.000000 0.000000)
+      (pin "Round2" "6" 500.000000 0.000000)
+    )
+    (image "0805$SparkFun"
+      (pin "Rectangle1" "1" -35.433071 0.000000)
+      (pin "Rectangle1" "2" 35.433071 0.000000)
+    )
+    (image "CPOL-RADIAL-100UF-25V$SparkFun"
+      (outline(circ "1#Top" 255.905512 0.000000 0.000000))
+      (pin "Square1" "1" 50.000000 0.000000)
+      (pin "Round3" "2" -50.000000 0.000000)
+    )
+    (image "USB-MINIB$SparkFun"
+      (keepout (circ signal 41.433071 0.000000 86.614173))
+      (keepout (circ signal 41.433071 0.000000 -86.614173))
+      (pin "Rectangle3" "D+" 98.425197 0.000000)
+      (pin "Rectangle3" "D-" 98.425197 31.496063)
+      (pin "Rectangle3" "GND" 98.425197 -62.992126)
+      (pin "Rectangle3" "ID" 98.425197 -31.496063)
+      (pin "Rectangle4" "MTN1" -118.110236 177.165354)
+      (pin "Rectangle4" "MTN2" 98.425197 177.165354)
+      (pin "Rectangle4" "MTN3" -118.110236 -177.165354)
+      (pin "Rectangle4" "MTN4" 98.425197 -177.165354)
+      (pin "Rectangle3" "VBUS" 98.425197 62.992126)
+    )
+    (padstack "ViaDefault$30.000000"
+      (shape (circle signal 46.000000 0 0))
+    )
+    (padstack "Round1$30.000000" 
+      (shape (circle "1#Top" 46.000000 0 0))
+      (shape (circle "16#Bottom" 46.000000 0 0))
+      (attach off)
+    )
+    (padstack "Rectangle1" 
+      (shape (rect "1#Top" -15.748031 -23.622047 15.748031 23.622047))
+      (attach off)
+    )
+    (padstack "Rectangle2" 
+      (shape (rect "1#Top" -15.748031 -4.921260 15.748031 4.921260))
+      (attach off)
+    )
+    (padstack "Round2" 
+      (shape (circle signal 74.000000 0 0))
+      (attach off)
+    )
+    (padstack "Square1" 
+      (shape (rect signal -32.500000 -32.500000 32.500000 32.500000))
+      (attach off)
+    )
+    (padstack "Round3" 
+      (shape (circle signal 65.000000 0 0))
+      (attach off)
+    )
+    (padstack "Rectangle3" 
+      (shape (rect "1#Top" -49.212598 -9.842520 49.212598 9.842520))
+      (attach off)
+    )
+    (padstack "Rectangle4" 
+      (shape (rect "1#Top" -49.212598 -39.370079 49.212598 39.370079))
+      (attach off)
+    )
+  )
+  (network
+    (net "CTS"
+      (pins  "JP1"-"2" "U$1"-"11")
+    )
+    (net "DTR"
+      (pins  "JP1"-"6" "U$1"-"2")
+    )
+    (net "GND"
+      (pins  "X1"-"GND" "U$1"-"26" "U$1"-"25" "U$1"-"7" "U$1"-"18" "U$1"-"21" "C1"-"-" "C2"-"2" "C3"-"2" "C4"-"1" "JP1"-"1")
+    )
+    (net "N$1"
+      (pins  "X1"-"VBUS" "U$2"-"1" "C1"-"+")
+    )
+    (net "N$4"
+      (pins  "X1"-"D-" "U$1"-"16")
+    )
+    (net "N$5"
+      (pins  "U$1"-"15" "X1"-"D+")
+    )
+    (net "N$6"
+      (pins  "U$1"-"17" "C4"-"2")
+    )
+    (net "RXD"
+      (pins  "U$1"-"5")
+    )
+    (net "RXI"
+      (pins  "JP1"-"5")
+    )
+    (net "TXO"
+      (pins  "JP1"-"4" "U$1"-"1")
+    )
+    (net "VCC"
+      (pins  "U$2"-"2" "U$1"-"4" "U$1"-"20" "C2"-"1" "C3"-"1" "JP1"-"3")
+    )
+  )
+  (wiring
+  )
+)
