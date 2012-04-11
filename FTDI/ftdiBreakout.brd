@@ -279,13 +279,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 </classes>
 <designrules>
 <description language="en">
-&lt;b&gt;Shot Timer Design rules&lt;/b&gt;
+&lt;b&gt;Toner Transfer Design rules&lt;/b&gt;
 
 </description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.0178mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0178mm"/>
 <param name="mtIsolate" value="59mil 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="10mil"/>
+<param name="mdWireWire" value="11mil"/>
 <param name="mdWirePad" value="10mil"/>
 <param name="mdWireVia" value="20mil"/>
 <param name="mdPadPad" value="10mil"/>
@@ -299,9 +299,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <param name="mdCopperDimension" value="20mil"/>
 <param name="mdDrill" value="16mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="12mil"/>
-<param name="msDrill" value="30mil"/>
-<param name="msMicroVia" value="30mil"/>
+<param name="msWidth" value="16mil"/>
+<param name="msDrill" value="35mil"/>
+<param name="msMicroVia" value="35mil"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
