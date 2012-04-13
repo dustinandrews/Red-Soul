@@ -592,9 +592,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="29.0801" y1="4.9594" x2="29.0801" y2="11.2939" width="0.3048" layer="1"/>
 <wire x1="29.0801" y1="11.2939" x2="27.0885" y2="13.2855" width="0.3048" layer="1"/>
 </signal>
-<signal name="RXD">
-<contactref element="U$1" pad="5"/>
-</signal>
 <signal name="CTS">
 <contactref element="JP1" pad="2"/>
 <contactref element="U$1" pad="11"/>
@@ -615,6 +612,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 </signal>
 <signal name="RXI">
 <contactref element="JP1" pad="5"/>
+<contactref element="U$1" pad="5"/>
+<wire x1="24.7941" y1="7.0696" x2="27.0885" y2="15.8255" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
