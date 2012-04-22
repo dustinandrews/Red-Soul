@@ -1,32 +1,36 @@
-(PCB "C:/Users/dustin/Documents/eagle/post 20120323/BuckRegulatorBoard/BuckPower.brd"
+(PCB "C:/Users/dustin/Documents/eagle/Red-Soul/BuckRegulatorBoard/BuckPower.brd"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad CadSoft)
     (host_version 'EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft')
   )
-  (resolution inch 254000)
-  (unit inch)
+  (resolution mil 254)
+  (unit mil)
   (structure
     (layer "1#Top"  (type signal))
     (layer "16#Bottom"  (type signal))
     (boundary 
-      (rect pcb  0.000000 0.000000 1.637008 1.249606)
+      (rect pcb  0.000000 0.000000 1637.007874 1249.606299)
     )
-    (boundary (path signal 0 0.000000 0.000000 1.637008 0.000000))
-    (boundary (path signal 0 1.637008 0.000000 1.637008 1.249606))
-    (boundary (path signal 0 1.637008 1.249606 0.000000 1.249606))
-    (boundary (path signal 0 0.000000 1.249606 0.000000 0.000000))
+    (boundary (path signal 0 0.000000 0.000000 1637.007874 0.000000))
+    (boundary (path signal 0 1637.007874 0.000000 1637.007874 1249.606299))
+    (boundary (path signal 0 1637.007874 1249.606299 0.000000 1249.606299))
+    (boundary (path signal 0 0.000000 1249.606299 0.000000 0.000000))
     (via
-       "Round1$0.030000"
+       "Round1$35.000000"
     )
-    (rule (width 0.012000)(clearance 0.010000))
-    (rule (clearance 0.020000 (type wire_via)))
-    (rule (clearance 0.040000 (type pin_via)))
-    (rule (clearance 0.030000 (type via_via)))
-    (rule (clearance 0.006000 (type smd_pin)))
-    (rule (clearance 0.020000 (type smd_via)))
-    (rule (clearance 0.006000 (type smd_smd)))
+    (rule (width 16.000000)(clearance 11.000000))
+    (rule (clearance 10.000000 (type wire_pin)))
+    (rule (clearance 10.000000 (type wire_smd)))
+    (rule (clearance 20.000000 (type wire_via)))
+    (rule (clearance 10.000000 (type pin_pin)))
+    (rule (clearance 40.000000 (type pin_via)))
+    (rule (clearance 30.000000 (type via_via)))
+    (rule (clearance 6.000000 (type smd_pin)))
+    (rule (clearance 20.000000 (type smd_via)))
+    (rule (clearance 6.000000 (type smd_smd)))
+    (wire_keepout(rect "1#Top" 516.000000 957.000000 601.000000 967.000000))
     (control
       (via_at_smd on)
     )
@@ -34,89 +38,297 @@
   (placement
     (place_control (flip_style rotate_first))
     (component "CPOL-RADIAL-100UF-25V$SparkFun" 
-      (place "C1" 1.050000 0.400000 Front 270.000000)
+      (place "C1" 426.421260 335.543307 Front 270.000000)
     )
     (component "CPOL-RADIAL-100UF-25V$SparkFun" 
-      (place "C2" 0.350000 0.350000 Front 90.000000)
+      (place "C2" 429.783465 625.590551 Front 90.000000)
+    )
+    (component "1X03_NO_SILK$SparkFun" 
+      (place "JP1" 708.661417 236.220472 Front 0.000000)
     )
     (component "INDUCTOR-1206$SparkFun" 
-      (place "L1" 0.350000 0.700000 Front 270.000000)
+      (place "L1" 452.165354 869.645669 Front 0.000000)
     )
     (component "DIODE-ZENER$SparkFun" 
-      (place "SCHOTTKEY" 0.700000 0.750000 Front 0.000000)
+      (place "SCHOTTKEY" 821.925197 840.759843 Front 0.000000)
     )
     (component "8DILL$Dustin" 
-      (place "U1" 0.700000 0.450000 Front 270.000000)
+      (place "U1" 818.110236 607.480315 Front 270.000000)
     )
   )
   (library
     (image "8DILL$Dustin"
-      (pin "Octagon1" "1" -0.150000 -0.150000)
-      (pin "Octagon1" "2" -0.050000 -0.150000)
-      (pin "Octagon1" "3" 0.050000 -0.150000)
-      (pin "Octagon1" "4" 0.150000 -0.150000)
-      (pin "Octagon1" "5" 0.150000 0.150000)
-      (pin "Octagon1" "6" 0.050000 0.150000)
-      (pin "Octagon1" "7" -0.050000 0.150000)
-      (pin "Octagon1" "8" -0.150000 0.150000)
+      (pin "Octagon1" "1" -150.000000 -150.000000)
+      (pin "Octagon1" "2" -50.000000 -150.000000)
+      (pin "Octagon1" "3" 50.000000 -150.000000)
+      (pin "Octagon1" "4" 150.000000 -150.000000)
+      (pin "Octagon1" "5" 150.000000 150.000000)
+      (pin "Octagon1" "6" 50.000000 150.000000)
+      (pin "Octagon1" "7" -50.000000 150.000000)
+      (pin "Octagon1" "8" -150.000000 150.000000)
+    )
+    (image "1X03_NO_SILK$SparkFun"
+      (pin "Round2" "1" 0.000000 0.000000)
+      (pin "Round2" "2" 100.000000 0.000000)
+      (pin "Round2" "3" 200.000000 0.000000)
     )
     (image "CPOL-RADIAL-100UF-25V$SparkFun"
-      (outline(circ "1#Top" 0.255906 0.000000 0.000000))
-      (pin "Square1" "1" 0.050000 0.000000)
-      (pin "Round2" "2" -0.050000 0.000000)
+      (outline(circ "1#Top" 255.905512 0.000000 0.000000))
+      (pin "Square1" "1" 50.000000 0.000000)
+      (pin "Round3" "2" -50.000000 0.000000)
     )
     (image "DIODE-ZENER$SparkFun"
-      (pin "Round3" "P$1" -0.140000 0.000000)
-      (pin "Round3" "P$2" 0.140000 0.000000)
+      (pin "Round4" "P$1" -140.000000 0.000000)
+      (pin "Round4" "P$2" 140.000000 0.000000)
     )
     (image "INDUCTOR-1206$SparkFun"
-      (pin "Rectangle1" "P$1" -0.100000 0.000000)
-      (pin "Rectangle1" "P$2" 0.100000 0.000000)
+      (pin "Rectangle1" "P$1" -100.000000 0.000000)
+      (pin "Rectangle1" "P$2" 100.000000 0.000000)
     )
-    (padstack "ViaDefault$0.030000"
-      (shape (circle signal 0.046000 0 0))
+    (padstack "ViaDefault$35.000000"
+      (shape (circle signal 51.000000 0 0))
     )
-    (padstack "Round1$0.030000" 
-      (shape (circle "1#Top" 0.046000 0 0))
-      (shape (circle "16#Bottom" 0.046000 0 0))
+    (padstack "Round1$35.000000" 
+      (shape (circle "1#Top" 51.000000 0 0))
+      (shape (circle "16#Bottom" 51.000000 0 0))
       (attach off)
     )
     (padstack "Octagon1" 
-      (shape (polygon "1#Top" 0 0.031500 0.013048 0.013048 0.031500 -0.013048 0.031500 -0.031500 0.013048 -0.031500 -0.013048 -0.013048 -0.031500 0.013048 -0.031500 0.031500 -0.013048 ))
-      (shape (polygon "16#Bottom" 0 0.031500 0.013048 0.013048 0.031500 -0.013048 0.031500 -0.031500 0.013048 -0.031500 -0.013048 -0.013048 -0.031500 0.013048 -0.031500 0.031500 -0.013048 ))
-      (attach off)
-    )
-    (padstack "Square1" 
-      (shape (rect signal -0.032500 -0.032500 0.032500 0.032500))
+      (shape (polygon "1#Top" 0 31.500000 13.047725 13.047725 31.500000 -13.047725 31.500000 -31.500000 13.047725 -31.500000 -13.047725 -13.047725 -31.500000 13.047725 -31.500000 31.500000 -13.047725 ))
+      (shape (polygon "16#Bottom" 0 31.500000 13.047725 13.047725 31.500000 -13.047725 31.500000 -31.500000 13.047725 -31.500000 -13.047725 -13.047725 -31.500000 13.047725 -31.500000 31.500000 -13.047725 ))
       (attach off)
     )
     (padstack "Round2" 
-      (shape (circle signal 0.065000 0 0))
+      (shape (circle signal 74.000000 0 0))
+      (attach off)
+    )
+    (padstack "Square1" 
+      (shape (rect signal -32.500000 -32.500000 32.500000 32.500000))
       (attach off)
     )
     (padstack "Round3" 
-      (shape (circle signal 0.053150 0 0))
+      (shape (circle signal 65.000000 0 0))
+      (attach off)
+    )
+    (padstack "Round4" 
+      (shape (circle signal 53.149606 0 0))
       (attach off)
     )
     (padstack "Rectangle1" 
-      (shape (rect "1#Top" -0.040000 -0.070000 0.040000 0.070000))
+      (shape (rect "1#Top" -40.000000 -70.000000 40.000000 70.000000))
       (attach off)
     )
   )
   (network
     (net "GND"
-      (pins  "C1"-"2" "C2"-"2" "U1"-"4" "U1"-"2" "U1"-"3" "SCHOTTKEY"-"P$2")
+      (pins  "C1"-"2" "C2"-"2" "U1"-"4" "U1"-"2" "U1"-"3" "SCHOTTKEY"-"P$2" "JP1"-"2")
     )
     (net "N$1"
       (pins  "L1"-"P$1" "U1"-"7" "SCHOTTKEY"-"P$1")
     )
     (net "RAW"
-      (pins  "U1"-"5" "C1"-"1")
+      (pins  "U1"-"5" "C1"-"1" "JP1"-"3")
     )
     (net "VCC"
-      (pins  "C2"-"1" "L1"-"P$2" "U1"-"1")
+      (pins  "C2"-"1" "L1"-"P$2" "U1"-"1" "JP1"-"1")
     )
   )
   (wiring
+    (wire
+      (path "1#Top" 16.000000 429.783465 385.543307 634.153543 181.173228) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 634.153543 181.173228 753.614173 181.173228) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 753.614173 181.173228 808.661417 236.220472) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 717.614173 657.480315 900.893701 840.759843) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 900.893701 840.759843 961.925197 840.759843) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 429.783465 385.543307 426.421260 385.543307) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 429.783465 575.590551 429.783465 385.543307) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 668.110236 407.976378 808.661417 267.425197) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 808.661417 267.425197 808.661417 236.220472) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 668.110236 457.480315 668.110236 407.976378) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 668.110236 557.480315 668.110236 457.480315) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 668.110236 657.480315 717.614173 657.480315) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 668.110236 557.480315 668.110236 657.480315) 
+      (net "GND")
+    )
+    (wire
+      (path "1#Top" 16.000000 690.586614 904.586614 681.925197 895.925197) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 681.925197 895.925197 681.925197 840.759843) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 690.586614 904.586614 966.267717 904.586614) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 966.267717 904.586614 1079.228346 791.625984) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 1079.228346 791.625984 1079.228346 719.094488) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 1079.228346 719.094488 1017.614173 657.480315) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 968.110236 657.480315 1017.614173 657.480315) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 690.586614 904.586614 608.456693 986.716535) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 608.456693 986.716535 505.488189 986.716535) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 505.488189 986.716535 410.169291 891.397638) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 410.169291 891.397638 410.169291 869.645669) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 352.165354 869.645669 410.169291 869.645669) 
+      (net "N$1")
+    )
+    (wire
+      (path "1#Top" 16.000000 322.929134 329.374016 316.996063 323.440945) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 316.996063 323.440945 316.996063 247.125984) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 316.996063 247.125984 361.992126 202.129921) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 361.992126 202.129921 380.996063 202.129921) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 380.996063 202.129921 380.996063 202.125984) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 380.996063 202.125984 430.948819 152.173228) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 430.948819 152.173228 824.614173 152.173228) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 824.614173 152.173228 908.661417 236.220472) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 426.421260 285.543307 426.421260 297.188976) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 426.421260 297.188976 389.606299 334.003937) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 389.606299 334.003937 327.559055 334.003937) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 327.559055 334.003937 322.929134 329.374016) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 968.110236 407.976378 908.661417 348.527559) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 908.661417 348.527559 908.661417 236.220472) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 968.110236 457.480315 968.110236 407.976378) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 589.724409 744.082677 521.232283 675.590551) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 668.110236 757.480315 603.122047 757.480315) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 603.122047 757.480315 589.724409 744.082677) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 552.165354 781.641732 589.724409 744.082677) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 552.165354 869.645669 552.165354 781.641732) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 521.232283 675.590551 521.232283 423.649606) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 521.232283 423.649606 708.661417 236.220472) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 480.287402 675.590551 521.232283 675.590551) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 429.783465 675.590551 480.287402 675.590551) 
+      (net "VCC")
+    )
   )
 )

@@ -1,4 +1,4 @@
-(PCB "C:/Users/dustin/Documents/eagle/post 20120323/FTDI/ftdiBreakout.brd"
+(PCB "C:/Users/dustin/Documents/eagle/Red-Soul/FTDI/ftdiBreakout.brd"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -11,16 +11,16 @@
     (layer "1#Top"  (type signal))
     (layer "16#Bottom"  (type signal))
     (boundary 
-      (rect pcb  0.000000 0.000000 1437.007874 899.606299)
+      (rect pcb  0.000000 -2.000000 1712.007874 1131.606299)
     )
-    (boundary (path signal 0 0.000000 0.000000 1437.007874 0.000000))
-    (boundary (path signal 0 1437.007874 0.000000 1437.007874 899.606299))
-    (boundary (path signal 0 1437.007874 899.606299 0.000000 899.606299))
-    (boundary (path signal 0 0.000000 899.606299 0.000000 0.000000))
+    (boundary (path signal 0 0.000000 0.000000 1709.007874 -2.000000))
+    (boundary (path signal 0 1709.007874 -2.000000 1712.007874 1129.606299))
+    (boundary (path signal 0 1712.007874 1129.606299 3.000000 1131.606299))
+    (boundary (path signal 0 3.000000 1131.606299 0.000000 0.000000))
     (via
-       "Round1$30.000000"
+       "Round1$35.000000"
     )
-    (rule (width 12.000000)(clearance 10.000000))
+    (rule (width 16.000000)(clearance 10.000000))
     (rule (clearance 20.000000 (type wire_via)))
     (rule (clearance 40.000000 (type pin_via)))
     (rule (clearance 30.000000 (type via_via)))
@@ -34,28 +34,28 @@
   (placement
     (place_control (flip_style rotate_first))
     (component "0805POL$Dustin" 
-      (place "C1" 616.216535 271.248031 Front 90.000000)
+      (place "C1" 579.248031 249.783465 Front 0.000000)
     )
     (component "CPOL-RADIAL-100UF-25V$SparkFun" 
-      (place "C2" 350.000000 712.090551 Front 90.000000)
+      (place "C2" 190.000000 698.090551 Front 90.000000)
     )
     (component "0805$SparkFun" 
-      (place "C3" 911.846457 735.015748 Front 270.000000)
+      (place "C3" 579.984252 769.846457 Front 0.000000)
     )
     (component "0805$SparkFun" 
-      (place "C4" 868.661417 613.208661 Front 180.000000)
+      (place "C4" 575.661417 647.208661 Front 180.000000)
     )
     (component "1X06$SparkFun" 
-      (place "JP1" 1066.476378 223.051181 Front 90.000000)
+      (place "JP1" 1423.523622 684.948819 Front 270.000000)
     )
     (component "TSSOP28$Dustin" 
-      (place "U$1" 861.145669 356.330709 Front 180.000000)
+      (place "U$1" 949.145669 346.330709 Front 180.000000)
     )
     (component "0805$Dustin" 
-      (place "U$2" 619.318898 132.937008 Front 0.000000)
+      (place "U$2" 575.318898 98.937008 Front 0.000000)
     )
     (component "USB-MINIB$SparkFun" 
-      (place "X1" 350.000000 350.000000 Front 0.000000)
+      (place "X1" 295.000000 278.000000 Front 0.000000)
     )
   )
   (library
@@ -128,12 +128,12 @@
       (pin "Rectangle4" "MTN4" 98.425197 -177.165354)
       (pin "Rectangle3" "VBUS" 98.425197 62.992126)
     )
-    (padstack "ViaDefault$30.000000"
-      (shape (circle signal 46.000000 0 0))
+    (padstack "ViaDefault$35.000000"
+      (shape (circle signal 51.000000 0 0))
     )
-    (padstack "Round1$30.000000" 
-      (shape (circle "1#Top" 46.000000 0 0))
-      (shape (circle "16#Bottom" 46.000000 0 0))
+    (padstack "Round1$35.000000" 
+      (shape (circle "1#Top" 51.000000 0 0))
+      (shape (circle "16#Bottom" 51.000000 0 0))
       (attach off)
     )
     (padstack "Rectangle1" 
@@ -187,11 +187,8 @@
     (net "N$6"
       (pins  "U$1"-"17" "C4"-"2")
     )
-    (net "RXD"
-      (pins  "U$1"-"5")
-    )
     (net "RXI"
-      (pins  "JP1"-"5")
+      (pins  "JP1"-"5" "U$1"-"5")
     )
     (net "TXO"
       (pins  "JP1"-"4" "U$1"-"1")
