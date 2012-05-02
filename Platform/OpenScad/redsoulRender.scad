@@ -119,7 +119,12 @@ module switch()
 	import(file="surfaceswitch.stl");
 }
 
-
+module connector()
+{
+	color([0,0,0])
+	rotate([0,0,90])
+	cube([41,2,12]);
+}
 
 module components()
 {
@@ -132,6 +137,8 @@ module components()
 	translate([1,71.628,0]) usb();
 	translate([-1.4,11,1]) switch();
 	translate([5,25,0])dc_jack();
+	translate([-32,10,1])connector();
+	
 }
 
 
@@ -142,5 +149,4 @@ rotate([00,00,-90])
 {	
 	components();
 }
-
 

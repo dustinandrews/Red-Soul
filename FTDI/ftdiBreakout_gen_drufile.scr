@@ -1,2 +1,0 @@
-DRC SAVE 'C:/Users/dustin/Documents/eagle/Red-Soul/FTDI/ftdiBreakout.dru';
-RUN brd_to_dsn_v6.ulp f;
