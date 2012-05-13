@@ -5,33 +5,33 @@
     (host_cad CadSoft)
     (host_version 'EAGLE Version 6.1.0 Copyright (c) 1988-2012 CadSoft')
   )
-  (resolution inch 254000)
-  (unit inch)
+  (resolution mil 254)
+  (unit mil)
   (structure
     (layer "1#Top"  (type signal))
     (layer "16#Bottom"  (type signal))
     (boundary 
-      (rect pcb  0.040000 0.000000 3.610000 1.690000)
+      (rect pcb  40.000000 0.000000 3810.000000 1690.000000)
     )
-    (boundary (path signal 0 0.040000 0.000000 3.610000 0.000000))
-    (boundary (path signal 0 3.610000 0.000000 3.610000 1.690000))
-    (boundary (path signal 0 3.610000 1.690000 0.040000 1.690000))
-    (boundary (path signal 0 0.040000 1.690000 0.040000 0.000000))
+    (boundary (path signal 0 40.000000 0.000000 3810.000000 0.000000))
+    (boundary (path signal 0 3810.000000 0.000000 3810.000000 1690.000000))
+    (boundary (path signal 0 3810.000000 1690.000000 40.000000 1690.000000))
+    (boundary (path signal 0 40.000000 1690.000000 40.000000 0.000000))
     (via
-       "Round1$0.035000"
-       "Round7$0.035000"
+       "Round1$35.000000"
+       "Round7$35.000000"
     )
-    (rule (width 0.016000)(clearance 0.010000))
-    (rule (clearance 0.020000 (type wire_via)))
-    (rule (clearance 0.009000 (type pin_pin)))
-    (rule (clearance 0.040000 (type pin_via)))
-    (rule (clearance 0.030000 (type via_via)))
-    (rule (clearance 0.006000 (type smd_pin)))
-    (rule (clearance 0.020000 (type smd_via)))
-    (rule (clearance 0.006000 (type smd_smd)))
-    (wire_keepout(rect "1#Top" 1.980000 0.080000 2.030000 0.130000))
-    (via_keepout(rect signal 0.950000 0.760000 1.550000 1.300000))
-    (via_keepout(rect signal 2.310000 0.490000 2.840000 0.940000))
+    (rule (width 16.000000)(clearance 10.000000))
+    (rule (clearance 20.000000 (type wire_via)))
+    (rule (clearance 9.000000 (type pin_pin)))
+    (rule (clearance 40.000000 (type pin_via)))
+    (rule (clearance 30.000000 (type via_via)))
+    (rule (clearance 6.000000 (type smd_pin)))
+    (rule (clearance 20.000000 (type smd_via)))
+    (rule (clearance 6.000000 (type smd_smd)))
+    (wire_keepout(rect "1#Top" 2180.000000 80.000000 2230.000000 130.000000))
+    (via_keepout(rect signal 1150.000000 760.000000 1750.000000 1300.000000))
+    (via_keepout(rect signal 2510.000000 490.000000 3040.000000 940.000000))
     (control
       (via_at_smd on)
     )
@@ -39,453 +39,450 @@
   (placement
     (place_control (flip_style rotate_first))
     (component "1X02$SparkFun" 
-      (place "9V" 1.503268 0.141402 Front 180.000000)
+      (place "9V" 1703.267717 141.401575 Front 180.000000)
     )
     (component "TQFP32-08$SparkFun" 
-      (place "ATMEGAXX8" 1.210000 1.010000 Front 180.000000)
+      (place "ATMEGAXX8" 1410.000000 1010.000000 Front 180.000000)
     )
     (component "0805$SparkFun" 
-      (place "C1" 2.546764 1.047063 Front 180.000000)
+      (place "C1" 2746.763780 1047.062992 Front 180.000000)
     )
     (component "0805$SparkFun" 
-      (place "C2" 1.315598 0.629500 Front 90.000000)
+      (place "C2" 1515.598425 629.500000 Front 90.000000)
     )
     (component "0805$SparkFun" 
-      (place "C3" 0.740000 0.970000 Front 90.000000)
+      (place "C3" 940.000000 970.000000 Front 90.000000)
     )
     (component "F80$Dustin" 
-      (place "C4" 1.690000 0.220000 Front 0.000000)
+      (place "C4" 1890.000000 220.000000 Front 0.000000)
     )
     (component "10X8CAP$Dustin" 
-      (place "C5" 2.090000 0.600000 Front 90.000000)
+      (place "C5" 2290.000000 600.000000 Front 90.000000)
     )
     (component "0805POL$Dustin" 
-      (place "C6" 2.891634 0.397205 Front 90.000000)
+      (place "C6" 3091.633858 397.204724 Front 90.000000)
     )
     (component "0805$SparkFun" 
-      (place "C7" 2.220000 1.050000 Front 90.000000)
-    )
-    (component "CAP-B$Dustin" 
-      (place "C8" 2.380000 1.030000 Front 0.000000)
+      (place "C7" 2420.000000 1050.000000 Front 90.000000)
     )
     (component "0805$SparkFun" 
-      (place "C9" 2.680000 1.050000 Front 0.000000)
+      (place "C8" 2560.000000 1050.000000 Front 270.000000)
+    )
+    (component "0805$SparkFun" 
+      (place "C9" 2880.000000 1050.000000 Front 0.000000)
     )
     (component "ISOLATOR$Dustin" 
-      (place "FTDIDGNDLINK" 2.410000 0.430000 Front 0.000000)
+      (place "FTDIDGNDLINK" 2610.000000 430.000000 Front 0.000000)
     )
     (component "ISOLATOR$Dustin" 
-      (place "FTDIVCCLINK" 2.340000 1.190000 Front 180.000000)
+      (place "FTDIVCCLINK" 2540.000000 1190.000000 Front 180.000000)
     )
     (component "1X14B$Dustin" 
-      (place "JP1" 0.100000 1.416591 Front 270.000000)
+      (place "JP1" 100.000000 1416.590551 Front 270.000000)
     )
     (component "1X14B$Dustin" 
-      (place "JP2" 0.200000 1.416591 Front 270.000000)
+      (place "JP2" 400.000000 1416.590551 Front 270.000000)
     )
     (component "0805$SparkFun" 
-      (place "L1" 0.655000 0.970000 Front 270.000000)
+      (place "L1" 855.000000 970.000000 Front 270.000000)
     )
     (component "0805$SparkFun" 
-      (place "L2" 1.740000 0.494441 Front 0.000000)
+      (place "L2" 1940.000000 494.440945 Front 0.000000)
     )
     (component "CON14$con-harting" 
-      (place "LCDCON" 1.086524 1.477866 Front 0.000000)
+      (place "LCDCON" 1286.523622 1477.866142 Front 0.000000)
     )
-    (component "LED-1206$SparkFun" 
-      (place "LED1" 2.390000 1.640000 Front 0.000000)
+    (component "LED-0603$SparkFun" 
+      (place "LED1" 2610.000000 1640.000000 Front 270.000000)
     )
-    (component "LED-1206$SparkFun" 
-      (place "LED2" 3.490000 0.860000 Front 0.000000)
-    )
-    (component "ISOLATOR$Dustin" 
-      (place "LINK1" 2.300000 0.330000 Front 90.000000)
+    (component "LED-0603$SparkFun" 
+      (place "LED2" 3670.000000 860.000000 Front 270.000000)
     )
     (component "ISOLATOR$Dustin" 
-      (place "LINK2" 1.413728 0.352732 Front 180.000000)
+      (place "LINK1" 2500.000000 330.000000 Front 90.000000)
+    )
+    (component "ISOLATOR$Dustin" 
+      (place "LINK2" 1613.728346 352.732283 Front 180.000000)
+    )
+    (component "OSHW_10X750_NOTEXT$ohw-logo" 
+      (place "LOGO1" 3608.000000 568.000000 Back 0.000000)
     )
     (component "0805$SparkFun" 
-      (place "R1" 1.230000 0.630000 Front 270.000000)
+      (place "R1" 1430.000000 630.000000 Front 270.000000)
     )
     (component "0805$SparkFun" 
-      (place "R2" 3.481000 0.726000 Front 90.000000)
+      (place "R2" 3681.000000 726.000000 Front 90.000000)
     )
     (component "0805$SparkFun" 
-      (place "R3" 2.410000 1.540000 Front 0.000000)
+      (place "R3" 2610.000000 1540.000000 Front 0.000000)
     )
     (component "TRIMPOT-3MM$SparkFun" 
-      (place "R4" 3.060000 0.800000 Front 0.000000)
+      (place "R4" 3260.000000 800.000000 Front 0.000000)
     )
-    (component "SWITCH-SPDT-SMD$SparkFun" 
-      (place "S1" 2.721299 1.624201 Front 0.000000)
+    (component "SWITCH-SPDT-SMT$Dustin" 
+      (place "S1" 2910.700049 1614.299951 Front 0.000000)
     )
     (component "SOD-123$Dustin" 
-      (place "SCHOTTKEY" 2.000000 0.100000 Front 0.000000)
+      (place "SCHOTTKEY" 2200.000000 100.000000 Front 0.000000)
     )
     (component "BUZZER-CMT1603$SparkFun" 
-      (place "SG2" 3.260000 1.260000 Front 270.000000)
+      (place "SG2" 3460.000000 1260.000000 Front 270.000000)
     )
     (component "2X3-NS$SparkFun" 
-      (place "SPI" 0.551480 0.202996 Front 0.000000)
-    )
-    (component "12MM_ROTATY_TOP$Dustin" 
-      (place "U$2" 3.275000 0.090000 Front 270.000000)
-    )
-    (component "0805$Dustin" 
-      (place "U$3" 2.972469 0.395878 Front 90.000000)
-    )
-    (component "JACK-SMD$Dustin" 
-      (place "U$4" 0.998622 -0.091878 Front 0.000000)
-    )
-    (component "SSOP28$Dustin" 
-      (place "U1" 2.580000 0.710000 Front 0.000000)
+      (place "SPI" 751.480315 202.996063 Front 0.000000)
     )
     (component "SOIC8$Dustin" 
-      (place "U2" 2.046563 0.280000 Front 90.000000)
+      (place "U$1" 2240.000000 280.000000 Front 90.000000)
+    )
+    (component "12MM_ROTATY_TOP$Dustin" 
+      (place "U$2" 3475.000000 90.000000 Front 270.000000)
+    )
+    (component "0805$Dustin" 
+      (place "U$3" 3172.468504 395.877953 Front 90.000000)
+    )
+    (component "JACK-SMD$Dustin" 
+      (place "U$4" 1198.622047 -91.877953 Front 0.000000)
+    )
+    (component "SSOP28$Dustin" 
+      (place "U1" 2780.000000 710.000000 Front 0.000000)
     )
     (component "USB-MINIB$SparkFun" 
-      (place "X1" 2.580000 0.220000 Front 90.000000)
+      (place "X1" 2780.000000 220.000000 Front 90.000000)
     )
     (component "RESONATOR-SMD$SparkFun" 
-      (place "Y1" 1.560000 1.095000 Front 90.000000)
+      (place "Y1" 1760.000000 1095.000000 Front 90.000000)
     )
   )
   (library
     (image "1X14B$Dustin"
       (pin "Round2" "1" 0.000000 0.000000)
-      (pin "Round2" "2" 0.100000 0.000000)
-      (pin "Round2" "3" 0.200000 0.000000)
-      (pin "Round2" "4" 0.300000 0.000000)
-      (pin "Round2" "5" 0.400000 0.000000)
-      (pin "Round2" "6" 0.500000 0.000000)
-      (pin "Round2" "7" 0.600000 0.000000)
-      (pin "Round2" "8" 0.700000 0.000000)
-      (pin "Round2" "9" 0.800000 0.000000)
-      (pin "Round2" "10" 0.900000 0.000000)
-      (pin "Round2" "11" 1.000000 0.000000)
-      (pin "Round2" "12" 1.100000 0.000000)
-      (pin "Round2" "13" 1.200000 0.000000)
-      (pin "Round2" "14" 1.300000 0.000000)
+      (pin "Round2" "2" 100.000000 0.000000)
+      (pin "Round2" "3" 200.000000 0.000000)
+      (pin "Round2" "4" 300.000000 0.000000)
+      (pin "Round2" "5" 400.000000 0.000000)
+      (pin "Round2" "6" 500.000000 0.000000)
+      (pin "Round2" "7" 600.000000 0.000000)
+      (pin "Round2" "8" 700.000000 0.000000)
+      (pin "Round2" "9" 800.000000 0.000000)
+      (pin "Round2" "10" 900.000000 0.000000)
+      (pin "Round2" "11" 1000.000000 0.000000)
+      (pin "Round2" "12" 1100.000000 0.000000)
+      (pin "Round2" "13" 1200.000000 0.000000)
+      (pin "Round2" "14" 1300.000000 0.000000)
     )
     (image "10X8CAP$Dustin"
-      (pin "Rectangle1" "+" 0.015354 0.164961)
-      (pin "Rectangle1" "-" 0.015354 -0.142126)
+      (pin "Rectangle1" "+" 15.354331 164.960630)
+      (pin "Rectangle1" "-" 15.354331 -142.125984)
     )
     (image "12MM_ROTATY_TOP$Dustin"
-      (outline(circ "1#Top" 0.236220 -0.295276 0.000000))
-      (outline(circ "1#Top" 0.149606 -0.295276 0.000000))
-      (pin "Round3" "A" 0.000000 -0.100000)
-      (pin "Round3" "B" 0.000000 0.100000)
+      (outline(circ "1#Top" 236.220472 -295.275591 0.000000))
+      (outline(circ "1#Top" 149.606299 -295.275591 0.000000))
+      (pin "Round3" "A" 0.000000 -100.000000)
+      (pin "Round3" "B" 0.000000 100.000000)
       (pin "Round3" "C" 0.000000 0.000000)
-      (pin "Round3" "D" -0.570866 -0.100000)
-      (pin "Round3" "E" -0.570866 0.100000)
-      (pin "Round4" "NC1" -0.295276 -0.200000)
-      (pin "Round4" "NC2" -0.295276 0.200000)
+      (pin "Round3" "D" -570.866142 -100.000000)
+      (pin "Round3" "E" -570.866142 100.000000)
+      (pin "Round4" "NC1" -295.275591 -200.000000)
+      (pin "Round4" "NC2" -295.275591 200.000000)
     )
     (image "0805$Dustin"
-      (pin "Rectangle2" "1" -0.035433 0.000000)
-      (pin "Rectangle2" "2" 0.035433 0.000000)
+      (pin "Rectangle2" "1" -35.433071 0.000000)
+      (pin "Rectangle2" "2" 35.433071 0.000000)
     )
     (image "0805POL$Dustin"
-      (pin "Rectangle2" "+" -0.035433 0.000000)
-      (pin "Rectangle2" "-" 0.035433 0.000000)
-    )
-    (image "CAP-B$Dustin"
-      (pin "Rectangle3" "+" 0.001767 0.061756)
-      (pin "Rectangle3" "-" 0.001767 -0.064229)
+      (pin "Rectangle2" "+" -35.433071 0.000000)
+      (pin "Rectangle2" "-" 35.433071 0.000000)
     )
     (image "F80$Dustin"
-      (pin "Rectangle4" "+" 0.000000 0.086614)
-      (pin "Rectangle4" "-" 0.000000 -0.090551)
+      (pin "Rectangle3" "+" 0.000000 86.614173)
+      (pin "Rectangle3" "-" 0.000000 -90.551181)
     )
     (image "ISOLATOR$Dustin"
-      (pin "Rectangle5" "P$1" -0.030000 0.000000)
-      (pin "Rectangle5" "P$2" 0.030000 0.000000)
+      (pin "Rectangle4" "P$1" -30.000000 0.000000)
+      (pin "Rectangle4" "P$2" 30.000000 0.000000)
     )
     (image "JACK-SMD$Dustin"
-      (keepout (circ signal 0.072929 0.000000 0.196850))
-      (keepout (circ signal 0.084740 0.000000 0.374016))
-      (pin "Rectangle6" "1A" 0.212598 0.385827)
-      (pin "Rectangle6" "1B" 0.212598 0.200787)
-      (pin "Rectangle6" "2" -0.212598 0.385827)
-      (pin "Rectangle6" "3" -0.212598 0.200787)
+      (keepout (circ signal 68.992126 0.000000 196.850394))
+      (keepout (circ signal 84.740157 0.000000 374.015748))
+      (pin "Rectangle5" "1A" 212.598425 435.826772)
+      (pin "Rectangle5" "1B" 212.598425 200.787402)
+      (pin "Rectangle5" "2" -212.598425 435.826772)
+      (pin "Rectangle5" "3" -212.598425 200.787402)
     )
     (image "SOD-123$Dustin"
-      (pin "Rectangle7" "ANODE" 0.054488 0.003937)
-      (pin "Rectangle7" "CATHODE" -0.051811 0.003937)
+      (pin "Rectangle6" "ANODE" 54.488189 3.937008)
+      (pin "Rectangle6" "CATHODE" -51.811024 3.937008)
     )
     (image "SOIC8$Dustin"
-      (outline(circ "1#Top" 0.011307 -0.071000 -0.039000))
-      (pin "Rectangle8" "1" -0.075000 -0.103000)
-      (pin "Rectangle8" "2" -0.025000 -0.103000)
-      (pin "Rectangle8" "3" 0.025000 -0.103000)
-      (pin "Rectangle8" "4" 0.075000 -0.103000)
-      (pin "Rectangle8" "5" 0.075000 0.103000)
-      (pin "Rectangle8" "6" 0.025000 0.103000)
-      (pin "Rectangle8" "7" -0.025000 0.103000)
-      (pin "Rectangle8" "8" -0.075000 0.103000)
+      (outline(circ "1#Top" 11.307087 -71.000000 -39.000000))
+      (pin "Rectangle7" "1" -75.000000 -103.000000)
+      (pin "Rectangle7" "2" -25.000000 -103.000000)
+      (pin "Rectangle7" "3" 25.000000 -103.000000)
+      (pin "Rectangle7" "4" 75.000000 -103.000000)
+      (pin "Rectangle7" "5" 75.000000 103.000000)
+      (pin "Rectangle7" "6" 25.000000 103.000000)
+      (pin "Rectangle7" "7" -25.000000 103.000000)
+      (pin "Rectangle7" "8" -75.000000 103.000000)
     )
     (image "SSOP28$Dustin"
-      (outline(circ "1#Top" 0.036189 -0.166339 -0.076772))
-      (pin "Rectangle9" "1" -0.166339 -0.143937)
-      (pin "Rectangle9" "2" -0.140748 -0.143937)
-      (pin "Rectangle9" "3" -0.115157 -0.143937)
-      (pin "Rectangle9" "4" -0.089567 -0.143937)
-      (pin "Rectangle9" "5" -0.063976 -0.143937)
-      (pin "Rectangle9" "6" -0.038386 -0.143937)
-      (pin "Rectangle9" "7" -0.012795 -0.143937)
-      (pin "Rectangle9" "8" 0.012795 -0.143937)
-      (pin "Rectangle9" "9" 0.038386 -0.143937)
-      (pin "Rectangle9" "10" 0.063976 -0.143937)
-      (pin "Rectangle9" "11" 0.089567 -0.143937)
-      (pin "Rectangle9" "12" 0.115157 -0.143937)
-      (pin "Rectangle9" "13" 0.140748 -0.143937)
-      (pin "Rectangle9" "14" 0.166339 -0.143937)
-      (pin "Rectangle9" "15" 0.166339 0.143937)
-      (pin "Rectangle9" "16" 0.140748 0.143937)
-      (pin "Rectangle9" "17" 0.115157 0.143937)
-      (pin "Rectangle9" "18" 0.089567 0.143937)
-      (pin "Rectangle9" "19" 0.063976 0.143937)
-      (pin "Rectangle9" "20" 0.038386 0.143937)
-      (pin "Rectangle9" "21" 0.012795 0.143937)
-      (pin "Rectangle9" "22" -0.012795 0.143937)
-      (pin "Rectangle9" "23" -0.038386 0.143937)
-      (pin "Rectangle9" "24" -0.063976 0.143937)
-      (pin "Rectangle9" "25" -0.089567 0.143937)
-      (pin "Rectangle9" "26" -0.115157 0.143937)
-      (pin "Rectangle9" "27" -0.140748 0.143937)
-      (pin "Rectangle9" "28" -0.166339 0.143937)
+      (outline(circ "1#Top" 36.188976 -166.338583 -76.771654))
+      (pin "Rectangle8" "1" -166.338583 -143.937008)
+      (pin "Rectangle8" "2" -140.748031 -143.937008)
+      (pin "Rectangle8" "3" -115.157480 -143.937008)
+      (pin "Rectangle8" "4" -89.566929 -143.937008)
+      (pin "Rectangle8" "5" -63.976378 -143.937008)
+      (pin "Rectangle8" "6" -38.385827 -143.937008)
+      (pin "Rectangle8" "7" -12.795276 -143.937008)
+      (pin "Rectangle8" "8" 12.795276 -143.937008)
+      (pin "Rectangle8" "9" 38.385827 -143.937008)
+      (pin "Rectangle8" "10" 63.976378 -143.937008)
+      (pin "Rectangle8" "11" 89.566929 -143.937008)
+      (pin "Rectangle8" "12" 115.157480 -143.937008)
+      (pin "Rectangle8" "13" 140.748031 -143.937008)
+      (pin "Rectangle8" "14" 166.338583 -143.937008)
+      (pin "Rectangle8" "15" 166.338583 143.937008)
+      (pin "Rectangle8" "16" 140.748031 143.937008)
+      (pin "Rectangle8" "17" 115.157480 143.937008)
+      (pin "Rectangle8" "18" 89.566929 143.937008)
+      (pin "Rectangle8" "19" 63.976378 143.937008)
+      (pin "Rectangle8" "20" 38.385827 143.937008)
+      (pin "Rectangle8" "21" 12.795276 143.937008)
+      (pin "Rectangle8" "22" -12.795276 143.937008)
+      (pin "Rectangle8" "23" -38.385827 143.937008)
+      (pin "Rectangle8" "24" -63.976378 143.937008)
+      (pin "Rectangle8" "25" -89.566929 143.937008)
+      (pin "Rectangle8" "26" -115.157480 143.937008)
+      (pin "Rectangle8" "27" -140.748031 143.937008)
+      (pin "Rectangle8" "28" -166.338583 143.937008)
+    )
+    (image "SWITCH-SPDT-SMT$Dustin"
+      (keepout (circ signal 41.433071 -59.055118 0.000000))
+      (keepout (circ signal 41.433071 59.055118 0.000000))
+      (pin "Rectangle9" "1" -98.425197 -108.267717)
+      (pin "Rectangle9" "2" 0.000000 -108.267717)
+      (pin "Rectangle9" "3" 98.425197 -108.267717)
     )
     (image "1X02$SparkFun"
       (pin "Round5" "1" 0.000000 0.000000)
-      (pin "Round5" "2" 0.100000 0.000000)
+      (pin "Round5" "2" 100.000000 0.000000)
     )
     (image "2X3-NS$SparkFun"
-      (pin "Square1" "1" -0.100000 -0.050000)
-      (pin "Octagon1" "2" -0.100000 0.050000)
-      (pin "Octagon1" "3" 0.000000 -0.050000)
-      (pin "Octagon1" "4" 0.000000 0.050000)
-      (pin "Octagon1" "5" 0.100000 -0.050000)
-      (pin "Octagon1" "6" 0.100000 0.050000)
+      (pin "Square1" "1" -100.000000 -50.000000)
+      (pin "Octagon1" "2" -100.000000 50.000000)
+      (pin "Octagon1" "3" 0.000000 -50.000000)
+      (pin "Octagon1" "4" 0.000000 50.000000)
+      (pin "Octagon1" "5" 100.000000 -50.000000)
+      (pin "Octagon1" "6" 100.000000 50.000000)
     )
     (image "0805$SparkFun"
-      (pin "Rectangle2" "1" -0.035433 0.000000)
-      (pin "Rectangle2" "2" 0.035433 0.000000)
+      (pin "Rectangle2" "1" -35.433071 0.000000)
+      (pin "Rectangle2" "2" 35.433071 0.000000)
     )
     (image "BUZZER-CMT1603$SparkFun"
-      (pin "Rectangle10" "P$1" -0.366142 0.000000)
-      (pin "Rectangle10" "P$2" 0.366142 0.000000)
+      (pin "Rectangle10" "P$1" -366.141732 0.000000)
+      (pin "Rectangle10" "P$2" 366.141732 0.000000)
     )
-    (image "LED-1206$SparkFun"
-      (pin "Rectangle11" "A" -0.059055 0.000000)
-      (pin "Rectangle11" "C" 0.059055 0.000000)
+    (image "LED-0603$SparkFun"
+      (pin "Rectangle11" "A" 0.000000 -29.527559)
+      (pin "Rectangle11" "C" 0.000000 29.527559)
     )
     (image "RESONATOR-SMD$SparkFun"
-      (pin "Rectangle12" "1" -0.047244 0.000000)
+      (pin "Rectangle12" "1" -47.244094 0.000000)
       (pin "Rectangle12" "2" 0.000000 0.000000)
-      (pin "Rectangle12" "3" 0.047244 0.000000)
-    )
-    (image "SWITCH-SPDT-SMD$SparkFun"
-      (keepout (circ signal 0.041433 -0.139764 0.000000))
-      (keepout (circ signal 0.041433 0.139764 0.000000))
-      (pin "Rectangle13" "1" -0.098425 -0.108268)
-      (pin "Rectangle13" "2" 0.000000 -0.108268)
-      (pin "Rectangle13" "3" 0.098425 -0.108268)
+      (pin "Rectangle12" "3" 47.244094 0.000000)
     )
     (image "TQFP32-08$SparkFun"
-      (outline(circ "1#Top" 0.028283 -0.108000 0.108000))
-      (pin "Rectangle14" "1" -0.169000 0.110236)
-      (pin "Rectangle14" "2" -0.169000 0.078740)
-      (pin "Rectangle14" "3" -0.169000 0.047244)
-      (pin "Rectangle14" "4" -0.169000 0.015748)
-      (pin "Rectangle14" "5" -0.169000 -0.015748)
-      (pin "Rectangle14" "6" -0.169000 -0.047244)
-      (pin "Rectangle14" "7" -0.169000 -0.078740)
-      (pin "Rectangle14" "8" -0.169000 -0.110236)
-      (pin "Rectangle15" "9" -0.110236 -0.169000)
-      (pin "Rectangle15" "10" -0.078740 -0.169000)
-      (pin "Rectangle15" "11" -0.047244 -0.169000)
-      (pin "Rectangle15" "12" -0.015748 -0.169000)
-      (pin "Rectangle15" "13" 0.015748 -0.169000)
-      (pin "Rectangle15" "14" 0.047244 -0.169000)
-      (pin "Rectangle15" "15" 0.078740 -0.169000)
-      (pin "Rectangle15" "16" 0.110236 -0.169000)
-      (pin "Rectangle14" "17" 0.169000 -0.110236)
-      (pin "Rectangle14" "18" 0.169000 -0.078740)
-      (pin "Rectangle14" "19" 0.169000 -0.047244)
-      (pin "Rectangle14" "20" 0.169000 -0.015748)
-      (pin "Rectangle14" "21" 0.169000 0.015748)
-      (pin "Rectangle14" "22" 0.169000 0.047244)
-      (pin "Rectangle14" "23" 0.169000 0.078740)
-      (pin "Rectangle14" "24" 0.169000 0.110236)
-      (pin "Rectangle15" "25" 0.110236 0.169000)
-      (pin "Rectangle15" "26" 0.078740 0.169000)
-      (pin "Rectangle15" "27" 0.047244 0.169000)
-      (pin "Rectangle15" "28" 0.015748 0.169000)
-      (pin "Rectangle15" "29" -0.015748 0.169000)
-      (pin "Rectangle15" "30" -0.047244 0.169000)
-      (pin "Rectangle15" "31" -0.078740 0.169000)
-      (pin "Rectangle15" "32" -0.110236 0.169000)
+      (outline(circ "1#Top" 28.283465 -108.000000 108.000000))
+      (pin "Rectangle13" "1" -169.000000 110.236220)
+      (pin "Rectangle13" "2" -169.000000 78.740157)
+      (pin "Rectangle13" "3" -169.000000 47.244094)
+      (pin "Rectangle13" "4" -169.000000 15.748031)
+      (pin "Rectangle13" "5" -169.000000 -15.748031)
+      (pin "Rectangle13" "6" -169.000000 -47.244094)
+      (pin "Rectangle13" "7" -169.000000 -78.740157)
+      (pin "Rectangle13" "8" -169.000000 -110.236220)
+      (pin "Rectangle14" "9" -110.236220 -169.000000)
+      (pin "Rectangle14" "10" -78.740157 -169.000000)
+      (pin "Rectangle14" "11" -47.244094 -169.000000)
+      (pin "Rectangle14" "12" -15.748031 -169.000000)
+      (pin "Rectangle14" "13" 15.748031 -169.000000)
+      (pin "Rectangle14" "14" 47.244094 -169.000000)
+      (pin "Rectangle14" "15" 78.740157 -169.000000)
+      (pin "Rectangle14" "16" 110.236220 -169.000000)
+      (pin "Rectangle13" "17" 169.000000 -110.236220)
+      (pin "Rectangle13" "18" 169.000000 -78.740157)
+      (pin "Rectangle13" "19" 169.000000 -47.244094)
+      (pin "Rectangle13" "20" 169.000000 -15.748031)
+      (pin "Rectangle13" "21" 169.000000 15.748031)
+      (pin "Rectangle13" "22" 169.000000 47.244094)
+      (pin "Rectangle13" "23" 169.000000 78.740157)
+      (pin "Rectangle13" "24" 169.000000 110.236220)
+      (pin "Rectangle14" "25" 110.236220 169.000000)
+      (pin "Rectangle14" "26" 78.740157 169.000000)
+      (pin "Rectangle14" "27" 47.244094 169.000000)
+      (pin "Rectangle14" "28" 15.748031 169.000000)
+      (pin "Rectangle14" "29" -15.748031 169.000000)
+      (pin "Rectangle14" "30" -47.244094 169.000000)
+      (pin "Rectangle14" "31" -78.740157 169.000000)
+      (pin "Rectangle14" "32" -110.236220 169.000000)
     )
     (image "TRIMPOT-3MM$SparkFun"
-      (pin "Rectangle16" "1" -0.033465 -0.064961)
-      (pin "Rectangle17" "2" 0.000000 0.064961)
-      (pin "Rectangle16" "3" 0.033465 -0.064961)
+      (pin "Rectangle15" "1" -33.464567 -64.960630)
+      (pin "Rectangle16" "2" 0.000000 64.960630)
+      (pin "Rectangle15" "3" 33.464567 -64.960630)
     )
     (image "USB-MINIB$SparkFun"
-      (keepout (circ signal 0.041433 0.000000 0.086614))
-      (keepout (circ signal 0.041433 0.000000 -0.086614))
-      (pin "Rectangle18" "D+" 0.098425 0.000000)
-      (pin "Rectangle18" "D-" 0.098425 0.031496)
-      (pin "Rectangle18" "GND" 0.098425 -0.062992)
-      (pin "Rectangle18" "ID" 0.098425 -0.031496)
-      (pin "Rectangle19" "MTN1" -0.118110 0.177165)
-      (pin "Rectangle19" "MTN2" 0.098425 0.177165)
-      (pin "Rectangle19" "MTN3" -0.118110 -0.177165)
-      (pin "Rectangle19" "MTN4" 0.098425 -0.177165)
-      (pin "Rectangle18" "VBUS" 0.098425 0.062992)
+      (keepout (circ signal 41.433071 0.000000 86.614173))
+      (keepout (circ signal 41.433071 0.000000 -86.614173))
+      (pin "Rectangle17" "D+" 98.425197 0.000000)
+      (pin "Rectangle17" "D-" 98.425197 31.496063)
+      (pin "Rectangle17" "GND" 98.425197 -62.992126)
+      (pin "Rectangle17" "ID" 98.425197 -31.496063)
+      (pin "Rectangle18" "MTN1" -118.110236 177.165354)
+      (pin "Rectangle18" "MTN2" 98.425197 177.165354)
+      (pin "Rectangle18" "MTN3" -118.110236 -177.165354)
+      (pin "Rectangle18" "MTN4" 98.425197 -177.165354)
+      (pin "Rectangle17" "VBUS" 98.425197 62.992126)
     )
     (image "CON14$con-harting"
-      (outline(rect "1#Top" -0.310000 -0.109000 -0.290000 -0.099000))
-      (outline(rect "1#Top" -0.315000 -0.099000 -0.300000 -0.094000))
-      (outline(rect "1#Top" -0.300000 -0.099000 -0.285000 -0.094000))
-      (outline(rect "1#Top" -0.305000 -0.117000 -0.295000 -0.107000))
-      (pin "Round6" "1" -0.300000 -0.050000)
-      (pin "Octagon2" "2" -0.300000 0.050000)
-      (pin "Octagon2" "3" -0.200000 -0.050000)
-      (pin "Octagon2" "4" -0.200000 0.050000)
-      (pin "Octagon2" "5" -0.100000 -0.050000)
-      (pin "Octagon2" "6" -0.100000 0.050000)
-      (pin "Octagon2" "7" 0.000000 -0.050000)
-      (pin "Octagon2" "8" 0.000000 0.050000)
-      (pin "Octagon2" "9" 0.100000 -0.050000)
-      (pin "Octagon2" "10" 0.100000 0.050000)
-      (pin "Octagon2" "11" 0.200000 -0.050000)
-      (pin "Octagon2" "12" 0.200000 0.050000)
-      (pin "Octagon2" "13" 0.300000 -0.050000)
-      (pin "Octagon2" "14" 0.300000 0.050000)
+      (outline(rect "1#Top" -310.000000 -109.000000 -290.000000 -99.000000))
+      (outline(rect "1#Top" -315.000000 -99.000000 -300.000000 -94.000000))
+      (outline(rect "1#Top" -300.000000 -99.000000 -285.000000 -94.000000))
+      (outline(rect "1#Top" -305.000000 -117.000000 -295.000000 -107.000000))
+      (pin "Round6" "1" -300.000000 -50.000000)
+      (pin "Octagon2" "2" -300.000000 50.000000)
+      (pin "Octagon2" "3" -200.000000 -50.000000)
+      (pin "Octagon2" "4" -200.000000 50.000000)
+      (pin "Octagon2" "5" -100.000000 -50.000000)
+      (pin "Octagon2" "6" -100.000000 50.000000)
+      (pin "Octagon2" "7" 0.000000 -50.000000)
+      (pin "Octagon2" "8" 0.000000 50.000000)
+      (pin "Octagon2" "9" 100.000000 -50.000000)
+      (pin "Octagon2" "10" 100.000000 50.000000)
+      (pin "Octagon2" "11" 200.000000 -50.000000)
+      (pin "Octagon2" "12" 200.000000 50.000000)
+      (pin "Octagon2" "13" 300.000000 -50.000000)
+      (pin "Octagon2" "14" 300.000000 50.000000)
     )
-    (padstack "ViaDefault$0.035000"
-      (shape (circle signal 0.051000 0 0))
+    (image "OSHW_10X750_NOTEXT$ohw-logo"
     )
-    (padstack "Round1$0.035000" 
-      (shape (circle "1#Top" 0.051000 0 0))
-      (shape (circle "16#Bottom" 0.051000 0 0))
+    (padstack "ViaDefault$35.000000"
+      (shape (circle signal 51.000000 0 0))
+    )
+    (padstack "Round1$35.000000" 
+      (shape (circle "1#Top" 51.000000 0 0))
+      (shape (circle "16#Bottom" 51.000000 0 0))
       (attach off)
     )
     (padstack "Round2" 
-      (shape (circle signal 0.086000 0 0))
+      (shape (circle signal 86.000000 0 0))
       (attach off)
     )
     (padstack "Rectangle1" 
-      (shape (rect "1#Top" -0.021654 -0.062992 0.021654 0.062992))
+      (shape (rect "1#Top" -21.653543 -62.992126 21.653543 62.992126))
       (attach off)
     )
     (padstack "Round3" 
-      (shape (circle signal 0.059055 0 0))
+      (shape (circle signal 59.055118 0 0))
       (attach off)
     )
     (padstack "Round4" 
-      (shape (circle signal 0.129921 0 0))
+      (shape (circle signal 129.921260 0 0))
       (attach off)
     )
     (padstack "Rectangle2" 
-      (shape (rect "1#Top" -0.015748 -0.023622 0.015748 0.023622))
+      (shape (rect "1#Top" -15.748031 -23.622047 15.748031 23.622047))
       (attach off)
     )
     (padstack "Rectangle3" 
-      (shape (rect "1#Top" -0.015748 -0.039370 0.015748 0.039370))
+      (shape (rect "1#Top" -15.748031 -52.165354 15.748031 52.165354))
       (attach off)
     )
     (padstack "Rectangle4" 
-      (shape (rect "1#Top" -0.015748 -0.052165 0.015748 0.052165))
+      (shape (rect "1#Top" -25.000000 -12.500000 25.000000 12.500000))
       (attach off)
     )
     (padstack "Rectangle5" 
-      (shape (rect "1#Top" -0.025000 -0.012500 0.025000 0.012500))
+      (shape (rect "1#Top" -55.118110 -55.118110 55.118110 55.118110))
       (attach off)
     )
     (padstack "Rectangle6" 
-      (shape (rect "1#Top" -0.055118 -0.055118 0.055118 0.055118))
+      (shape (rect "1#Top" -15.000000 -35.000000 15.000000 35.000000))
       (attach off)
     )
     (padstack "Rectangle7" 
-      (shape (rect "1#Top" -0.015000 -0.035000 0.015000 0.035000))
+      (shape (rect "1#Top" -12.000000 -43.500000 12.000000 43.500000))
       (attach off)
     )
     (padstack "Rectangle8" 
-      (shape (rect "1#Top" -0.012000 -0.043500 0.012000 0.043500))
+      (shape (rect "1#Top" -6.850394 -27.500000 6.850394 27.500000))
       (attach off)
     )
     (padstack "Rectangle9" 
-      (shape (rect "1#Top" -0.006850 -0.027500 0.006850 0.027500))
+      (shape (rect "1#Top" -19.685039 -29.527559 19.685039 29.527559))
       (attach off)
     )
     (padstack "Round5" 
-      (shape (circle signal 0.074000 0 0))
+      (shape (circle signal 74.000000 0 0))
       (attach off)
     )
     (padstack "Square1" 
-      (shape (rect signal -0.043000 -0.043000 0.043000 0.043000))
+      (shape (rect signal -43.000000 -43.000000 43.000000 43.000000))
       (attach off)
     )
     (padstack "Octagon1" 
-      (shape (polygon "1#Top" 0 0.043000 0.017811 0.017811 0.043000 -0.017811 0.043000 -0.043000 0.017811 -0.043000 -0.017811 -0.017811 -0.043000 0.017811 -0.043000 0.043000 -0.017811 ))
-      (shape (polygon "16#Bottom" 0 0.043000 0.017811 0.017811 0.043000 -0.017811 0.043000 -0.043000 0.017811 -0.043000 -0.017811 -0.017811 -0.043000 0.017811 -0.043000 0.043000 -0.017811 ))
+      (shape (polygon "1#Top" 0 43.000000 17.811180 17.811180 43.000000 -17.811180 43.000000 -43.000000 17.811180 -43.000000 -17.811180 -17.811180 -43.000000 17.811180 -43.000000 43.000000 -17.811180 ))
+      (shape (polygon "16#Bottom" 0 43.000000 17.811180 17.811180 43.000000 -17.811180 43.000000 -43.000000 17.811180 -43.000000 -17.811180 -17.811180 -43.000000 17.811180 -43.000000 43.000000 -17.811180 ))
       (attach off)
     )
     (padstack "Rectangle10" 
-      (shape (rect "1#Top" -0.049213 -0.059055 0.049213 0.059055))
+      (shape (rect "1#Top" -49.212598 -59.055118 49.212598 59.055118))
       (attach off)
     )
     (padstack "Rectangle11" 
-      (shape (rect "1#Top" -0.023622 -0.027559 0.023622 0.027559))
+      (shape (rect "1#Top" -15.748031 -15.748031 15.748031 15.748031))
       (attach off)
     )
     (padstack "Rectangle12" 
-      (shape (rect "1#Top" -0.013780 -0.033465 0.013780 0.033465))
+      (shape (rect "1#Top" -13.779528 -33.464567 13.779528 33.464567))
       (attach off)
     )
     (padstack "Rectangle13" 
-      (shape (rect "1#Top" -0.023622 -0.049213 0.023622 0.049213))
+      (shape (rect "1#Top" -25.000000 -11.000000 25.000000 11.000000))
       (attach off)
     )
     (padstack "Rectangle14" 
-      (shape (rect "1#Top" -0.025000 -0.011000 0.025000 0.011000))
+      (shape (rect "1#Top" -11.000000 -25.000000 11.000000 25.000000))
       (attach off)
     )
     (padstack "Rectangle15" 
-      (shape (rect "1#Top" -0.011000 -0.025000 0.011000 0.025000))
+      (shape (rect "1#Top" -19.685039 -17.716535 19.685039 17.716535))
       (attach off)
     )
     (padstack "Rectangle16" 
-      (shape (rect "1#Top" -0.019685 -0.017717 0.019685 0.017717))
+      (shape (rect "1#Top" -21.653543 -17.716535 21.653543 17.716535))
       (attach off)
     )
     (padstack "Rectangle17" 
-      (shape (rect "1#Top" -0.021654 -0.017717 0.021654 0.017717))
+      (shape (rect "1#Top" -49.212598 -9.842520 49.212598 9.842520))
       (attach off)
     )
     (padstack "Rectangle18" 
-      (shape (rect "1#Top" -0.049213 -0.009843 0.049213 0.009843))
-      (attach off)
-    )
-    (padstack "Rectangle19" 
-      (shape (rect "1#Top" -0.049213 -0.039370 0.049213 0.039370))
+      (shape (rect "1#Top" -49.212598 -39.370079 49.212598 39.370079))
       (attach off)
     )
     (padstack "Round6" 
-      (shape (circle signal 0.054000 0 0))
+      (shape (circle signal 54.000000 0 0))
       (attach off)
     )
     (padstack "Octagon2" 
-      (shape (polygon "1#Top" 0 0.027000 0.011184 0.011184 0.027000 -0.011184 0.027000 -0.027000 0.011184 -0.027000 -0.011184 -0.011184 -0.027000 0.011184 -0.027000 0.027000 -0.011184 ))
-      (shape (polygon "16#Bottom" 0 0.027000 0.011184 0.011184 0.027000 -0.011184 0.027000 -0.027000 0.011184 -0.027000 -0.011184 -0.011184 -0.027000 0.011184 -0.027000 0.027000 -0.011184 ))
+      (shape (polygon "1#Top" 0 27.000000 11.183765 11.183765 27.000000 -11.183765 27.000000 -27.000000 11.183765 -27.000000 -11.183765 -11.183765 -27.000000 11.183765 -27.000000 27.000000 -11.183765 ))
+      (shape (polygon "16#Bottom" 0 27.000000 11.183765 11.183765 27.000000 -11.183765 27.000000 -27.000000 11.183765 -27.000000 -11.183765 -11.183765 -27.000000 11.183765 -27.000000 27.000000 -11.183765 ))
       (attach off)
     )
-    (padstack "Round7$0.035000" 
-      (shape (circle "1#Top" 0.052500 0 0))
-      (shape (circle "16#Bottom" 0.052500 0 0))
+    (padstack "Round7$35.000000" 
+      (shape (circle "1#Top" 52.500000 0 0))
+      (shape (circle "16#Bottom" 52.500000 0 0))
       (attach off)
     )
   )
@@ -572,31 +569,31 @@
       (pins  "C2"-"1" "U1"-"2")
     )
     (net "FTDI-GND"
-      (pins  "U1"-"26" "U1"-"25" "U1"-"18" "U1"-"7" "U1"-"21" "C9"-"1" "FTDIDGNDLINK"-"P$2" "C8"-"-" "C7"-"1" "X1"-"GND" "C6"-"-")
+      (pins  "U1"-"26" "U1"-"25" "U1"-"18" "U1"-"7" "U1"-"21" "C9"-"1" "FTDIDGNDLINK"-"P$2" "C7"-"1" "X1"-"GND" "C6"-"-" "C8"-"2")
     )
     (net "FTDI-VCC"
-      (pins  "U$3"-"2" "U1"-"4" "U1"-"20" "FTDIVCCLINK"-"P$1" "C7"-"2" "C8"-"+")
+      (pins  "U$3"-"2" "U1"-"4" "U1"-"20" "FTDIVCCLINK"-"P$1" "C7"-"2" "C8"-"1")
     )
     (net "GND"
-      (pins  "Y1"-"2" "ATMEGAXX8"-"5" "ATMEGAXX8"-"3" "ATMEGAXX8"-"21" "C1"-"1" "C3"-"1" "U$2"-"C" "U$2"-"D" "SPI"-"6" "R2"-"1" "JP2"-"1" "9V"-"2" "U$4"-"3" "U$4"-"2" "SG2"-"P$1" "R4"-"3" "LCDCON"-"1" "LCDCON"-"5" "R3"-"1" "LINK2"-"P$2" "FTDIDGNDLINK"-"P$1" "JP1"-"1")
+      (pins  "Y1"-"2" "ATMEGAXX8"-"5" "ATMEGAXX8"-"3" "ATMEGAXX8"-"21" "C1"-"1" "C3"-"1" "U$2"-"C" "U$2"-"D" "SPI"-"6" "R2"-"1" "JP2"-"1" "9V"-"2" "U$4"-"1B" "U$4"-"1A" "SG2"-"P$1" "R4"-"3" "LCDCON"-"1" "LCDCON"-"5" "R3"-"1" "LINK2"-"P$2" "FTDIDGNDLINK"-"P$1" "JP1"-"1")
     )
     (net "GNDLINK"
-      (pins  "U2"-"4" "U2"-"2" "U2"-"3" "C4"-"-" "C5"-"-" "SCHOTTKEY"-"ANODE" "LINK2"-"P$1")
+      (pins  "C4"-"-" "C5"-"-" "SCHOTTKEY"-"ANODE" "LINK2"-"P$1" "U$1"-"5" "U$1"-"6")
     )
     (net "N$2"
       (pins  "R2"-"2" "LED2"-"C")
     )
     (net "N$3"
-      (pins  "L2"-"1" "U2"-"7" "SCHOTTKEY"-"CATHODE")
+      (pins  "L2"-"1" "SCHOTTKEY"-"CATHODE" "U$1"-"8")
     )
     (net "N$7"
       (pins  "LED1"-"C" "R3"-"2")
     )
     (net "RAW"
-      (pins  "S1"-"1" "U2"-"5" "C4"-"+")
+      (pins  "C4"-"+" "U$1"-"7" "S1"-"1")
     )
     (net "RAW_IN"
-      (pins  "S1"-"2" "9V"-"1" "U$4"-"1A" "U$4"-"1B")
+      (pins  "9V"-"1" "U$4"-"2" "U$4"-"3" "S1"-"2")
     )
     (net "RESET"
       (pins  "ATMEGAXX8"-"29" "R1"-"1" "C2"-"2" "SPI"-"5" "JP2"-"14" "JP1"-"14")
@@ -614,7 +611,7 @@
       (pins  "R1"-"2" "C1"-"2" "L1"-"2" "ATMEGAXX8"-"6" "ATMEGAXX8"-"4" "SPI"-"2" "JP2"-"2" "R4"-"1" "LCDCON"-"2" "LED1"-"A" "LINK1"-"P$2" "FTDIVCCLINK"-"P$2" "JP1"-"2")
     )
     (net "VCCLINK"
-      (pins  "L2"-"2" "U2"-"1" "C5"-"+" "LINK1"-"P$1")
+      (pins  "L2"-"2" "C5"-"+" "LINK1"-"P$1" "U$1"-"4")
     )
     (net "XTAL1"
       (pins  "Y1"-"1" "ATMEGAXX8"-"7")
@@ -625,2443 +622,2363 @@
   )
   (wiring
     (wire
-      (path "1#Top" 0.016000 2.695575 0.853937 2.695575 0.930583) 
+      (path "1#Top" 16.000000 2915.433071 1050.000000 2915.433071 1008.374016) 
       (net "3V3OUT")
     )
     (wire
-      (path "1#Top" 0.016000 2.695575 0.930583 2.721886 0.956894) 
+      (path "1#Top" 16.000000 2895.574803 853.937008 2895.574803 988.515748) 
       (net "3V3OUT")
     )
     (wire
-      (path "1#Top" 0.016000 2.721886 0.956894 2.721886 1.001921) 
+      (path "1#Top" 16.000000 2895.574803 988.515748 2915.433071 1008.374016) 
       (net "3V3OUT")
     )
     (wire
-      (path "1#Top" 0.016000 2.721886 1.001921 2.715433 1.008374) 
+      (path "1#Top" 13.692913 2895.574803 853.937008 2895.157480 853.937008) 
       (net "3V3OUT")
     )
     (wire
-      (path "1#Top" 0.016000 2.715433 1.050000 2.715433 1.008374) 
-      (net "3V3OUT")
-    )
-    (wire
-      (path "1#Top" 0.013693 2.695575 0.853937 2.695157 0.853937) 
-      (net "3V3OUT")
-    )
-    (wire
-      (path "16#Bottom" 0.016000 3.175000 0.090000 2.991157 0.273843) 
+      (path "1#Top" 16.000000 1241.000000 931.259843 1136.614173 931.259843) 
       (net "A0")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.991157 0.273843 2.991157 0.886571) 
+      (path "1#Top" 16.000000 1136.614173 931.259843 1114.003937 908.649606) 
       (net "A0")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.991157 0.886571 2.564709 1.313020) 
+      (path "16#Bottom" 16.000000 3375.000000 90.000000 2820.059055 644.940945) 
       (net "A0")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.564709 1.313020 2.564709 1.328283) 
+      (path "16#Bottom" 16.000000 2820.059055 644.940945 2820.059055 1178.425197) 
       (net "A0")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.564709 1.328283 2.479831 1.413161) 
+      (path "16#Bottom" 16.000000 2820.059055 1178.425197 2771.964567 1226.519685) 
       (net "A0")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.479831 1.413161 1.841185 1.413161) 
+      (path "16#Bottom" 16.000000 2771.964567 1226.519685 1431.874016 1226.519685) 
       (net "A0")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.841185 1.413161 1.301185 0.873161) 
-      (net "A0")
-    )
-    (wire
-      (path "16#Bottom" 0.016000 1.301185 0.873161 0.914217 0.873161) 
-      (net "A0")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.041000 0.931260 0.972315 0.931260) 
-      (net "A0")
-    )
-    (wire
-      (path "1#Top" 0.016000 0.972315 0.931260 0.914217 0.873161) 
+      (path "16#Bottom" 16.000000 1431.874016 1226.519685 1114.003937 908.649606) 
       (net "A0")
     )
     (via
-      "Round7$0.035000" 0.914217 0.873161
+      "Round7$35.000000" 1114.003937 908.649606
       (net "A0")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 1.216591 0.200000 1.211945) 
+      (path "1#Top" 16.000000 400.000000 1216.590551 737.732283 878.858268) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 1.211945 0.596220 0.815724) 
+      (path "1#Top" 16.000000 737.732283 878.858268 737.732283 836.822835) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 0.596220 0.815724 0.933252 0.815724) 
+      (path "1#Top" 16.000000 737.732283 836.822835 782.271654 792.283465) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 0.933252 0.815724 0.997996 0.880469) 
+      (path "1#Top" 16.000000 782.271654 792.283465 1090.515748 792.283465) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 0.997996 0.880469 0.997996 0.899764) 
+      (path "1#Top" 16.000000 1090.515748 792.283465 1197.996063 899.763780) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 1.041000 0.899764 0.997996 0.899764) 
+      (path "1#Top" 16.000000 400.000000 1216.590551 100.000000 1216.590551) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 1.216591 0.200000 1.216591) 
+      (path "1#Top" 16.000000 1241.000000 899.763780 1197.996063 899.763780) 
       (net "A1")
     )
     (wire
-      (path "1#Top" 0.016000 1.099764 0.797996 1.091488 0.789720) 
+      (path "1#Top" 16.000000 400.000000 1116.590551 751.897638 764.692913) 
       (net "A2")
     )
     (wire
-      (path "1#Top" 0.016000 1.091488 0.789720 0.526870 0.789720) 
+      (path "1#Top" 16.000000 751.897638 764.692913 1223.456693 764.692913) 
       (net "A2")
     )
     (wire
-      (path "1#Top" 0.016000 0.526870 0.789720 0.200000 1.116591) 
+      (path "1#Top" 16.000000 1223.456693 764.692913 1299.763780 841.000000) 
       (net "A2")
     )
     (wire
-      (path "1#Top" 0.016000 1.099764 0.841000 1.099764 0.797996) 
+      (path "1#Top" 16.000000 100.000000 1116.590551 400.000000 1116.590551) 
       (net "A2")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 1.116591 0.200000 1.116591) 
-      (net "A2")
-    )
-    (wire
-      (path "1#Top" 0.016000 0.200000 1.016591 0.100000 1.016591) 
+      (path "1#Top" 16.000000 400.000000 1016.590551 677.905512 738.685039) 
       (net "A3")
     )
     (wire
-      (path "1#Top" 0.016000 1.131260 0.841000 1.131260 0.790386) 
+      (path "1#Top" 16.000000 677.905512 738.685039 1261.200787 738.685039) 
       (net "A3")
     )
     (wire
-      (path "1#Top" 0.016000 1.131260 0.790386 1.103669 0.762795) 
+      (path "1#Top" 16.000000 1261.200787 738.685039 1331.259843 808.744094) 
       (net "A3")
     )
     (wire
-      (path "1#Top" 0.016000 1.103669 0.762795 0.453795 0.762795) 
+      (path "1#Top" 16.000000 1331.259843 808.744094 1331.259843 841.000000) 
       (net "A3")
     )
     (wire
-      (path "1#Top" 0.016000 0.453795 0.762795 0.200000 1.016591) 
+      (path "1#Top" 16.000000 400.000000 1016.590551 100.000000 1016.590551) 
       (net "A3")
     )
     (wire
-      (path "1#Top" 0.016000 1.162756 0.841000 1.162756 0.784886) 
+      (path "1#Top" 16.000000 400.000000 916.590551 603.909449 712.681102) 
       (net "A4")
     )
     (wire
-      (path "1#Top" 0.016000 1.162756 0.784886 1.114602 0.736732) 
+      (path "1#Top" 16.000000 603.909449 712.681102 1274.330709 712.681102) 
       (net "A4")
     )
     (wire
-      (path "1#Top" 0.016000 1.114602 0.736732 0.379858 0.736732) 
+      (path "1#Top" 16.000000 1274.330709 712.681102 1362.755906 801.106299) 
       (net "A4")
     )
     (wire
-      (path "1#Top" 0.016000 0.379858 0.736732 0.200000 0.916591) 
+      (path "1#Top" 16.000000 1362.755906 801.106299 1362.755906 841.000000) 
       (net "A4")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 0.916591 0.200000 0.916591) 
+      (path "1#Top" 16.000000 100.000000 916.590551 400.000000 916.590551) 
       (net "A4")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 0.816591 0.305866 0.710724) 
+      (path "1#Top" 16.000000 400.000000 816.590551 529.913386 686.677165) 
       (net "A5")
     )
     (wire
-      (path "1#Top" 0.016000 0.305866 0.710724 1.127744 0.710724) 
+      (path "1#Top" 16.000000 529.913386 686.677165 1285.263780 686.677165) 
       (net "A5")
     )
     (wire
-      (path "1#Top" 0.016000 1.127744 0.710724 1.194252 0.777232) 
+      (path "1#Top" 16.000000 1285.263780 686.677165 1394.251969 795.665354) 
       (net "A5")
     )
     (wire
-      (path "1#Top" 0.016000 1.194252 0.777232 1.194252 0.841000) 
+      (path "1#Top" 16.000000 1394.251969 795.665354 1394.251969 841.000000) 
       (net "A5")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 0.816591 0.200000 0.816591) 
+      (path "1#Top" 16.000000 100.000000 816.590551 400.000000 816.590551) 
       (net "A5")
     )
     (wire
-      (path "1#Top" 0.016000 0.467909 1.060937 0.557169 0.971677) 
+      (path "1#Top" 16.000000 784.212598 988.291339 800.826772 971.677165) 
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.557169 0.971677 0.824220 0.971677) 
+      (path "1#Top" 16.000000 800.826772 971.677165 1015.055118 971.677165) 
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.824220 0.971677 0.902839 1.050295) 
+      (path "1#Top" 16.000000 1015.055118 971.677165 1063.641732 1020.263780) 
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.902839 1.050295 0.912638 1.050295) 
+      (path "1#Top" 16.000000 1063.641732 1020.263780 1153.350394 1020.263780) 
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.912638 1.050295 0.919587 1.057244) 
+      (path "1#Top" 16.000000 1153.350394 1020.263780 1190.330709 1057.244094) 
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.919587 1.057244 1.041000 1.057244) 
+      (path "1#Top" 16.000000 1190.330709 1057.244094 1241.000000 1057.244094) 
       (net "A6")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.200000 0.716591 0.467909 0.984500) 
+      (path "16#Bottom" 16.000000 400.000000 716.590551 512.511811 716.590551) 
       (net "A6")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.467909 0.984500 0.467909 1.060937) 
+      (path "16#Bottom" 16.000000 512.511811 716.590551 784.212598 988.291339) 
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 0.716591 0.200000 0.716591) 
+      (path "1#Top" 16.000000 100.000000 716.590551 400.000000 716.590551) 
       (net "A6")
     )
     (via
-      "Round7$0.035000" 0.467909 1.060937
+      "Round7$35.000000" 784.212598 988.291339
       (net "A6")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 0.616591 0.237988 0.654579) 
+      (path "1#Top" 16.000000 1241.000000 962.755906 1092.444882 962.755906) 
       (net "A7")
     )
     (wire
-      (path "1#Top" 0.016000 0.237988 0.654579 0.832539 0.654579) 
+      (path "1#Top" 16.000000 1092.444882 962.755906 1059.629921 929.940945) 
       (net "A7")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.833209 0.869953 0.833209 0.655248) 
+      (path "1#Top" 16.000000 1059.629921 929.940945 1059.629921 919.027559) 
       (net "A7")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.833209 0.655248 0.832539 0.654579) 
+      (path "1#Top" 16.000000 1059.629921 919.027559 958.897638 818.295276) 
       (net "A7")
     )
     (wire
-      (path "1#Top" 0.016000 1.041000 0.962756 0.926012 0.962756) 
+      (path "1#Top" 16.000000 958.897638 818.295276 832.370079 818.295276) 
       (net "A7")
     )
     (wire
-      (path "1#Top" 0.016000 0.926012 0.962756 0.833209 0.869953) 
+      (path "1#Top" 16.000000 832.370079 818.295276 791.236220 859.429134) 
       (net "A7")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 0.616591 0.100000 0.616591) 
+      (path "16#Bottom" 16.000000 400.000000 616.590551 548.397638 616.590551) 
+      (net "A7")
+    )
+    (wire
+      (path "16#Bottom" 16.000000 548.397638 616.590551 791.236220 859.429134) 
+      (net "A7")
+    )
+    (wire
+      (path "1#Top" 16.000000 400.000000 616.590551 100.000000 616.590551) 
       (net "A7")
     )
     (via
-      "Round7$0.035000" 0.832539 0.654579
-      (net "A7")
-    )
-    (via
-      "Round7$0.035000" 0.833209 0.869953
+      "Round7$35.000000" 791.236220 859.429134
       (net "A7")
     )
     (wire
-      (path "1#Top" 0.016000 0.740000 1.039185 0.854945 1.039185) 
+      (path "1#Top" 16.000000 981.625984 1005.433071 1022.460630 1046.267717) 
       (net "AVCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.854945 1.039185 0.892059 1.076299) 
+      (path "1#Top" 16.000000 1022.460630 1046.267717 1142.570866 1046.267717) 
       (net "AVCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.892059 1.076299 0.901862 1.076299) 
+      (path "1#Top" 16.000000 1142.570866 1046.267717 1185.043307 1088.740157) 
       (net "AVCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.901862 1.076299 0.914303 1.088740) 
+      (path "1#Top" 16.000000 1185.043307 1088.740157 1241.000000 1088.740157) 
       (net "AVCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.914303 1.088740 1.041000 1.088740) 
+      (path "1#Top" 16.000000 940.000000 1005.433071 981.625984 1005.433071) 
       (net "AVCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.655000 1.005433 0.740000 1.005433) 
+      (path "1#Top" 16.000000 855.000000 1005.433071 940.000000 1005.433071) 
       (net "AVCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.740000 1.005433 0.740000 1.039185) 
-      (net "AVCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 3.060000 0.900681 2.900657 1.060024) 
+      (path "16#Bottom" 16.000000 1131.527559 1427.866142 1131.527559 1418.539370) 
       (net "CONTRAST")
     )
     (wire
-      (path "1#Top" 0.016000 2.900657 1.060024 2.900657 1.139476) 
+      (path "16#Bottom" 16.000000 1131.527559 1418.539370 1230.909449 1319.157480) 
       (net "CONTRAST")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.886524 1.427866 0.932339 1.382051) 
+      (path "16#Bottom" 16.000000 1230.909449 1319.157480 2884.842520 1319.157480) 
       (net "CONTRAST")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.932339 1.382051 1.407264 1.382051) 
+      (path "16#Bottom" 16.000000 2884.842520 1319.157480 3255.783465 948.216535) 
       (net "CONTRAST")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.407264 1.382051 1.520480 1.495268) 
+      (path "16#Bottom" 16.000000 3255.783465 948.216535 3255.783465 931.267717) 
       (net "CONTRAST")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.520480 1.495268 2.544866 1.495268) 
+      (path "1#Top" 16.000000 3260.000000 900.681102 3255.783465 904.897638) 
       (net "CONTRAST")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.544866 1.495268 2.900657 1.139476) 
+      (path "1#Top" 16.000000 3255.783465 904.897638 3255.783465 931.267717) 
       (net "CONTRAST")
     )
     (wire
-      (path "1#Top" 0.016000 3.060000 0.864961 3.060000 0.900681) 
+      (path "1#Top" 16.000000 3260.000000 864.960630 3260.000000 900.681102) 
+      (net "CONTRAST")
+    )
+    (wire
+      (path "16#Bottom" 16.000000 1086.523622 1427.866142 1131.527559 1427.866142) 
       (net "CONTRAST")
     )
     (via
-      "Round7$0.035000" 2.900657 1.139476
+      "Round7$35.000000" 3255.783465 931.267717
       (net "CONTRAST")
     )
     (wire
-      (path "1#Top" 0.016000 2.746339 0.853937 2.746339 0.808433) 
+      (path "1#Top" 16.000000 2946.338583 853.937008 2946.338583 808.433071) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.580000 0.318425 2.580000 0.373000) 
+      (path "1#Top" 16.000000 2780.000000 318.425197 2780.000000 373.000000) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.580000 0.373000 2.638205 0.431205) 
+      (path "1#Top" 16.000000 2780.000000 373.000000 2838.204724 431.204724) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.638205 0.431205 2.710165 0.431205) 
+      (path "1#Top" 16.000000 2838.204724 431.204724 2910.165354 431.204724) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.710165 0.431205 2.800961 0.522000) 
+      (path "1#Top" 16.000000 2910.165354 431.204724 2997.547244 518.586614) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.800961 0.522000 2.800961 0.753811) 
+      (path "1#Top" 16.000000 2997.547244 518.586614 2997.547244 757.224409) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.800961 0.753811 2.746339 0.808433) 
+      (path "1#Top" 16.000000 2997.547244 757.224409 2946.338583 808.433071) 
       (net "D+")
     )
     (wire
-      (path "1#Top" 0.016000 2.548504 0.318425 2.548504 0.385642) 
+      (path "1#Top" 16.000000 2748.503937 318.425197 2748.503937 385.641732) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.013693 2.720748 0.738488 2.720748 0.853937) 
+      (path "1#Top" 13.692913 2920.748031 713.027559 2920.748031 853.937008) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.016000 2.548504 0.385642 2.683421 0.520559) 
+      (path "1#Top" 16.000000 2748.503937 385.641732 2868.181102 505.318898) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.016000 2.683421 0.520559 2.760646 0.520559) 
+      (path "1#Top" 16.000000 2868.181102 505.318898 2947.496063 505.318898) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.016000 2.760646 0.520559 2.772878 0.532791) 
+      (path "1#Top" 16.000000 2947.496063 505.318898 2971.196850 529.019685) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.016000 2.772878 0.532791 2.772878 0.686358) 
+      (path "1#Top" 16.000000 2971.196850 529.019685 2971.196850 662.578740) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.016000 2.772878 0.686358 2.720748 0.738488) 
+      (path "1#Top" 16.000000 2971.196850 662.578740 2920.748031 713.027559) 
       (net "D-")
     )
     (wire
-      (path "1#Top" 0.016000 1.320236 0.797996 1.326114 0.792118) 
+      (path "1#Top" 16.000000 1520.236220 841.000000 1564.283465 796.952756) 
       (net "D2")
     )
     (wire
-      (path "1#Top" 0.016000 1.326114 0.792118 2.197350 0.792118) 
+      (path "1#Top" 16.000000 1564.283465 796.952756 2468.562992 796.952756) 
       (net "D2")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.375000 0.090000 3.326638 0.041638) 
+      (path "16#Bottom" 16.000000 3575.000000 90.000000 3525.940945 40.940945) 
       (net "D2")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.326638 0.041638 2.947831 0.041638) 
+      (path "16#Bottom" 16.000000 3525.940945 40.940945 3224.574803 40.940945) 
       (net "D2")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.947831 0.041638 2.197350 0.792118) 
-      (net "D2")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.320236 0.841000 1.320236 0.797996) 
+      (path "16#Bottom" 16.000000 3224.574803 40.940945 2468.562992 796.952756) 
       (net "D2")
     )
     (via
-      "Round7$0.035000" 2.197350 0.792118
+      "Round7$35.000000" 2468.562992 796.952756
       (net "D2")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 0.899764 1.422004 0.899764) 
+      (path "16#Bottom" 16.000000 400.000000 316.590551 588.937008 127.653543) 
       (net "D3")
     )
     (wire
-      (path "1#Top" 0.016000 1.601236 0.859157 1.462610 0.859157) 
+      (path "16#Bottom" 16.000000 588.937008 127.653543 588.937008 104.003937) 
       (net "D3")
     )
     (wire
-      (path "1#Top" 0.016000 1.462610 0.859157 1.422004 0.899764) 
+      (path "16#Bottom" 16.000000 588.937008 104.003937 652.980315 39.960630) 
       (net "D3")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.857874 0.055220 0.992630 0.189976) 
+      (path "16#Bottom" 16.000000 652.980315 39.960630 900.401575 39.960630) 
       (net "D3")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.992630 0.189976 1.011291 0.189976) 
+      (path "16#Bottom" 16.000000 900.401575 39.960630 1113.767717 253.326772) 
       (net "D3")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.011291 0.189976 1.601236 0.779921) 
+      (path "16#Bottom" 16.000000 1113.767717 253.326772 1113.767717 398.059055) 
       (net "D3")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.601236 0.779921 1.601236 0.859157) 
+      (path "16#Bottom" 16.000000 1113.767717 398.059055 1579.814961 864.106299) 
       (net "D3")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 0.316591 0.200000 0.316591) 
+      (path "16#Bottom" 16.000000 1579.814961 864.106299 1786.716535 864.106299) 
+      (net "D3")
+    )
+    (wire
+      (path "1#Top" 16.000000 1786.716535 864.106299 1657.661417 864.106299) 
+      (net "D3")
+    )
+    (wire
+      (path "1#Top" 16.000000 1657.661417 864.106299 1622.003937 899.763780) 
+      (net "D3")
+    )
+    (wire
+      (path "1#Top" 16.000000 1579.000000 899.763780 1622.003937 899.763780) 
+      (net "D3")
+    )
+    (wire
+      (path "1#Top" 16.000000 100.000000 316.590551 400.000000 316.590551) 
       (net "D3")
     )
     (via
-      "Round7$0.035000" 1.601236 0.859157
+      "Round7$35.000000" 1786.716535 864.106299
       (net "D3")
     )
     (wire
-      (path "1#Top" 0.016000 1.386524 1.527866 1.849677 1.527866) 
+      (path "1#Top" 16.000000 1973.338583 1372.661417 1973.338583 1149.114173) 
       (net "D4")
     )
     (wire
-      (path "1#Top" 0.016000 1.849677 1.527866 2.017894 1.359650) 
+      (path "1#Top" 16.000000 1973.338583 1149.114173 1755.484252 931.259843) 
       (net "D4")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.017894 1.359650 2.017894 1.062524) 
+      (path "1#Top" 16.000000 1755.484252 931.259843 1579.000000 931.259843) 
       (net "D4")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.017894 1.062524 1.886630 0.931260) 
+      (path "16#Bottom" 16.000000 1586.523622 1527.866142 1818.133858 1527.866142) 
       (net "D4")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 0.931260 1.886630 0.931260) 
-      (net "D4")
-    )
-    (via
-      "Round7$0.035000" 2.017894 1.359650
+      (path "16#Bottom" 16.000000 1818.133858 1527.866142 1973.338583 1372.661417) 
       (net "D4")
     )
     (via
-      "Round7$0.035000" 1.886630 0.931260
+      "Round7$35.000000" 1973.338583 1372.661417
       (net "D4")
     )
     (wire
-      (path "1#Top" 0.016000 1.320236 1.222004 1.373555 1.275323) 
+      (path "1#Top" 16.000000 1520.236220 1179.000000 1520.236220 1222.003937) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 1.373555 1.275323 2.466335 1.275323) 
+      (path "1#Top" 16.000000 3460.000000 893.858268 3460.000000 961.074803) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 2.466335 1.275323 2.489043 1.252614) 
+      (path "1#Top" 16.000000 3460.000000 961.074803 2960.929134 1436.145669) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 2.489043 1.252614 2.968461 1.252614) 
+      (path "1#Top" 16.000000 2960.929134 1436.145669 2960.929134 1550.649606) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 2.968461 1.252614 3.260000 0.961075) 
+      (path "1#Top" 16.000000 2960.929134 1550.649606 2929.007874 1562.570866) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 1.320236 1.179000 1.320236 1.222004) 
+      (path "1#Top" 16.000000 2929.007874 1562.570866 2769.944882 1562.570866) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 3.260000 0.893858 3.260000 0.961075) 
+      (path "1#Top" 16.000000 2769.944882 1562.570866 2705.744094 1498.370079) 
       (net "D5")
     )
     (wire
-      (path "1#Top" 0.016000 1.386524 1.427866 1.386524 1.382862) 
+      (path "1#Top" 16.000000 2705.744094 1498.370079 2622.232283 1498.370079) 
+      (net "D5")
+    )
+    (wire
+      (path "1#Top" 16.000000 2622.232283 1498.370079 2608.318898 1512.283465) 
+      (net "D5")
+    )
+    (wire
+      (path "1#Top" 16.000000 2608.318898 1512.283465 2608.318898 1571.078740) 
+      (net "D5")
+    )
+    (wire
+      (path "1#Top" 16.000000 2608.318898 1571.078740 2596.488189 1582.909449) 
+      (net "D5")
+    )
+    (wire
+      (path "1#Top" 16.000000 2596.488189 1582.909449 1881.141732 1582.909449) 
+      (net "D5")
+    )
+    (wire
+      (path "1#Top" 16.000000 1881.141732 1582.909449 1520.236220 1222.003937) 
+      (net "D5")
+    )
+    (wire
+      (path "1#Top" 16.000000 1586.523622 1427.866142 1586.523622 1372.500000) 
       (net "D6")
     )
     (wire
-      (path "1#Top" 0.016000 1.386524 1.382862 1.288740 1.285079) 
+      (path "1#Top" 16.000000 1586.523622 1372.500000 1488.740157 1274.716535) 
       (net "D6")
     )
     (wire
-      (path "1#Top" 0.016000 1.288740 1.285079 1.288740 1.179000) 
+      (path "1#Top" 16.000000 1488.740157 1274.716535 1488.740157 1179.000000) 
       (net "D6")
     )
     (wire
-      (path "1#Top" 0.016000 1.286524 1.527866 1.286524 1.482862) 
+      (path "1#Top" 16.000000 1486.523622 1527.866142 1486.523622 1482.862205) 
       (net "D7")
     )
     (wire
-      (path "1#Top" 0.016000 1.286524 1.482862 1.297776 1.482862) 
+      (path "1#Top" 16.000000 1486.523622 1482.862205 1497.775591 1482.862205) 
       (net "D7")
     )
     (wire
-      (path "1#Top" 0.016000 1.297776 1.482862 1.331634 1.449004) 
+      (path "1#Top" 16.000000 1497.775591 1482.862205 1531.633858 1449.003937) 
       (net "D7")
     )
     (wire
-      (path "1#Top" 0.016000 1.331634 1.449004 1.331634 1.391189) 
+      (path "1#Top" 16.000000 1531.633858 1449.003937 1531.633858 1391.188976) 
       (net "D7")
     )
     (wire
-      (path "1#Top" 0.016000 1.331634 1.391189 1.257244 1.316799) 
+      (path "1#Top" 16.000000 1531.633858 1391.188976 1457.244094 1316.799213) 
       (net "D7")
     )
     (wire
-      (path "1#Top" 0.016000 1.257244 1.316799 1.257244 1.179000) 
+      (path "1#Top" 16.000000 1457.244094 1316.799213 1457.244094 1179.000000) 
       (net "D7")
     )
     (wire
-      (path "1#Top" 0.016000 1.286524 1.427866 1.286524 1.382862) 
+      (path "1#Top" 16.000000 1486.523622 1427.866142 1486.523622 1382.862205) 
       (net "D8")
     )
     (wire
-      (path "1#Top" 0.016000 1.286524 1.382862 1.225748 1.322087) 
+      (path "1#Top" 16.000000 1486.523622 1382.862205 1425.748031 1322.086614) 
       (net "D8")
     )
     (wire
-      (path "1#Top" 0.016000 1.225748 1.322087 1.225748 1.179000) 
+      (path "1#Top" 16.000000 1425.748031 1322.086614 1425.748031 1179.000000) 
       (net "D8")
     )
     (wire
-      (path "1#Top" 0.016000 0.986524 1.527866 0.986524 1.482862) 
+      (path "1#Top" 16.000000 1186.523622 1527.866142 1186.523622 1482.862205) 
       (net "D9")
     )
     (wire
-      (path "1#Top" 0.016000 0.986524 1.482862 0.997780 1.482862) 
+      (path "1#Top" 16.000000 1186.523622 1482.862205 1197.779528 1482.862205) 
       (net "D9")
     )
     (wire
-      (path "1#Top" 0.016000 0.997780 1.482862 1.031528 1.449114) 
+      (path "1#Top" 16.000000 1197.779528 1482.862205 1231.527559 1449.114173) 
       (net "D9")
     )
     (wire
-      (path "1#Top" 0.016000 1.031528 1.449114 1.031528 1.418764) 
+      (path "1#Top" 16.000000 1231.527559 1449.114173 1231.527559 1416.464567) 
       (net "D9")
     )
     (wire
-      (path "1#Top" 0.016000 1.031528 1.418764 1.194252 1.256039) 
+      (path "1#Top" 16.000000 1231.527559 1416.464567 1394.251969 1253.740157) 
       (net "D9")
     )
     (wire
-      (path "1#Top" 0.016000 1.194252 1.256039 1.194252 1.179000) 
+      (path "1#Top" 16.000000 1394.251969 1253.740157 1394.251969 1179.000000) 
       (net "D9")
     )
     (wire
-      (path "1#Top" 0.016000 1.162756 1.179000 1.162756 1.222004) 
+      (path "1#Top" 16.000000 1362.755906 1179.000000 1362.755906 1222.003937) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 0.886524 1.527866 0.886524 1.482862) 
+      (path "1#Top" 16.000000 1086.523622 1527.866142 1086.523622 1482.862205) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 0.886524 1.482862 0.897138 1.482862) 
+      (path "1#Top" 16.000000 1086.523622 1482.862205 1097.779528 1482.862205) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 0.897138 1.482862 0.936524 1.443476) 
+      (path "1#Top" 16.000000 1097.779528 1482.862205 1131.527559 1449.114173) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 0.936524 1.443476 0.936524 1.413803) 
+      (path "1#Top" 16.000000 1131.527559 1449.114173 1131.527559 1418.799213) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 0.936524 1.413803 1.097811 1.252516) 
+      (path "1#Top" 16.000000 1131.527559 1418.799213 1301.874016 1248.452756) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 1.097811 1.252516 1.132244 1.252516) 
+      (path "1#Top" 16.000000 1301.874016 1248.452756 1336.307087 1248.452756) 
       (net "D10")
     )
     (wire
-      (path "1#Top" 0.016000 1.132244 1.252516 1.162756 1.222004) 
+      (path "1#Top" 16.000000 1336.307087 1248.452756 1362.755906 1222.003937) 
       (net "D10")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.551480 0.314000 0.602701 0.365220) 
+      (path "16#Bottom" 16.000000 751.480315 252.996063 751.480315 314.000000) 
       (net "D11/MOSI")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.602701 0.365220 0.602701 1.148846) 
+      (path "1#Top" 16.000000 945.641732 1147.311024 1020.338583 1222.007874) 
       (net "D11/MOSI")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.602701 1.148846 0.678362 1.224508) 
+      (path "1#Top" 16.000000 1020.338583 1222.007874 1321.251969 1222.007874) 
       (net "D11/MOSI")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.551480 0.252996 0.551480 0.314000) 
+      (path "1#Top" 16.000000 1321.251969 1222.007874 1331.259843 1212.000000) 
       (net "D11/MOSI")
     )
     (wire
-      (path "1#Top" 0.016000 0.678362 1.224508 1.118752 1.224508) 
+      (path "1#Top" 16.000000 1331.259843 1212.000000 1331.259843 1179.000000) 
       (net "D11/MOSI")
     )
     (wire
-      (path "1#Top" 0.016000 1.118752 1.224508 1.131260 1.212000) 
+      (path "16#Bottom" 16.000000 751.480315 314.000000 881.547244 444.066929) 
       (net "D11/MOSI")
     )
     (wire
-      (path "1#Top" 0.016000 1.131260 1.212000 1.131260 1.179000) 
-      (net "D11/MOSI")
-    )
-    (via
-      "Round7$0.035000" 0.678362 1.224508
+      (path "16#Bottom" 16.000000 881.547244 444.066929 881.547244 1083.216535) 
       (net "D11/MOSI")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.375000 0.660866 3.253819 0.660866) 
+      (path "16#Bottom" 16.000000 881.547244 1083.216535 945.641732 1147.311024) 
+      (net "D11/MOSI")
+    )
+    (via
+      "Round7$35.000000" 945.641732 1147.311024
+      (net "D11/MOSI")
+    )
+    (wire
+      (path "16#Bottom" 16.000000 651.480315 152.996063 738.511811 65.964567) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.253819 0.660866 2.590713 1.323972) 
+      (path "16#Bottom" 16.000000 738.511811 65.964567 889.625984 65.964567) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.590713 1.323972 2.590713 1.339059) 
+      (path "16#Bottom" 16.000000 889.625984 65.964567 1078.937008 255.275591) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.590713 1.339059 2.489181 1.440591) 
+      (path "16#Bottom" 16.000000 1078.937008 255.275591 1078.937008 868.043307) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.489181 1.440591 1.648067 1.440591) 
+      (path "16#Bottom" 16.000000 1078.937008 868.043307 1059.433071 887.547244) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.648067 1.440591 1.363283 1.155807) 
+      (path "16#Bottom" 16.000000 1059.433071 887.547244 1059.433071 977.507874) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.363283 1.155807 0.868921 1.155807) 
+      (path "16#Bottom" 16.000000 1059.433071 977.507874 1114.405512 1032.480315) 
       (net "D12/MISO")
     )
     (wire
-      (path "1#Top" 0.016000 0.868921 1.155807 0.855000 1.169728) 
+      (path "16#Bottom" 16.000000 1114.405512 1032.480315 1114.405512 1164.838583) 
       (net "D12/MISO")
     )
     (wire
-      (path "1#Top" 0.016000 0.855000 1.169728 0.523193 1.169728) 
+      (path "1#Top" 16.000000 1299.763780 1179.000000 1285.602362 1164.838583) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.451480 0.152996 0.389657 0.214819) 
+      (path "1#Top" 16.000000 1285.602362 1164.838583 1114.405512 1164.838583) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.389657 0.214819 0.389657 0.672173) 
+      (path "16#Bottom" 16.000000 3575.000000 660.866142 3449.322835 660.866142) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.389657 0.672173 0.523193 0.805709) 
+      (path "16#Bottom" 16.000000 3449.322835 660.866142 2906.204724 1203.984252) 
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.523193 0.805709 0.523193 1.169728) 
+      (path "16#Bottom" 16.000000 2906.204724 1203.984252 2831.283465 1203.984252) 
       (net "D12/MISO")
     )
     (wire
-      (path "1#Top" 0.016000 0.868921 1.155807 1.076571 1.155807) 
+      (path "16#Bottom" 16.000000 2831.283465 1203.984252 2782.086614 1253.181102) 
       (net "D12/MISO")
     )
     (wire
-      (path "1#Top" 0.016000 1.076571 1.155807 1.099764 1.179000) 
+      (path "16#Bottom" 16.000000 2782.086614 1253.181102 1202.748031 1253.181102) 
+      (net "D12/MISO")
+    )
+    (wire
+      (path "16#Bottom" 16.000000 1202.748031 1253.181102 1114.405512 1164.838583) 
       (net "D12/MISO")
     )
     (via
-      "Round7$0.035000" 0.523193 1.169728
-      (net "D12/MISO")
-    )
-    (via
-      "Round7$0.035000" 0.868921 1.155807
+      "Round7$35.000000" 1114.405512 1164.838583
       (net "D12/MISO")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.195917 0.794650 3.169811 0.794650) 
+      (path "16#Bottom" 16.000000 751.480315 152.996063 812.507874 91.968504) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.169811 0.794650 2.616717 1.347744) 
+      (path "16#Bottom" 16.000000 812.507874 91.968504 878.850394 91.968504) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.616717 1.347744 2.616717 1.349835) 
+      (path "16#Bottom" 16.000000 878.850394 91.968504 1052.933071 266.051181) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.616717 1.349835 2.499724 1.466827) 
+      (path "16#Bottom" 16.000000 1052.933071 266.051181 1052.933071 844.259843) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.499724 1.466827 1.528823 1.466827) 
+      (path "16#Bottom" 16.000000 1052.933071 844.259843 1033.153543 864.039370) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.528823 1.466827 1.324461 1.262465) 
+      (path "16#Bottom" 16.000000 1033.153543 864.039370 1033.153543 1079.992126) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.324461 1.262465 0.890083 1.262465) 
+      (path "16#Bottom" 16.000000 1033.153543 1079.992126 1052.933071 1099.771654) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.890083 1.262465 0.742366 1.114748) 
+      (path "1#Top" 16.000000 3640.472441 860.000000 3606.720472 860.000000) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 3.389319 0.860000 3.323969 0.794650) 
+      (path "16#Bottom" 16.000000 2860.889764 1264.657480 2846.358268 1279.188976) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 3.323969 0.794650 3.195917 0.794650) 
+      (path "16#Bottom" 16.000000 2846.358268 1279.188976 1151.480315 1279.188976) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 0.742366 1.114748 0.754811 1.102303) 
+      (path "16#Bottom" 16.000000 1151.480315 1279.188976 1052.933071 1180.641732) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 0.754811 1.102303 0.891087 1.102303) 
+      (path "16#Bottom" 16.000000 1052.933071 1180.641732 1052.933071 1099.771654) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 0.891087 1.102303 0.909020 1.120236) 
+      (path "1#Top" 16.000000 3606.720472 860.000000 3573.358268 826.637795) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 0.909020 1.120236 1.041000 1.120236) 
+      (path "1#Top" 16.000000 3573.358268 826.637795 3390.736220 826.637795) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.551480 0.091992 0.679476 0.091992) 
+      (path "1#Top" 16.000000 3390.736220 826.637795 3313.059055 904.314961) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.679476 0.091992 0.742366 0.154882) 
+      (path "1#Top" 16.000000 3313.059055 904.314961 3313.059055 950.799213) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.742366 0.154882 0.742366 1.114748) 
+      (path "1#Top" 16.000000 3313.059055 950.799213 2999.200787 1264.657480) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 3.430945 0.860000 3.389319 0.860000) 
+      (path "1#Top" 16.000000 2999.200787 1264.657480 2860.889764 1264.657480) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.551480 0.091992 0.324598 0.091992) 
+      (path "1#Top" 16.000000 1241.000000 1120.236220 1168.818898 1120.236220) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.324598 0.091992 0.200000 0.216591) 
+      (path "1#Top" 16.000000 1168.818898 1120.236220 1148.354331 1099.771654) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.551480 0.098496 0.551480 0.091992) 
+      (path "1#Top" 16.000000 1148.354331 1099.771654 1052.933071 1099.771654) 
       (net "D13/SCK")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.551480 0.152996 0.551480 0.098496) 
+      (path "1#Top" 16.000000 751.480315 152.996063 751.480315 91.992126) 
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 0.216591 0.200000 0.216591) 
+      (path "1#Top" 16.000000 751.480315 91.992126 524.598425 91.992126) 
+      (net "D13/SCK")
+    )
+    (wire
+      (path "1#Top" 16.000000 524.598425 91.992126 400.000000 216.590551) 
+      (net "D13/SCK")
+    )
+    (wire
+      (path "1#Top" 16.000000 100.000000 216.590551 400.000000 216.590551) 
       (net "D13/SCK")
     )
     (via
-      "Round7$0.035000" 3.195917 0.794650
+      "Round7$35.000000" 2860.889764 1264.657480
       (net "D13/SCK")
     )
     (via
-      "Round7$0.035000" 0.742366 1.114748
+      "Round7$35.000000" 1052.933071 1099.771654
       (net "D13/SCK")
     )
     (wire
-      (path "1#Top" 0.016000 2.439252 0.566063 2.439252 0.520559) 
+      (path "1#Top" 16.000000 2639.669291 565.645669 2639.669291 529.539370) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 1.357224 0.594067 1.656157 0.594067) 
+      (path "1#Top" 16.000000 2639.669291 529.539370 2629.917323 519.787402) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 1.656157 0.594067 1.769213 0.707122) 
+      (path "1#Top" 16.000000 2629.917323 519.787402 2597.413386 519.787402) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 1.769213 0.707122 2.077862 0.707122) 
+      (path "1#Top" 16.000000 2597.413386 519.787402 2513.125984 604.074803) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.077862 0.707122 2.124382 0.660602) 
+      (path "1#Top" 16.000000 2513.125984 604.074803 2513.125984 644.956693) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.124382 0.660602 2.297323 0.660602) 
+      (path "1#Top" 16.000000 2513.125984 644.956693 2457.531496 700.551181) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.297323 0.660602 2.332476 0.625449) 
+      (path "1#Top" 16.000000 2457.531496 700.551181 1838.531496 700.551181) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.332476 0.625449 2.332476 0.587437) 
+      (path "1#Top" 16.000000 1838.531496 700.551181 1732.047244 594.066929) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.332476 0.587437 2.399354 0.520559) 
+      (path "1#Top" 16.000000 1732.047244 594.066929 1557.224409 594.066929) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.399354 0.520559 2.439252 0.520559) 
+      (path "1#Top" 16.000000 1515.598425 594.066929 1557.224409 594.066929) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 1.315598 0.594067 1.357224 0.594067) 
+      (path "1#Top" 13.692913 2639.669291 565.645669 2639.251969 566.062992) 
       (net "DTR")
     )
     (wire
-      (path "1#Top" 0.016000 2.490433 0.890909 2.498965 0.899441) 
+      (path "1#Top" 16.000000 2878.318898 1050.000000 2878.318898 1079.531496) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.498965 0.899441 2.592795 0.899441) 
+      (path "1#Top" 16.000000 2878.318898 1079.531496 2891.023622 1092.236220) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.490433 0.890909 2.481902 0.899441) 
+      (path "1#Top" 16.000000 2891.023622 1092.236220 2940.692913 1092.236220) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.481902 0.899441 2.464843 0.899441) 
+      (path "1#Top" 16.000000 2940.692913 1092.236220 2995.342520 1037.586614) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.490433 0.876689 2.490433 0.890909) 
+      (path "1#Top" 16.000000 2995.342520 1037.586614 2995.342520 959.700787) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.668382 0.900626 2.669567 0.899441) 
+      (path "1#Top" 16.000000 2995.342520 959.700787 3026.291339 928.751969) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.668382 0.979059 2.668382 0.900626) 
+      (path "1#Top" 16.000000 3026.291339 928.751969 3026.291339 477.665354) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.668382 0.900626 2.593980 0.900626) 
+      (path "1#Top" 16.000000 3091.633858 432.637795 3091.633858 466.389764) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.593980 0.900626 2.592795 0.899441) 
+      (path "1#Top" 16.000000 2664.842520 899.440945 2664.842520 951.350394) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.592795 0.853937 2.592795 0.899441) 
+      (path "1#Top" 16.000000 2664.842520 951.350394 2601.625984 1014.566929) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.464843 0.899441 2.464843 0.916449) 
+      (path "1#Top" 16.000000 2690.433071 899.440945 2664.842520 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.464843 0.916449 2.415520 0.965772) 
+      (path "1#Top" 16.000000 2560.000000 1014.566929 2601.625984 1014.566929) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.464843 0.853937 2.464843 0.899441) 
+      (path "1#Top" 16.000000 2560.000000 1014.566929 2420.000000 1014.566929) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.490433 0.853937 2.490433 0.876689) 
+      (path "1#Top" 16.000000 2664.842520 853.937008 2664.842520 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.220000 1.014567 2.220000 0.980815) 
+      (path "1#Top" 16.000000 2844.566929 899.440945 2792.795276 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.381768 0.965772 2.235043 0.965772) 
+      (path "1#Top" 16.000000 2792.795276 853.937008 2792.795276 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.235043 0.965772 2.220000 0.980815) 
+      (path "1#Top" 16.000000 2690.433071 899.440945 2792.795276 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.398646 0.965772 2.381768 0.965772) 
+      (path "1#Top" 16.000000 2690.433071 853.937008 2690.433071 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.398646 0.965772 2.415520 0.965772) 
+      (path "1#Top" 16.000000 2844.566929 899.440945 2844.566929 1050.000000) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.668382 0.979059 2.644567 1.002874) 
+      (path "1#Top" 16.000000 2869.566929 899.440945 2844.566929 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.644567 1.002874 2.644567 1.008374) 
+      (path "1#Top" 16.000000 2842.992126 318.425197 2842.992126 385.641732) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.808224 0.398886 2.891634 0.398886) 
+      (path "1#Top" 16.000000 2640.000000 430.000000 2683.003937 430.000000) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.642992 0.385642 2.656236 0.398886) 
+      (path "1#Top" 16.000000 2767.204724 566.062992 2767.204724 520.559055) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.656236 0.398886 2.808224 0.398886) 
+      (path "1#Top" 16.000000 2844.566929 1050.000000 2878.318898 1050.000000) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.808224 0.398886 2.808224 0.413795) 
+      (path "1#Top" 16.000000 2869.566929 853.937008 2869.566929 899.440945) 
       (net "FTDI-GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.668382 0.979059 2.668382 0.553638) 
+      (path "1#Top" 16.000000 3091.633858 466.389764 3037.566929 466.389764) 
       (net "FTDI-GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.668382 0.553638 2.808224 0.413795) 
+      (path "1#Top" 16.000000 3037.566929 466.389764 3026.291339 477.665354) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.440000 0.430000 2.440000 0.460504) 
+      (path "1#Top" 16.000000 2869.566929 853.937008 2869.566929 782.822835) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.567205 0.566063 2.567205 0.520559) 
+      (path "1#Top" 16.000000 2869.566929 782.822835 2767.204724 680.460630) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.567205 0.520559 2.507150 0.460504) 
+      (path "1#Top" 16.000000 2767.204724 680.460630 2767.204724 566.062992) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.507150 0.460504 2.440000 0.460504) 
+      (path "1#Top" 16.000000 2767.204724 520.559055 2683.003937 436.358268) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.669567 0.853937 2.669567 0.798303) 
+      (path "1#Top" 16.000000 2683.003937 436.358268 2683.003937 430.000000) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.669567 0.798303 2.567205 0.695941) 
+      (path "1#Top" 16.000000 2842.992126 385.641732 2934.267717 385.641732) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.567205 0.695941 2.567205 0.566063) 
+      (path "1#Top" 16.000000 2934.267717 385.641732 3026.291339 477.665354) 
       (net "FTDI-GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.669567 0.857748 2.669567 0.853937) 
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.669567 0.857748 2.669567 0.899441) 
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.644567 1.050000 2.644567 1.008374) 
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.642992 0.352035 2.642992 0.371445) 
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.642992 0.371445 2.642992 0.385642) 
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.642992 0.318425 2.642992 0.352035) 
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.891634 0.432638 2.891634 0.398886) 
-      (net "FTDI-GND")
-    )
-    (via
-      "Round7$0.035000" 2.668382 0.979059
-      (net "FTDI-GND")
-    )
-    (via
-      "Round7$0.035000" 2.808224 0.413795
-      (net "FTDI-GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.619118 0.843488 2.619118 0.819866) 
+      (path "1#Top" 16.000000 2601.625984 1085.433071 2681.625984 1005.433071) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.619118 0.819866 2.606020 0.806768) 
+      (path "1#Top" 16.000000 2681.625984 1005.433071 2734.531496 1005.433071) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.606020 0.806768 2.317858 0.806768) 
+      (path "1#Top" 16.000000 2734.531496 1005.433071 2745.086614 1015.988189) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.317858 0.806768 2.266425 0.858201) 
+      (path "1#Top" 16.000000 2745.086614 1015.988189 2745.086614 1074.850394) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.013693 2.619118 0.843488 2.619118 0.853205) 
+      (path "1#Top" 16.000000 2745.086614 1074.850394 2763.385827 1093.149606) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.013693 2.619118 0.853205 2.618386 0.853937) 
+      (path "1#Top" 16.000000 2763.385827 1093.149606 2781.440945 1093.149606) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.370000 1.190000 2.370000 1.159496) 
+      (path "1#Top" 16.000000 2781.440945 1093.149606 2833.456693 1145.165354) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.381768 1.091756 2.381768 1.149130) 
+      (path "1#Top" 16.000000 2833.456693 1145.165354 2961.362205 1145.165354) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.370000 1.159496 2.371402 1.159496) 
+      (path "1#Top" 16.000000 2961.362205 1145.165354 3102.350394 1004.177165) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.371402 1.159496 2.381768 1.149130) 
+      (path "1#Top" 16.000000 3102.350394 1004.177165 3102.350394 535.181102) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.381768 1.091756 2.348016 1.091756) 
+      (path "1#Top" 16.000000 3102.350394 535.181102 3172.468504 465.062992) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.220000 1.068559 2.324819 1.068559) 
+      (path "1#Top" 16.000000 2683.500000 684.763780 2377.157480 991.106299) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.324819 1.068559 2.348016 1.091756) 
+      (path "1#Top" 16.000000 2377.157480 991.106299 2377.157480 1038.370079) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.220000 1.068559 2.220000 1.051681) 
+      (path "1#Top" 16.000000 2377.157480 1038.370079 2390.468504 1051.681102) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.220000 1.085433 2.220000 1.068559) 
+      (path "1#Top" 16.000000 2390.468504 1051.681102 2420.000000 1051.681102) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.266425 0.858201 2.177787 0.946839) 
+      (path "1#Top" 16.000000 2690.433071 566.062992 2690.433071 677.830709) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.177787 0.946839 2.177787 1.039000) 
+      (path "1#Top" 16.000000 2690.433071 677.830709 2683.500000 684.763780) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.177787 1.039000 2.190469 1.051681) 
+      (path "1#Top" 16.000000 2819.118110 843.488189 2819.118110 820.381890) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.190469 1.051681 2.220000 1.051681) 
+      (path "1#Top" 16.000000 2819.118110 820.381890 2683.500000 684.763780) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.266425 0.856346 2.183929 0.856346) 
+      (path "1#Top" 16.000000 2420.000000 1085.433071 2420.000000 1051.681102) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.183929 0.856346 2.143102 0.815520) 
+      (path "1#Top" 13.692913 2819.118110 843.488189 2819.118110 853.204724) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.143102 0.815520 2.143102 0.621402) 
+      (path "1#Top" 13.692913 2819.118110 853.204724 2818.385827 853.937008) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.143102 0.621402 2.272421 0.492083) 
+      (path "1#Top" 16.000000 2560.000000 1085.433071 2601.625984 1085.433071) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.895008 0.292323 2.830449 0.292323) 
+      (path "1#Top" 16.000000 2560.000000 1085.433071 2560.000000 1149.496063) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.830449 0.292323 2.266425 0.856346) 
+      (path "1#Top" 16.000000 2560.000000 1149.496063 2570.000000 1159.496063) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.266425 0.856346 2.266425 0.858201) 
+      (path "1#Top" 16.000000 3172.468504 431.311024 3172.468504 465.062992) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.489701 0.565331 2.489701 0.531031) 
+      (path "1#Top" 16.000000 2570.000000 1190.000000 2570.000000 1159.496063) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.489701 0.531031 2.450752 0.492083) 
+      (path "1#Top" 16.000000 2461.625984 1085.433071 2560.000000 1085.433071) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.450752 0.492083 2.272421 0.492083) 
+      (path "1#Top" 16.000000 2420.000000 1085.433071 2461.625984 1085.433071) 
       (net "FTDI-VCC")
     )
     (wire
-      (path "1#Top" 0.013693 2.489701 0.565331 2.490433 0.566063) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.972469 0.431311 2.972469 0.465063) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.895008 0.292323 3.100280 0.292323) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 3.100280 0.292323 3.159106 0.351150) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 3.159106 0.351150 3.159106 0.420232) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 3.159106 0.420232 3.110307 0.469031) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 3.110307 0.469031 2.976437 0.469031) 
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.976437 0.469031 2.972469 0.465063) 
-      (net "FTDI-VCC")
-    )
-    (via
-      "Round7$0.035000" 2.266425 0.858201
-      (net "FTDI-VCC")
-    )
-    (via
-      "Round7$0.035000" 2.272421 0.492083
-      (net "FTDI-VCC")
-    )
-    (via
-      "Round7$0.035000" 2.895008 0.292323
-      (net "FTDI-VCC")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.560000 1.095000 1.613331 1.095000) 
-      (net "GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.613331 1.095000 1.765882 1.247551) 
-      (net "GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.765882 1.247551 2.457327 1.247551) 
-      (net "GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.457327 1.247551 2.478268 1.226610) 
-      (net "GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.478268 1.226610 2.889193 1.226610) 
-      (net "GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.889193 1.226610 3.099661 1.016142) 
-      (net "GND")
-    )
-    (wire
-      (path "1#Top" 0.016000 3.099661 1.016142 3.099661 0.776957) 
+      (path "1#Top" 16.000000 1817.114173 1354.200787 2002.913386 1540.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.099661 0.776957 3.093465 0.770760) 
+      (path "1#Top" 16.000000 2002.913386 1540.000000 2540.814961 1540.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.383728 0.352732 1.340724 0.352732) 
+      (path "1#Top" 16.000000 1800.090551 1095.000000 1811.822835 1106.732283) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.786024 0.293949 0.873693 0.293949) 
+      (path "1#Top" 16.000000 1811.822835 1106.732283 1811.822835 1348.909449) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.873693 0.293949 0.946819 0.367075) 
+      (path "1#Top" 16.000000 1811.822835 1348.909449 1817.114173 1354.200787) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.946819 0.367075 1.326382 0.367075) 
+      (path "1#Top" 16.000000 1817.114173 1354.200787 1792.960630 1378.350394) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.326382 0.367075 1.340724 0.352732) 
+      (path "16#Bottom" 16.000000 1186.523622 1427.866142 1231.527559 1427.866142) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.749465 0.293949 0.786024 0.293949) 
+      (path "16#Bottom" 16.000000 1792.960630 1378.350394 1271.716535 1378.350394) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.749465 0.293949 0.712902 0.293949) 
+      (path "16#Bottom" 16.000000 1271.716535 1378.350394 1231.527559 1418.539370) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.403268 0.196539 1.383728 0.216079) 
+      (path "16#Bottom" 16.000000 1231.527559 1418.539370 1231.527559 1427.866142) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.383728 0.216079 1.383728 0.352732) 
+      (path "16#Bottom" 16.000000 936.318898 872.559055 936.318898 1059.141732) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.345457 0.045146 2.325098 0.024787) 
+      (path "16#Bottom" 16.000000 936.318898 1059.141732 1000.551181 1123.374016) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.325098 0.024787 1.700720 0.024787) 
+      (path "16#Bottom" 16.000000 1000.551181 1123.374016 1000.551181 1413.838583) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.700720 0.024787 1.528969 0.196539) 
+      (path "16#Bottom" 16.000000 1000.551181 1413.838583 986.523622 1427.866142) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.528969 0.196539 1.403268 0.196539) 
+      (path "16#Bottom" 16.000000 936.318898 872.559055 936.318898 398.838583) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.403268 0.196539 1.403268 0.141402) 
+      (path "16#Bottom" 16.000000 936.318898 398.838583 851.480315 314.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.986524 1.427866 0.986524 1.431457) 
+      (path "1#Top" 16.000000 940.000000 900.814961 936.318898 897.133858) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.986524 1.431457 0.940236 1.477744) 
+      (path "1#Top" 16.000000 936.318898 897.133858 936.318898 872.559055) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.940236 1.477744 0.940236 1.546898) 
+      (path "1#Top" 16.000000 940.000000 934.566929 940.000000 900.814961) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.940236 1.546898 0.966976 1.573638) 
+      (path "1#Top" 16.000000 1760.000000 1095.000000 1800.090551 1095.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.966976 1.573638 2.307177 1.573638) 
+      (path "16#Bottom" 16.000000 1186.523622 1427.866142 1141.480315 1472.909449) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.307177 1.573638 2.340815 1.540000) 
+      (path "16#Bottom" 16.000000 1141.480315 1472.909449 1031.566929 1472.909449) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.786524 1.427866 0.833398 1.474740) 
+      (path "16#Bottom" 16.000000 1031.566929 1472.909449 986.523622 1427.866142) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.833398 1.474740 0.903969 1.474740) 
+      (path "16#Bottom" 16.000000 851.480315 252.996063 851.480315 314.000000) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.903969 1.474740 0.941520 1.437189) 
+      (path "1#Top" 16.000000 1197.996063 994.251969 1074.409449 994.251969) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.941520 1.437189 0.941520 1.427866) 
+      (path "1#Top" 16.000000 1074.409449 994.251969 1014.724409 934.566929) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.676004 0.871272 0.676004 1.132075) 
+      (path "1#Top" 16.000000 1014.724409 934.566929 940.000000 934.566929) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.676004 1.132075 0.786524 1.242594) 
+      (path "1#Top" 16.000000 1241.000000 994.251969 1197.996063 994.251969) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.786524 1.242594 0.786524 1.427866) 
+      (path "1#Top" 16.000000 3375.000000 660.866142 3331.917323 660.866142) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.986524 1.427866 0.941520 1.427866) 
+      (path "1#Top" 16.000000 3331.917323 660.866142 3293.464567 699.318898) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.651480 0.314000 0.676004 0.338524) 
+      (path "1#Top" 16.000000 3462.208661 573.657480 3375.000000 660.866142) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.676004 0.338524 0.676004 0.871272) 
+      (path "1#Top" 16.000000 3293.464567 735.039370 3293.464567 699.318898) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.740000 0.900815 0.710457 0.871272) 
+      (path "1#Top" 16.000000 3048.846457 981.862205 3048.846457 1020.901575) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.710457 0.871272 0.676004 0.871272) 
+      (path "1#Top" 16.000000 3048.846457 1020.901575 2950.586614 1119.161417) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.380000 0.430000 2.380000 0.399496) 
+      (path "1#Top" 16.000000 2950.586614 1119.161417 2845.555118 1119.161417) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.275000 0.090000 3.219669 0.034669) 
+      (path "1#Top" 16.000000 2845.555118 1119.161417 2782.196850 1055.803150) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.219669 0.034669 2.355933 0.034669) 
+      (path "1#Top" 16.000000 2782.196850 1055.803150 2782.196850 1047.062992) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.355933 0.034669 2.345457 0.045146) 
+      (path "16#Bottom" 16.000000 3375.000000 660.866142 3369.842520 660.866142) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.345457 0.045146 2.345457 0.376394) 
+      (path "16#Bottom" 16.000000 3369.842520 660.866142 3048.846457 981.862205) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.345457 0.376394 2.368559 0.399496) 
+      (path "1#Top" 16.000000 1411.220472 343.948819 1338.098425 293.948819) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.368559 0.399496 2.380000 0.399496) 
+      (path "1#Top" 16.000000 851.480315 252.996063 851.480315 314.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 1.025748 1.335996 1.025748) 
+      (path "1#Top" 16.000000 851.480315 314.000000 904.551181 367.070866) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 0.962756 1.335996 0.962756) 
+      (path "1#Top" 16.000000 904.551181 367.070866 1264.976378 367.070866) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.333287 0.994252 1.333287 0.965465) 
+      (path "1#Top" 16.000000 1264.976378 367.070866 1338.098425 293.948819) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.333287 0.965465 1.335996 0.962756) 
+      (path "1#Top" 16.000000 400.000000 1416.590551 100.000000 1416.590551) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.335996 1.025748 1.335996 0.996961) 
+      (path "1#Top" 16.000000 986.523622 1427.866142 411.275591 1427.866142) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.335996 0.996961 1.333287 0.994252) 
+      (path "1#Top" 16.000000 411.275591 1427.866142 400.000000 1416.590551) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.041000 0.994252 1.333287 0.994252) 
+      (path "1#Top" 16.000000 3681.000000 690.566929 3681.000000 656.814961) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.740000 0.917693 0.745768 0.923461) 
+      (path "1#Top" 16.000000 3462.208661 90.000000 3462.208661 573.657480) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.745768 0.923461 0.815350 0.923461) 
+      (path "1#Top" 16.000000 3462.208661 573.657480 3597.842520 573.657480) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.815350 0.923461 0.886142 0.994252) 
+      (path "1#Top" 16.000000 3597.842520 573.657480 3681.000000 656.814961) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.886142 0.994252 1.041000 0.994252) 
+      (path "1#Top" 16.000000 2653.669291 204.736220 2824.342520 34.062992) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.740000 0.917693 0.740000 0.900815) 
+      (path "1#Top" 16.000000 2824.342520 34.062992 3406.271654 34.062992) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.740000 0.934567 0.740000 0.917693) 
+      (path "1#Top" 16.000000 3406.271654 34.062992 3462.208661 90.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.786024 0.108909 0.786024 0.182031) 
+      (path "1#Top" 16.000000 3475.000000 90.000000 3462.208661 90.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.712902 0.253413 0.712484 0.252996) 
+      (path "1#Top" 16.000000 2653.669291 204.736220 2653.669291 249.736220) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.712902 0.293949 0.712902 0.253413) 
+      (path "1#Top" 16.000000 2653.669291 249.736220 2660.409449 256.476378) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.786024 0.182031 0.784283 0.182031) 
+      (path "1#Top" 16.000000 2660.409449 256.476378 2660.409449 378.019685) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.784283 0.182031 0.712902 0.253413) 
+      (path "1#Top" 16.000000 2660.409449 378.019685 2638.933071 399.496063) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.651480 0.252996 0.712484 0.252996) 
+      (path "1#Top" 16.000000 2638.933071 399.496063 2580.000000 399.496063) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 1.416591 0.100000 1.416591) 
+      (path "1#Top" 16.000000 1603.267717 196.641732 1728.311024 196.641732) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.786524 1.427866 0.775248 1.416591) 
+      (path "1#Top" 16.000000 1728.311024 196.641732 1900.629921 24.322835) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 0.775248 1.416591 0.200000 1.416591) 
+      (path "1#Top" 16.000000 1900.629921 24.322835 2398.854331 24.322835) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.582197 1.047063 2.582197 1.088689) 
+      (path "1#Top" 16.000000 2398.854331 24.322835 2579.267717 204.736220) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.582197 1.088689 2.585744 1.092236) 
+      (path "1#Top" 16.000000 2579.267717 204.736220 2653.669291 204.736220) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.585744 1.092236 2.740693 1.092236) 
+      (path "1#Top" 16.000000 1603.267717 196.641732 1603.267717 272.338583) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.740693 1.092236 2.793165 1.039764) 
+      (path "1#Top" 16.000000 1603.267717 272.338583 1581.657480 293.948819) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.793165 1.039764 2.793165 0.902425) 
+      (path "1#Top" 16.000000 1603.267717 141.401575 1603.267717 196.641732) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.793165 0.902425 3.034724 0.660866) 
+      (path "1#Top" 16.000000 2580.000000 430.000000 2580.000000 399.496063) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.034724 0.660866 3.175000 0.660866) 
+      (path "1#Top" 16.000000 2574.566929 1540.000000 2540.814961 1540.000000) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.093465 0.735039 3.093465 0.770760) 
+      (path "1#Top" 16.000000 1581.657480 293.948819 1581.657480 320.157480) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.374567 1.540000 2.408319 1.540000) 
+      (path "1#Top" 16.000000 1581.657480 320.157480 1583.728346 322.228346) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.260000 1.626142 3.182941 1.626142) 
+      (path "1#Top" 16.000000 1581.657480 293.948819 1484.342520 293.948819) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.182941 1.626142 3.141114 1.584315) 
+      (path "1#Top" 16.000000 1411.220472 343.948819 1484.342520 293.948819) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.141114 1.584315 2.571551 1.584315) 
+      (path "1#Top" 16.000000 1603.267717 141.401575 1516.834646 141.401575) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.571551 1.584315 2.485606 1.498370) 
+      (path "1#Top" 16.000000 1516.834646 141.401575 1484.342520 108.909449) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.485606 1.498370 2.420417 1.498370) 
+      (path "1#Top" 16.000000 1411.220472 108.909449 1484.342520 108.909449) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.420417 1.498370 2.408319 1.510469) 
+      (path "1#Top" 16.000000 1583.728346 352.732283 1583.728346 322.228346) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.408319 1.510469 2.408319 1.540000) 
+      (path "1#Top" 16.000000 1579.000000 1025.748031 1535.996063 1025.748031) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.093465 0.728630 3.093465 0.735039) 
+      (path "1#Top" 16.000000 1579.000000 962.755906 1535.996063 962.755906) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 2.374567 1.540000 2.340815 1.540000) 
+      (path "1#Top" 16.000000 1533.287402 994.251969 1533.287402 965.464567) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.481000 0.656815 3.435181 0.610996) 
+      (path "1#Top" 16.000000 1533.287402 965.464567 1535.996063 962.755906) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.435181 0.610996 3.224870 0.610996) 
+      (path "1#Top" 16.000000 1535.996063 1025.748031 1535.996063 996.960630) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.224870 0.610996 3.175000 0.660866) 
+      (path "1#Top" 16.000000 1535.996063 996.960630 1533.287402 994.251969) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.651480 0.252996 0.651480 0.314000) 
+      (path "1#Top" 16.000000 1241.000000 994.251969 1533.287402 994.251969) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.093465 0.728630 3.093465 0.699319) 
+      (path "1#Top" 16.000000 3460.000000 1626.141732 3460.000000 1558.925197) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.093465 0.699319 3.136547 0.699319) 
+      (path "1#Top" 16.000000 3681.000000 690.566929 3681.000000 724.318898) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.136547 0.699319 3.175000 0.660866) 
+      (path "1#Top" 16.000000 3681.000000 724.318898 3710.531496 724.318898) 
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 3.481000 0.690567 3.481000 0.656815) 
+      (path "1#Top" 16.000000 3710.531496 724.318898 3735.842520 749.629921) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.175000 0.660866 3.175000 0.190000) 
+      (path "1#Top" 16.000000 3735.842520 749.629921 3735.842520 1283.082677) 
       (net "GND")
     )
     (wire
-      (path "16#Bottom" 0.016000 3.175000 0.190000 3.275000 0.090000) 
+      (path "1#Top" 16.000000 3735.842520 1283.082677 3460.000000 1558.925197) 
       (net "GND")
     )
     (via
-      "Round7$0.035000" 0.676004 0.871272
+      "Round7$35.000000" 1792.960630 1378.350394
+      (net "GND")
+    )
+    (via
+      "Round7$35.000000" 936.318898 872.559055
+      (net "GND")
+    )
+    (via
+      "Round7$35.000000" 3048.846457 981.862205
       (net "GND")
     )
     (wire
-      (path "1#Top" 0.016000 1.690000 0.129449 1.690000 0.199618) 
+      (path "1#Top" 16.000000 1643.728346 352.732283 1643.728346 322.228346) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.486732 0.352732 1.536886 0.352732) 
+      (path "1#Top" 16.000000 1643.728346 322.228346 1767.389764 322.228346) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.536886 0.352732 1.690000 0.199618) 
+      (path "1#Top" 16.000000 1767.389764 322.228346 1890.000000 199.618110) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.232126 0.615354 2.132850 0.615354) 
+      (path "1#Top" 16.000000 2007.488189 199.618110 2007.488189 168.964567) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.132850 0.615354 2.067091 0.681114) 
+      (path "1#Top" 16.000000 2007.488189 168.964567 2126.122047 50.330709) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.067091 0.681114 1.782933 0.681114) 
+      (path "1#Top" 16.000000 2126.122047 50.330709 2227.381890 50.330709) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.782933 0.681114 1.486732 0.384913) 
+      (path "1#Top" 16.000000 2227.381890 50.330709 2254.488189 77.437008) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.486732 0.384913 1.486732 0.352732) 
+      (path "1#Top" 16.000000 2075.496063 305.000000 2007.488189 236.992126) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.054488 0.050933 1.768516 0.050933) 
+      (path "1#Top" 16.000000 2007.488189 236.992126 2007.488189 199.618110) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.768516 0.050933 1.690000 0.129449) 
+      (path "1#Top" 16.000000 2007.488189 199.618110 1890.000000 199.618110) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.443728 0.352732 1.486732 0.352732) 
+      (path "1#Top" 16.000000 1890.000000 129.448819 1890.000000 199.618110) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.118811 0.255000 2.094563 0.255000) 
+      (path "1#Top" 16.000000 2075.496063 305.000000 2075.496063 355.000000) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.149563 0.255000 2.118811 0.255000) 
+      (path "1#Top" 16.000000 2254.488189 77.437008 2343.244094 77.437008) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.118811 0.305000 2.088059 0.305000) 
+      (path "1#Top" 16.000000 2343.244094 77.437008 2530.641732 264.834646) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.149563 0.305000 2.118811 0.305000) 
+      (path "1#Top" 16.000000 2530.641732 264.834646 2530.641732 394.385827) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.118811 0.305000 2.118811 0.255000) 
+      (path "1#Top" 16.000000 2530.641732 394.385827 2488.059055 436.968504) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.149563 0.355000 2.088059 0.355000) 
+      (path "1#Top" 16.000000 2488.059055 436.968504 2415.405512 436.968504) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.088059 0.355000 2.088059 0.305000) 
+      (path "1#Top" 16.000000 2415.405512 436.968504 2255.807087 596.566929) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.054488 0.103937 2.054488 0.050933) 
+      (path "1#Top" 16.000000 2255.807087 596.566929 2255.807087 640.342520) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.094563 0.255000 2.054488 0.214925) 
+      (path "1#Top" 16.000000 2255.807087 640.342520 2287.877953 672.413386) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.054488 0.214925 2.054488 0.103937) 
+      (path "1#Top" 16.000000 2287.877953 672.413386 2414.724409 672.413386) 
       (net "GNDLINK")
     )
     (wire
-      (path "1#Top" 0.016000 3.549055 0.860000 3.507429 0.860000) 
+      (path "1#Top" 16.000000 2414.724409 672.413386 2432.125984 655.011811) 
+      (net "GNDLINK")
+    )
+    (wire
+      (path "1#Top" 16.000000 2432.125984 615.354331 2432.125984 655.011811) 
+      (net "GNDLINK")
+    )
+    (wire
+      (path "1#Top" 16.000000 2254.488189 103.937008 2254.488189 77.437008) 
+      (net "GNDLINK")
+    )
+    (wire
+      (path "1#Top" 16.000000 2137.000000 355.000000 2075.496063 355.000000) 
+      (net "GNDLINK")
+    )
+    (wire
+      (path "1#Top" 16.000000 2137.000000 305.000000 2075.496063 305.000000) 
+      (net "GNDLINK")
+    )
+    (wire
+      (path "1#Top" 16.000000 3699.527559 860.000000 3699.527559 826.248031) 
       (net "N$2")
     )
     (wire
-      (path "1#Top" 0.016000 3.481000 0.761433 3.481000 0.795185) 
+      (path "1#Top" 16.000000 3681.000000 761.433071 3681.000000 807.720472) 
       (net "N$2")
     )
     (wire
-      (path "1#Top" 0.016000 3.481000 0.795185 3.507429 0.821614) 
+      (path "1#Top" 16.000000 3681.000000 807.720472 3699.527559 826.248031) 
       (net "N$2")
     )
     (wire
-      (path "1#Top" 0.016000 3.507429 0.821614 3.507429 0.860000) 
-      (net "N$2")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.948189 0.103937 1.948189 0.156941) 
+      (path "1#Top" 16.000000 2192.003937 205.000000 2225.606299 238.602362) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 2.005067 0.255000 2.005067 0.183606) 
+      (path "1#Top" 16.000000 2225.606299 238.602362 2225.606299 432.940945) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 2.005067 0.183606 1.978402 0.156941) 
+      (path "1#Top" 16.000000 2225.606299 432.940945 2190.114173 468.433071) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.978402 0.156941 1.948189 0.156941) 
+      (path "1#Top" 16.000000 2190.114173 468.433071 2130.043307 468.433071) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.998567 0.255000 2.005067 0.255000) 
+      (path "1#Top" 16.000000 2130.043307 468.433071 2114.421260 452.811024) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.943563 0.255000 1.998567 0.255000) 
+      (path "1#Top" 16.000000 2114.421260 452.811024 1950.417323 452.811024) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.704567 0.494441 1.738319 0.494441) 
+      (path "1#Top" 16.000000 1950.417323 452.811024 1938.318898 464.909449) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 2.005067 0.255000 2.005067 0.376185) 
+      (path "1#Top" 16.000000 1938.318898 464.909449 1938.318898 494.440945) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 2.005067 0.376185 1.928437 0.452815) 
+      (path "1#Top" 16.000000 2192.003937 205.000000 2192.003937 200.755906) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.928437 0.452815 1.750413 0.452815) 
+      (path "1#Top" 16.000000 2192.003937 200.755906 2148.188976 156.940945) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.750413 0.452815 1.738319 0.464909) 
+      (path "1#Top" 16.000000 1904.566929 494.440945 1938.318898 494.440945) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 1.738319 0.464909 1.738319 0.494441) 
+      (path "1#Top" 16.000000 2137.000000 205.000000 2192.003937 205.000000) 
       (net "N$3")
     )
     (wire
-      (path "1#Top" 0.016000 2.449055 1.640000 2.449055 1.594437) 
+      (path "1#Top" 16.000000 2148.188976 103.937008 2148.188976 156.940945) 
+      (net "N$3")
+    )
+    (wire
+      (path "1#Top" 16.000000 2645.433071 1540.000000 2645.433071 1581.625984) 
       (net "N$7")
     )
     (wire
-      (path "1#Top" 0.016000 2.449055 1.594437 2.445433 1.590815) 
+      (path "1#Top" 16.000000 2639.527559 1640.000000 2639.527559 1606.248031) 
       (net "N$7")
     )
     (wire
-      (path "1#Top" 0.016000 2.445433 1.590815 2.445433 1.540000) 
+      (path "1#Top" 16.000000 2645.433071 1581.625984 2644.677165 1581.625984) 
       (net "N$7")
     )
     (wire
-      (path "1#Top" 0.016000 2.581248 1.515933 2.581248 1.499433) 
+      (path "1#Top" 16.000000 2644.677165 1581.625984 2639.527559 1606.248031) 
+      (net "N$7")
+    )
+    (wire
+      (path "1#Top" 16.000000 2813.248031 1507.933071 2667.492126 1362.177165) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 2.581248 1.499433 2.441465 1.359650) 
+      (path "1#Top" 16.000000 2667.492126 1362.177165 2667.492126 1172.657480) 
       (net "RAW")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.823835 0.361433 1.874091 0.411689) 
+      (path "16#Bottom" 16.000000 2167.929134 413.224409 2181.976378 413.224409) 
       (net "RAW")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.874091 0.411689 1.874091 0.792276) 
+      (path "16#Bottom" 16.000000 2181.976378 413.224409 2377.791339 609.039370) 
       (net "RAW")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.874091 0.792276 2.441465 1.359650) 
+      (path "16#Bottom" 16.000000 2377.791339 609.039370 2377.791339 882.956693) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 2.622874 1.515933 2.581248 1.515933) 
+      (path "16#Bottom" 16.000000 2377.791339 882.956693 2667.492126 1172.657480) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 1.882059 0.355000 1.875626 0.361433) 
+      (path "1#Top" 16.000000 2167.929134 386.161417 2188.826772 386.161417) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 1.875626 0.361433 1.823835 0.361433) 
+      (path "1#Top" 16.000000 2188.826772 386.161417 2198.503937 376.484252) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 1.823835 0.361433 1.808484 0.376783) 
+      (path "1#Top" 16.000000 2198.503937 376.484252 2198.503937 255.000000) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 1.808484 0.376783 1.690000 0.376783) 
+      (path "1#Top" 16.000000 1890.000000 376.783465 1899.377953 386.161417) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 1.943563 0.355000 1.882059 0.355000) 
+      (path "1#Top" 16.000000 1899.377953 386.161417 2167.929134 386.161417) 
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 1.690000 0.306614 1.690000 0.376783) 
+      (path "1#Top" 16.000000 2167.929134 386.161417 2167.929134 413.224409) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 1890.000000 306.614173 1890.000000 376.783465) 
+      (net "RAW")
+    )
+    (wire
+      (path "1#Top" 16.000000 2137.000000 255.000000 2198.503937 255.000000) 
       (net "RAW")
     )
     (via
-      "Round7$0.035000" 1.823835 0.361433
+      "Round7$35.000000" 2667.492126 1172.657480
       (net "RAW")
     )
     (via
-      "Round7$0.035000" 2.441465 1.359650
+      "Round7$35.000000" 2167.929134 413.224409
       (net "RAW")
     )
     (wire
-      (path "1#Top" 0.016000 2.721299 1.515933 2.679673 1.515933) 
+      (path "1#Top" 16.000000 2906.673228 1512.933071 2908.673228 1390.106299) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 2.511205 1.306118 2.511484 1.306118) 
+      (path "1#Top" 16.000000 2908.673228 1390.106299 2748.500000 1227.933071) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 2.511484 1.306118 2.679673 1.474307) 
+      (path "1#Top" 16.000000 2748.500000 1227.933071 2748.500000 1172.657480) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 2.679673 1.474307 2.679673 1.515933) 
+      (path "16#Bottom" 16.000000 2748.500000 1172.657480 2415.059055 839.216535) 
       (net "RAW_IN")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.503268 0.141402 1.679469 0.141402) 
+      (path "16#Bottom" 16.000000 2415.059055 839.216535 2415.059055 582.614173) 
       (net "RAW_IN")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.679469 0.141402 2.107933 0.569866) 
+      (path "16#Bottom" 16.000000 2415.059055 582.614173 1973.846457 141.401575) 
       (net "RAW_IN")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.107933 0.569866 2.107933 0.902846) 
+      (path "16#Bottom" 16.000000 1973.846457 141.401575 1703.267717 141.401575) 
       (net "RAW_IN")
     )
     (wire
-      (path "16#Bottom" 0.016000 2.107933 0.902846 2.511205 1.306118) 
+      (path "1#Top" 16.000000 986.023622 108.909449 1059.145669 108.909449) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 1.211220 0.108909 1.284343 0.108909) 
+      (path "1#Top" 16.000000 1059.145669 108.909449 1132.507874 35.547244) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 1.284343 0.108909 1.306858 0.086394) 
+      (path "1#Top" 16.000000 1132.507874 35.547244 1597.413386 35.547244) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 1.306858 0.086394 1.448260 0.086394) 
+      (path "1#Top" 16.000000 1597.413386 35.547244 1703.267717 141.401575) 
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 1.448260 0.086394 1.503268 0.141402) 
-      (net "RAW_IN")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.211220 0.293949 1.211220 0.108909) 
+      (path "1#Top" 16.000000 986.023622 108.909449 986.023622 343.948819) 
       (net "RAW_IN")
     )
     (via
-      "Round7$0.035000" 2.511205 1.306118
+      "Round7$35.000000" 2748.500000 1172.657480
       (net "RAW_IN")
     )
     (wire
-      (path "1#Top" 0.016000 1.188374 0.665433 1.188374 0.624193) 
+      (path "1#Top" 16.000000 999.122047 573.303150 1083.003937 657.185039) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 1.188374 0.624193 0.984736 0.420555) 
+      (path "1#Top" 16.000000 1083.003937 657.185039 1380.125984 657.185039) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.984736 0.420555 0.736839 0.420555) 
+      (path "1#Top" 16.000000 1380.125984 657.185039 1388.374016 665.433071) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.736839 0.420555 0.710835 0.394551) 
+      (path "16#Bottom" 16.000000 851.480315 152.996063 999.122047 300.637795) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.710835 0.394551 0.558173 0.394551) 
+      (path "16#Bottom" 16.000000 999.122047 300.637795 999.122047 573.303150) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.558173 0.394551 0.543638 0.380016) 
+      (path "1#Top" 16.000000 400.000000 116.590551 100.000000 116.590551) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.543638 0.380016 0.490776 0.380016) 
+      (path "1#Top" 16.000000 851.480315 152.996063 764.468504 65.984252) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.490776 0.380016 0.300890 0.190130) 
+      (path "1#Top" 16.000000 764.468504 65.984252 450.606299 65.984252) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 0.116591 0.205484 0.122075) 
+      (path "1#Top" 16.000000 450.606299 65.984252 400.000000 116.590551) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.205484 0.122075 0.232835 0.122075) 
+      (path "1#Top" 16.000000 1430.000000 665.433071 1388.374016 665.433071) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.232835 0.122075 0.300890 0.190130) 
+      (path "1#Top" 16.000000 1515.598425 664.933071 1473.972441 664.933071) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.651480 0.152996 0.590472 0.091988) 
+      (path "1#Top" 16.000000 1430.000000 682.311024 1456.594488 682.311024) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.590472 0.091988 0.399028 0.091988) 
+      (path "1#Top" 16.000000 1456.594488 682.311024 1473.972441 664.933071) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 0.399028 0.091988 0.300890 0.190130) 
+      (path "1#Top" 16.000000 1430.000000 682.311024 1430.000000 699.185039) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 1.230000 0.699185 1.225748 0.703437) 
+      (path "1#Top" 16.000000 1430.000000 665.433071 1430.000000 682.311024) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 1.225748 0.703437 1.225748 0.841000) 
+      (path "1#Top" 16.000000 1430.000000 699.185039 1425.748031 703.437008) 
       (net "RESET")
     )
     (wire
-      (path "1#Top" 0.016000 1.230000 0.665433 1.230000 0.699185) 
+      (path "1#Top" 16.000000 1425.748031 703.437008 1425.748031 841.000000) 
       (net "RESET")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.273972 0.664933 1.273472 0.665433) 
-      (net "RESET")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.273472 0.665433 1.230000 0.665433) 
-      (net "RESET")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.230000 0.665433 1.188374 0.665433) 
-      (net "RESET")
-    )
-    (wire
-      (path "1#Top" 0.016000 0.100000 0.116591 0.200000 0.116591) 
-      (net "RESET")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.315598 0.664933 1.273972 0.664933) 
-      (net "RESET")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.413669 0.581028 2.413669 0.581039) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.413669 0.581039 2.287587 0.707122) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.287587 0.707122 2.133028 0.707122) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.133028 0.707122 2.106087 0.734063) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.106087 0.734063 1.617358 0.734063) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.617358 0.734063 1.552110 0.668815) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.552110 0.668815 1.401594 0.668815) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.401594 0.668815 1.388008 0.682402) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.388008 0.682402 1.338957 0.731453) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.338957 0.731453 1.309134 0.731453) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.309134 0.731453 1.257244 0.783343) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.257244 0.783343 1.257244 0.841000) 
-      (net "RX")
-    )
-    (wire
-      (path "16#Bottom" 0.016000 1.388008 0.682402 1.303898 0.598291) 
-      (net "RX")
-    )
-    (wire
-      (path "16#Bottom" 0.016000 1.303898 0.598291 1.085299 0.598291) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 0.200000 0.516591 0.281701 0.598291) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 0.281701 0.598291 1.085299 0.598291) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.016000 0.100000 0.516591 0.200000 0.516591) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.013693 2.413669 0.581028 2.413669 0.566071) 
-      (net "RX")
-    )
-    (wire
-      (path "1#Top" 0.013693 2.413669 0.566071 2.413661 0.566063) 
-      (net "RX")
     )
     (via
-      "Round7$0.035000" 1.388008 0.682402
+      "Round7$35.000000" 999.122047 573.303150
+      (net "RESET")
+    )
+    (wire
+      (path "1#Top" 16.000000 400.000000 516.590551 1104.838583 516.590551) 
       (net "RX")
     )
-    (via
-      "Round7$0.035000" 1.085299 0.598291
+    (wire
+      (path "1#Top" 16.000000 1104.838583 516.590551 1219.425197 631.177165) 
       (net "RX")
     )
     (wire
-      (path "1#Top" 0.016000 2.516024 0.611567 2.388976 0.738614) 
+      (path "1#Top" 16.000000 1219.425197 631.177165 1546.712598 631.177165) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1546.712598 631.177165 1558.736220 643.200787) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1558.736220 643.200787 1558.736220 657.968504) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1558.736220 657.968504 1558.736220 691.216535) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1558.736220 691.216535 1457.244094 792.708661) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1457.244094 792.708661 1457.244094 841.000000) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1558.736220 657.968504 1639.145669 657.968504) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1639.145669 657.968504 1707.736220 726.559055) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 1707.736220 726.559055 2468.299213 726.559055) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 2468.299213 726.559055 2613.669291 581.188976) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 2613.669291 581.188976 2613.669291 581.185039) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 100.000000 516.590551 400.000000 516.590551) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 13.692913 2613.669291 581.185039 2613.669291 566.070866) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 13.692913 2613.669291 566.070866 2613.661417 566.062992) 
+      (net "RX")
+    )
+    (wire
+      (path "1#Top" 16.000000 400.000000 416.590551 462.259843 478.850394) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 2.388976 0.738614 2.159311 0.738614) 
+      (path "1#Top" 16.000000 462.259843 478.850394 1270.897638 478.850394) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 2.159311 0.738614 2.136240 0.761685) 
+      (path "16#Bottom" 16.000000 1616.984252 618.338583 1477.496063 478.850394) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 2.136240 0.761685 1.471476 0.761685) 
+      (path "16#Bottom" 16.000000 1477.496063 478.850394 1270.897638 478.850394) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 1.471476 0.761685 1.469244 0.759453) 
+      (path "16#Bottom" 16.000000 1616.984252 618.338583 1616.984252 711.472441) 
       (net "TX")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.027138 0.538630 1.319906 0.538630) 
+      (path "16#Bottom" 16.000000 1616.984252 618.338583 2311.275591 618.338583) 
       (net "TX")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.319906 0.538630 1.469244 0.687969) 
+      (path "1#Top" 16.000000 1488.740157 841.000000 1488.740157 797.996063) 
       (net "TX")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.469244 0.687969 1.469244 0.723866) 
+      (path "1#Top" 16.000000 1616.984252 711.472441 1575.263780 711.472441) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 0.416591 0.322039 0.538630) 
+      (path "1#Top" 16.000000 1575.263780 711.472441 1488.740157 797.996063) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 0.322039 0.538630 1.027138 0.538630) 
+      (path "1#Top" 16.000000 2716.755906 555.614173 2716.755906 530.311024) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 1.469244 0.759453 1.469244 0.723866) 
+      (path "1#Top" 16.000000 2716.755906 530.311024 2680.224409 493.779528) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 1.469244 0.759453 1.319146 0.759453) 
+      (path "1#Top" 16.000000 2680.224409 493.779528 2435.834646 493.779528) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 1.319146 0.759453 1.288740 0.789858) 
+      (path "1#Top" 16.000000 2435.834646 493.779528 2311.275591 618.338583) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 1.288740 0.789858 1.288740 0.841000) 
+      (path "1#Top" 13.692913 2716.755906 555.614173 2716.755906 565.330709) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 2.516024 0.566063 2.516024 0.611567) 
+      (path "1#Top" 13.692913 2716.755906 565.330709 2716.023622 566.062992) 
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 0.416591 0.200000 0.416591) 
+      (path "1#Top" 16.000000 100.000000 416.590551 400.000000 416.590551) 
       (net "TX")
     )
     (via
-      "Round7$0.035000" 1.027138 0.538630
+      "Round7$35.000000" 1616.984252 711.472441
       (net "TX")
     )
     (via
-      "Round7$0.035000" 1.469244 0.723866
+      "Round7$35.000000" 1270.897638 478.850394
+      (net "TX")
+    )
+    (via
+      "Round7$35.000000" 2311.275591 618.338583
       (net "TX")
     )
     (wire
-      (path "1#Top" 0.016000 2.891634 0.361772 2.850008 0.361772) 
+      (path "1#Top" 16.000000 3091.633858 361.771654 3091.633858 328.019685) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.517008 0.318425 2.517008 0.251209) 
+      (path "1#Top" 16.000000 3091.633858 361.771654 3133.259843 361.771654) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.517008 0.251209 2.587106 0.181110) 
+      (path "1#Top" 16.000000 2717.007874 318.425197 2717.007874 251.208661) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.587106 0.181110 2.734449 0.181110) 
+      (path "1#Top" 16.000000 3172.468504 360.444882 3134.586614 360.444882) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.734449 0.181110 2.841248 0.287909) 
+      (path "1#Top" 16.000000 3134.586614 360.444882 3133.259843 361.771654) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.841248 0.287909 2.841248 0.353012) 
+      (path "1#Top" 16.000000 2717.007874 251.208661 2788.051181 180.165354) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.841248 0.353012 2.850008 0.361772) 
+      (path "1#Top" 16.000000 2788.051181 180.165354 2943.779528 180.165354) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.899409 0.361772 2.891634 0.361772) 
+      (path "1#Top" 16.000000 2943.779528 180.165354 3091.633858 328.019685) 
       (net "VBUS")
     )
     (wire
-      (path "1#Top" 0.016000 2.899409 0.361772 2.933260 0.361772) 
-      (net "VBUS")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.972469 0.360445 2.934587 0.360445) 
-      (net "VBUS")
-    )
-    (wire
-      (path "1#Top" 0.016000 2.934587 0.360445 2.933260 0.361772) 
-      (net "VBUS")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.230000 0.578217 1.279606 0.627823) 
+      (path "1#Top" 16.000000 2510.000000 1220.503937 2227.736220 1220.503937) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.279606 0.627823 1.610921 0.627823) 
+      (path "1#Top" 16.000000 2227.736220 1220.503937 1996.452756 1451.787402) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.610921 0.627823 1.631921 0.648823) 
+      (path "1#Top" 16.000000 2510.000000 1190.000000 2510.000000 1220.503937) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.722665 0.708528 1.662961 0.648823) 
+      (path "1#Top" 16.000000 2525.000000 1220.503937 2510.000000 1220.503937) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.662961 0.648823 1.631921 0.648823) 
+      (path "1#Top" 16.000000 2711.330709 1088.688976 2675.795276 1088.688976) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.722665 0.708528 1.804421 0.626772) 
+      (path "1#Top" 16.000000 2675.795276 1088.688976 2613.988189 1150.496063) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.660559 0.987791 1.722665 0.925685) 
+      (path "1#Top" 16.000000 2613.988189 1150.496063 2613.988189 1209.511811) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 1.722665 0.925685 1.722665 0.708528) 
+      (path "1#Top" 16.000000 2613.988189 1209.511811 2602.996063 1220.503937) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.230000 0.578217 1.230000 0.560815) 
+      (path "1#Top" 16.000000 2602.996063 1220.503937 2525.000000 1220.503937) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.230000 0.594567 1.230000 0.578217) 
+      (path "1#Top" 16.000000 1996.452756 1451.787402 1976.799213 1451.787402) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.230000 0.560815 1.062264 0.393079) 
+      (path "1#Top" 16.000000 1976.799213 1451.787402 1880.976378 1355.964567) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.062264 0.393079 0.923051 0.393079) 
+      (path "1#Top" 16.000000 1880.976378 1355.964567 1880.976378 1095.909449) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.923051 0.393079 0.897047 0.367075) 
+      (path "1#Top" 16.000000 1880.976378 1095.909449 1799.480315 1014.413386) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.897047 0.367075 0.630988 0.367075) 
+      (path "1#Top" 16.000000 1799.480315 1014.413386 1622.003937 1014.413386) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.630988 0.367075 0.583870 0.319957) 
+      (path "1#Top" 16.000000 1622.003937 1014.413386 1622.003937 1057.244094) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.583870 0.319957 0.518441 0.319957) 
+      (path "1#Top" 16.000000 1622.003937 994.251969 1622.003937 1014.413386) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.518441 0.319957 0.451480 0.252996) 
+      (path "1#Top" 16.000000 1996.452756 1451.787402 1996.452756 1457.448819) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.576697 1.293524 0.553630 1.316591) 
+      (path "16#Bottom" 16.000000 845.165354 1316.590551 845.165354 507.685039) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.553630 1.316591 0.200000 1.316591) 
+      (path "16#Bottom" 16.000000 845.165354 507.685039 651.480315 314.000000) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.451480 0.314000 0.576697 0.439217) 
+      (path "1#Top" 16.000000 986.523622 1527.866142 1031.527559 1527.866142) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.576697 0.439217 0.576697 1.293524) 
+      (path "1#Top" 16.000000 1031.527559 1527.866142 1031.527559 1539.118110) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.786524 1.482862 0.766035 1.482862) 
+      (path "1#Top" 16.000000 1031.527559 1539.118110 1132.409449 1640.000000) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.766035 1.482862 0.576697 1.293524) 
+      (path "1#Top" 16.000000 1132.409449 1640.000000 2580.472441 1640.000000) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.310000 1.205252 1.878020 1.205252) 
+      (path "16#Bottom" 16.000000 1031.527559 1527.866142 1031.527559 1539.118110) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.878020 1.205252 1.660559 0.987791) 
+      (path "16#Bottom" 16.000000 1031.527559 1539.118110 1066.125984 1573.716535) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.660559 0.987791 1.654098 0.994252) 
+      (path "16#Bottom" 16.000000 1066.125984 1573.716535 1880.185039 1573.716535) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.654098 0.994252 1.422004 0.994252) 
+      (path "16#Bottom" 16.000000 1880.185039 1573.716535 1996.452756 1457.448819) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.804421 0.626772 1.832661 0.655012) 
+      (path "16#Bottom" 16.000000 845.165354 1316.590551 845.165354 1350.830709) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.832661 0.655012 1.995488 0.655012) 
+      (path "16#Bottom" 16.000000 845.165354 1350.830709 977.196850 1482.862205) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.995488 0.655012 2.269496 0.381004) 
+      (path "16#Bottom" 16.000000 977.196850 1482.862205 986.523622 1482.862205) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.269496 0.381004 2.269496 0.360000) 
+      (path "16#Bottom" 16.000000 845.165354 1316.590551 400.000000 1316.590551) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.200000 1.316591 0.306587 1.210004) 
+      (path "16#Bottom" 16.000000 986.523622 1527.866142 986.523622 1482.862205) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.306587 1.210004 0.306587 1.145524) 
+      (path "16#Bottom" 16.000000 651.480315 252.996063 651.480315 314.000000) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.306587 1.145524 0.517543 0.934567) 
+      (path "1#Top" 16.000000 400.000000 1316.590551 100.000000 1316.590551) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.517543 0.934567 0.655000 0.934567) 
+      (path "1#Top" 16.000000 813.374016 934.566929 759.586614 934.566929) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.100000 1.316591 0.200000 1.316591) 
+      (path "1#Top" 16.000000 759.586614 934.566929 513.838583 1180.314961) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.786524 1.527866 0.786524 1.482862) 
+      (path "1#Top" 16.000000 513.838583 1180.314961 513.838583 1202.751969) 
       (net "VCC")
     )
     (wire
-      (path "16#Bottom" 0.016000 0.451480 0.252996 0.451480 0.314000) 
+      (path "1#Top" 16.000000 513.838583 1202.751969 400.000000 1316.590551) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 3.026535 0.735039 3.026535 0.770760) 
+      (path "16#Bottom" 16.000000 986.523622 1527.866142 1031.527559 1527.866142) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.511331 1.115449 2.511331 1.047063) 
+      (path "1#Top" 16.000000 2711.330709 1088.688976 2741.795276 1119.153543) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.310000 1.205252 2.325776 1.221028) 
+      (path "1#Top" 16.000000 2741.795276 1119.153543 2770.665354 1119.153543) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.325776 1.221028 2.405752 1.221028) 
+      (path "1#Top" 16.000000 2770.665354 1119.153543 2825.169291 1173.657480) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.405752 1.221028 2.511331 1.115449) 
+      (path "1#Top" 16.000000 2825.169291 1173.657480 2971.582677 1173.657480) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 3.026535 0.770760 2.990815 0.806480) 
+      (path "1#Top" 16.000000 2971.582677 1173.657480 3190.814961 954.425197) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.990815 0.806480 2.990815 0.879079) 
+      (path "1#Top" 16.000000 3190.814961 954.425197 3190.814961 806.480315) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.990815 0.879079 2.751177 1.118717) 
+      (path "1#Top" 16.000000 3190.814961 806.480315 3226.535433 770.759843) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.751177 1.118717 2.514598 1.118717) 
+      (path "1#Top" 16.000000 2711.330709 1047.062992 2711.330709 1088.688976) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.514598 1.118717 2.511331 1.115449) 
+      (path "1#Top" 16.000000 3226.535433 735.039370 3226.535433 770.759843) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 1.057244 1.422004 1.057244) 
+      (path "1#Top" 16.000000 1430.000000 560.814961 1430.503937 560.311024) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.422004 1.057244 1.422004 0.994252) 
+      (path "1#Top" 16.000000 1430.503937 560.311024 1917.295276 560.311024) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 0.994252 1.422004 0.994252) 
+      (path "1#Top" 16.000000 1917.295276 560.311024 2012.000000 655.015748) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.300000 0.360000 2.269496 0.360000) 
+      (path "1#Top" 16.000000 2012.000000 655.015748 2195.889764 655.015748) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.310000 1.190000 2.310000 1.205252) 
+      (path "1#Top" 16.000000 2195.889764 655.015748 2208.720472 642.185039) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.786524 1.527866 0.831528 1.527866) 
+      (path "1#Top" 16.000000 2208.720472 642.185039 2208.720472 606.681102) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.330945 1.640000 0.934335 1.640000) 
+      (path "1#Top" 16.000000 2208.720472 606.681102 2455.401575 360.000000) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.934335 1.640000 0.831528 1.537193) 
+      (path "1#Top" 16.000000 2455.401575 360.000000 2500.000000 360.000000) 
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 0.831528 1.537193 0.831528 1.527866) 
+      (path "1#Top" 16.000000 1430.000000 567.066929 1430.000000 560.814961) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 1430.000000 594.566929 1430.000000 567.066929) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 651.480315 252.996063 813.874016 415.389764) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 813.874016 415.389764 1284.574803 415.389764) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 1284.574803 415.389764 1430.000000 560.814961) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 1579.000000 994.251969 1622.003937 994.251969) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 855.000000 934.566929 813.374016 934.566929) 
+      (net "VCC")
+    )
+    (wire
+      (path "1#Top" 16.000000 1579.000000 1057.244094 1622.003937 1057.244094) 
       (net "VCC")
     )
     (via
-      "Round7$0.035000" 1.631921 0.648823
-      (net "VCC")
-    )
-    (via
-      "Round7$0.035000" 1.804421 0.626772
-      (net "VCC")
-    )
-    (via
-      "Round7$0.035000" 1.660559 0.987791
+      "Round7$35.000000" 1996.452756 1457.448819
       (net "VCC")
     )
     (wire
-      (path "1#Top" 0.016000 2.233783 0.300000 2.233783 0.352417) 
+      (path "1#Top" 16.000000 2373.751969 355.000000 2153.055118 575.696850) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.233783 0.352417 2.087520 0.498681) 
+      (path "1#Top" 16.000000 2153.055118 575.696850 2125.039370 575.696850) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.087520 0.498681 1.925039 0.498681) 
+      (path "1#Top" 16.000000 1975.433071 494.440945 2009.185039 494.440945) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.211067 0.205000 2.211067 0.277283) 
+      (path "1#Top" 16.000000 2009.185039 494.440945 2090.440945 575.696850) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.211067 0.277283 2.233783 0.300000) 
+      (path "1#Top" 16.000000 2090.440945 575.696850 2125.039370 575.696850) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.233783 0.300000 2.269496 0.300000) 
+      (path "1#Top" 16.000000 2125.039370 615.354331 2125.039370 575.696850) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.925039 0.498681 1.925039 0.575697) 
+      (path "1#Top" 16.000000 2373.751969 355.000000 2404.503937 355.000000) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.792311 0.494441 1.920799 0.494441) 
+      (path "1#Top" 16.000000 2343.000000 355.000000 2373.751969 355.000000) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 1.920799 0.494441 1.925039 0.498681) 
+      (path "1#Top" 16.000000 2404.503937 355.000000 2459.503937 300.000000) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.300000 0.300000 2.269496 0.300000) 
+      (path "1#Top" 16.000000 2459.503937 300.000000 2500.000000 300.000000) 
       (net "VCCLINK")
     )
     (wire
-      (path "1#Top" 0.016000 2.149563 0.205000 2.211067 0.205000) 
-      (net "VCCLINK")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.925039 0.615354 1.925039 0.575697) 
-      (net "VCCLINK")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.775433 0.494441 1.792311 0.494441) 
-      (net "VCCLINK")
-    )
-    (wire
-      (path "1#Top" 0.016000 1.560000 1.047756 1.475480 1.047756) 
+      (path "1#Top" 16.000000 1760.000000 1047.755906 1708.531496 1047.755906) 
       (net "XTAL1")
     )
     (wire
-      (path "1#Top" 0.016000 1.475480 1.047756 1.434496 1.088740) 
+      (path "1#Top" 16.000000 1708.531496 1047.755906 1667.547244 1088.740157) 
       (net "XTAL1")
     )
     (wire
-      (path "1#Top" 0.016000 1.434496 1.088740 1.379000 1.088740) 
+      (path "1#Top" 16.000000 1667.547244 1088.740157 1579.000000 1088.740157) 
       (net "XTAL1")
     )
     (wire
-      (path "1#Top" 0.016000 1.379000 1.120236 1.422004 1.120236) 
+      (path "1#Top" 16.000000 1579.000000 1120.236220 1622.003937 1120.236220) 
       (net "XTAL2")
     )
     (wire
-      (path "1#Top" 0.016000 1.560000 1.142244 1.444012 1.142244) 
+      (path "1#Top" 16.000000 1760.000000 1142.244094 1644.011811 1142.244094) 
       (net "XTAL2")
     )
     (wire
-      (path "1#Top" 0.016000 1.444012 1.142244 1.422004 1.120236) 
+      (path "1#Top" 16.000000 1644.011811 1142.244094 1622.003937 1120.236220) 
       (net "XTAL2")
     )
   )
