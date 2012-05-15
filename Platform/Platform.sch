@@ -2021,6 +2021,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-1.6" y="-0.35" size="0.762" layer="25">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="0.762" layer="27">&gt;VALUE</text>
 </package>
+<package name="LED-0805">
+<wire x1="0.242646875" y1="-0.479871875" x2="0.242646875" y2="-0.006621875" width="0.2032" layer="21"/>
+<wire x1="0.242646875" y1="0.453378125" x2="0.242646875" y2="-0.006621875" width="0.2032" layer="21"/>
+<wire x1="0.242646875" y1="-0.006621875" x2="-0.28529375" y2="-0.359653125" width="0.2032" layer="21"/>
+<wire x1="0.1546" y1="0.0254" x2="-0.272084375" y2="0.350875" width="0.2032" layer="21"/>
+<smd name="C" x="0.9" y="0" dx="1.2" dy="0.8" layer="1" rot="R270"/>
+<smd name="A" x="-0.9" y="0" dx="1.2" dy="0.8" layer="1" rot="R270"/>
+<text x="-1.320134375" y="0.778959375" size="0.6096" layer="25" ratio="15">&gt;NAME</text>
+<text x="-1.736471875" y="-1.3782625" size="0.6096" layer="27" ratio="15">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA168">
@@ -2940,6 +2950,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="LED-0805">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4692,10 +4711,10 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="C5" library="Dustin" deviceset="CAP_POL" device="8X10" value="120uf"/>
 <part name="SCHOTTKEY" library="Dustin" deviceset="DIODE-SCHOTTKY" device="" value=""/>
 <part name="SG2" library="SparkFun" deviceset="BUZZER" device="SMD"/>
-<part name="LED2" library="SparkFun" deviceset="LED" device="0603" value="RED"/>
+<part name="LED2" library="SparkFun" deviceset="LED" device="0805" value="RED"/>
 <part name="R4" library="SparkFun" deviceset="TRIMPOT" device="SMD"/>
 <part name="LCDCON" library="con-harting" deviceset="CON14" device=""/>
-<part name="LED1" library="SparkFun" deviceset="LED" device="0603" value="GRN"/>
+<part name="LED1" library="SparkFun" deviceset="LED" device="0805" value="GRN"/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="LINK1" library="Dustin" deviceset="LINK" device=""/>
 <part name="LINK2" library="Dustin" deviceset="LINK" device=""/>
@@ -4706,7 +4725,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="JP1" library="Dustin" deviceset="M14B" device=""/>
 <part name="C7" library="SparkFun" deviceset="CAP" device="0805" value="0.1uf"/>
 <part name="C8" library="SparkFun" deviceset="CAP" device="0805" value="4.7uf"/>
-<part name="U$1" library="Dustin" deviceset="LM2594" device=""/>
+<part name="SWITCHREG" library="Dustin" deviceset="LM2594" device=""/>
 <part name="LOGO1" library="ohw-logo" deviceset="OSHW_LOGO_10MIL" device="X0750-NT"/>
 <part name="S1" library="Dustin" deviceset="SWITCH-SPDT" device="" value=""/>
 </parts>
@@ -4777,7 +4796,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <attribute name="VALUE" x="34.036" y="131.699" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C8" gate="G$1" x="17.78" y="127"/>
-<instance part="U$1" gate="G$1" x="149.86" y="149.86"/>
+<instance part="SWITCHREG" gate="G$1" x="149.86" y="149.86"/>
 <instance part="LOGO1" gate="G$1" x="104.14" y="182.88"/>
 <instance part="S1" gate="G$1" x="109.22" y="129.54" rot="R270"/>
 </instances>
@@ -5404,7 +5423,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <wire x1="134.62" y1="139.7" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C4" gate="C$1" pin="+"/>
 <junction x="134.62" y="157.48"/>
-<pinref part="U$1" gate="G$1" pin="VIN"/>
+<pinref part="SWITCHREG" gate="G$1" pin="VIN"/>
 </segment>
 </net>
 <net name="RAW_IN" class="0">
@@ -5485,7 +5504,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <wire x1="165.1" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="165.1" y1="139.7" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="SCHOTTKEY" gate="G$1" pin="C"/>
-<pinref part="U$1" gate="G$1" pin="OUTPUT"/>
+<pinref part="SWITCHREG" gate="G$1" pin="OUTPUT"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5507,7 +5526,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <label x="182.88" y="144.78" size="1.778" layer="95"/>
 <pinref part="C5" gate="C$1" pin="+"/>
 <pinref part="LINK1" gate="G$1" pin="P$1"/>
-<pinref part="U$1" gate="G$1" pin="FB"/>
+<pinref part="SWITCHREG" gate="G$1" pin="FB"/>
 </segment>
 </net>
 <net name="GNDLINK" class="0">
@@ -5532,8 +5551,8 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <pinref part="SCHOTTKEY" gate="G$1" pin="A"/>
 <label x="167.64" y="129.54" size="1.778" layer="95"/>
 <pinref part="LINK2" gate="G$1" pin="P$1"/>
-<pinref part="U$1" gate="G$1" pin="ON/OFF"/>
-<pinref part="U$1" gate="G$1" pin="PWR_GND"/>
+<pinref part="SWITCHREG" gate="G$1" pin="ON/OFF"/>
+<pinref part="SWITCHREG" gate="G$1" pin="PWR_GND"/>
 </segment>
 </net>
 <net name="FTDI-VCC" class="0">
