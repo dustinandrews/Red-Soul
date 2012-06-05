@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.1">
+<eagle version="6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3563,21 +3563,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-2.54" y="-0.635" size="1.27" layer="21">+</text>
 <text x="1.905" y="-0.635" size="1.27" layer="21">-</text>
 </package>
-<package name="SOIC8">
-<wire x1="2.362" y1="-1.803" x2="2.362" y2="1.803" width="0.1524" layer="21"/>
-<wire x1="-2.362" y1="1.803" x2="-2.362" y2="-1.803" width="0.1524" layer="21"/>
-<circle x="-1.8034" y="-0.9906" radius="0.1436" width="0.2032" layer="21"/>
-<smd name="1" x="-1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="2" x="-0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="3" x="0.635" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="4" x="1.905" y="-2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="5" x="1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="6" x="0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="7" x="-0.635" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<smd name="8" x="-1.905" y="2.6162" dx="0.6096" dy="2.2098" layer="1"/>
-<text x="-1.27" y="-0.635" size="0.4064" layer="27">&gt;VALUE</text>
-<text x="-1.27" y="0" size="0.4064" layer="25">&gt;NAME</text>
-</package>
 <package name="DCPOWERSOCKETPJ-019">
 <description>DC power jack. PJ-019 CUI Inc.</description>
 <pad name="1C" x="0" y="0" drill="2.2"/>
@@ -3797,34 +3782,53 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <hole x="0" y="5" drill="1.6"/>
 <hole x="0" y="9.5" drill="2"/>
 </package>
-<package name="SOD-123">
-<smd name="CATHODE" x="-1.316" y="0.1" dx="1.778" dy="0.762" layer="1" rot="R90"/>
-<smd name="ANODE" x="1.384" y="0.1" dx="1.778" dy="0.762" layer="1" rot="R90"/>
-<wire x1="-0.916" y1="1.054" x2="1.084" y2="1.054" width="0.127" layer="21"/>
-<wire x1="-0.916" y1="-0.854" x2="1.084" y2="-0.854" width="0.127" layer="21"/>
-<wire x1="-0.616" y1="0.954" x2="-0.616" y2="-0.754" width="0.127" layer="21"/>
-<text x="-0.916" y="1.154" size="0.6096" layer="25" ratio="15">&gt;NAME</text>
-<text x="-1.016" y="-1.254" size="0.3048" layer="27" ratio="10">&gt;VALUE</text>
-<text x="0.584" y="-0.1" size="0.6096" layer="21" ratio="10">A</text>
-</package>
 <package name="ISOLATOR">
 <smd name="P$1" x="-0.762" y="0" dx="1.27" dy="0.635" layer="1"/>
 <smd name="P$2" x="0.762" y="0" dx="1.27" dy="0.635" layer="1"/>
 <wire x1="-0.6604" y1="0.0254" x2="0.7874" y2="0.0254" width="0.4064" layer="1"/>
 </package>
-<package name="SWITCH-SPDT-SMT">
-<wire x1="-4" y1="-1.75" x2="-4.5" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-1.75" x2="-4.5" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="1.75" x2="4.5" y2="1.75" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="1.75" x2="4.5" y2="-1.75" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-1.75" x2="4" y2="-1.75" width="0.2032" layer="21"/>
-<smd name="1" x="-2.5" y="-2.75" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="2" x="0" y="-2.75" dx="1" dy="1.5" layer="1" rot="R180"/>
-<smd name="3" x="2.5" y="-2.75" dx="1" dy="1.5" layer="1" rot="R180"/>
-<text x="-1.27" y="0.635" size="0.6096" layer="25">&gt;Name</text>
-<text x="-1.27" y="-1.27" size="0.6096" layer="27">&gt;Value</text>
-<hole x="-1.5" y="0" drill="0.9"/>
-<hole x="1.5" y="0" drill="0.9"/>
+<package name="TO263-3">
+<description>TO263-3 3 pin surface mount package</description>
+<wire x1="5.094" y1="4.625" x2="5.094" y2="-5.42" width="0.2032" layer="51"/>
+<wire x1="5.094" y1="-5.42" x2="-5.094" y2="-5.42" width="0.2032" layer="21"/>
+<wire x1="-5.094" y1="-5.42" x2="-5.094" y2="4.625" width="0.2032" layer="51"/>
+<wire x1="-5.094" y1="4.625" x2="5.094" y2="4.625" width="0.2032" layer="51"/>
+<wire x1="-5.105" y1="4.727" x2="-5.105" y2="5.138" width="0.2032" layer="51"/>
+<wire x1="-5.105" y1="5.138" x2="-3.378" y2="5.595" width="0.2032" layer="51"/>
+<wire x1="-3.378" y1="5.595" x2="3.378" y2="5.595" width="0.2032" layer="51"/>
+<wire x1="3.378" y1="5.595" x2="5.105" y2="5.138" width="0.2032" layer="51"/>
+<wire x1="5.105" y1="5.138" x2="5.105" y2="4.727" width="0.2032" layer="51"/>
+<wire x1="5.105" y1="4.727" x2="-5.105" y2="4.727" width="0.2032" layer="51"/>
+<smd name="TAB" x="0" y="0" dx="10.8" dy="10.41" layer="1"/>
+<smd name="2" x="0" y="-8.3312" dx="1.0668" dy="2.159" layer="1"/>
+<smd name="1" x="-2.54" y="-8.3312" dx="1.0668" dy="2.159" layer="1"/>
+<smd name="3" x="2.54" y="-8.3312" dx="1.0668" dy="2.159" layer="1"/>
+<text x="-5.588" y="-8.128" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.858" y="-8.128" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-0.4826" y1="-9.144" x2="0.4826" y2="-6.985" layer="51"/>
+<rectangle x1="-0.4826" y1="-7.0104" x2="0.4826" y2="-5.334" layer="21"/>
+<rectangle x1="-3.0226" y1="-9.144" x2="-2.0574" y2="-6.985" layer="51"/>
+<rectangle x1="-3.0226" y1="-7.0104" x2="-2.0574" y2="-5.334" layer="21"/>
+<rectangle x1="2.0574" y1="-9.144" x2="3.0226" y2="-6.985" layer="51"/>
+<rectangle x1="2.0574" y1="-7.0104" x2="3.0226" y2="-5.334" layer="21"/>
+<polygon width="0.2032" layer="51">
+<vertex x="-5.1054" y="4.727"/>
+<vertex x="-5.1054" y="5.1382"/>
+<vertex x="-3.3782" y="5.5954"/>
+<vertex x="3.3782" y="5.5954"/>
+<vertex x="5.1054" y="5.1382"/>
+<vertex x="5.1054" y="4.727"/>
+</polygon>
+</package>
+<package name="1210POL">
+<wire x1="-1.6" y1="1.3" x2="1.6" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="-1.3" x2="1.6" y2="-1.3" width="0.2032" layer="21"/>
+<smd name="1" x="-1.6" y="0" dx="1.2" dy="2" layer="1"/>
+<smd name="2" x="1.6" y="0" dx="1.2" dy="2" layer="1"/>
+<text x="-0.8" y="0.5" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-0.7" size="0.4064" layer="27">&gt;VALUE</text>
+<wire x1="-0.826171875" y1="1.169515625" x2="-0.826171875" y2="-1.244621875" width="0.127" layer="21"/>
+<text x="-2.907690625" y="-0.2682375" size="0.6096" layer="21" ratio="20">+</text>
 </package>
 </packages>
 <symbols>
@@ -3957,51 +3961,23 @@ USB to serial UART interface</description>
 <pin name="13" x="7.62" y="12.7" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="14" x="7.62" y="15.24" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="DIODE-SCHOTTKY">
-<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="1.27" y1="1.27" x2="1.778" y2="1.524" width="0.254" layer="94"/>
-<wire x1="1.27" y1="-1.27" x2="0.762" y2="-1.524" width="0.254" layer="94"/>
-<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-</symbol>
 <symbol name="LINK">
 <pin name="P$1" x="-7.62" y="0" visible="off" length="middle"/>
 <pin name="P$2" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <text x="-2.90098125" y="0.71694375" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
-<symbol name="LM2594">
-<pin name="FB" x="12.7" y="2.54" length="short" rot="R180"/>
-<pin name="ON/OFF" x="-2.54" y="-10.16" length="short" rot="R90"/>
-<pin name="PWR_GND" x="-7.62" y="-10.16" length="short" rot="R90"/>
-<pin name="VIN" x="-12.7" y="7.62" length="short"/>
-<pin name="OUTPUT" x="12.7" y="-5.08" length="short" rot="R180"/>
-<wire x1="-10.16" y1="2.54" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-7.62" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="10.16" x2="-10.16" y2="2.54" width="0.254" layer="94"/>
-<text x="-9.144" y="10.668" size="1.27" layer="95">&gt;NAME</text>
-<text x="2.54" y="-9.398" size="1.27" layer="96">&gt;VALUE</text>
-</symbol>
-<symbol name="TOGGLE">
-<wire x1="-2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0.635" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="0" y1="2.54" x2="0.635" y2="2.54" width="0.1524" layer="94"/>
-<circle x="0" y="2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="0" y="-2.54" radius="0.3592" width="0.2032" layer="94"/>
-<circle x="-2.54" y="0" radius="0.3592" width="0.2032" layer="94"/>
-<text x="-4.445" y="-6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-5.08" y="3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="P" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="S" x="2.54" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="O" x="2.54" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<symbol name="78XXREG">
+<pin name="IN" x="-7.62" y="2.54" visible="off" length="short"/>
+<pin name="OUT" x="7.62" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<wire x1="-5.08" y1="-2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="2.286" size="1.27" layer="94">In</text>
+<text x="0.508" y="2.286" size="1.27" layer="94">Out</text>
+<text x="-1.524" y="-1.524" size="1.27" layer="94">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4136,6 +4112,15 @@ Digikey 768-1007-1-ND</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="1210" package="1210POL">
+<connects>
+<connect gate="C$1" pin="+" pad="1"/>
+<connect gate="C$1" pin="-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="DCJACK">
@@ -4193,22 +4178,6 @@ Digikey 768-1007-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="DIODE-SCHOTTKY">
-<gates>
-<gate name="G$1" symbol="DIODE-SCHOTTKY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOD-123">
-<connects>
-<connect gate="G$1" pin="A" pad="ANODE"/>
-<connect gate="G$1" pin="C" pad="CATHODE"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="LINK" prefix="LINK">
 <gates>
 <gate name="G$1" symbol="LINK" x="0" y="0"/>
@@ -4225,35 +4194,26 @@ Digikey 768-1007-1-ND</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LM2594">
+<deviceset name="IFX25001TC">
+<description>&lt;h1&gt;IC REG LDO 5.0V 400MA TO263-3&lt;/h1&gt;
+IFX25001
+&lt;ul&gt;
+&lt;li&gt; Wide Input Voltage Range up to 45V
+&lt;li&gt;Low Dropout Voltage
+&lt;li&gt; Output Current Limitation
+&lt;li&gt; Reverse Polarity Protection
+&lt;li&gt; Overtemperature Shutdown
+&lt;li&gt; Wide Temperature Range, -40
+&lt;/ul&gt;</description>
 <gates>
-<gate name="G$1" symbol="LM2594" x="0" y="0"/>
+<gate name="G$1" symbol="78XXREG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOIC8">
+<device name="" package="TO263-3">
 <connects>
-<connect gate="G$1" pin="FB" pad="4"/>
-<connect gate="G$1" pin="ON/OFF" pad="5"/>
-<connect gate="G$1" pin="OUTPUT" pad="8"/>
-<connect gate="G$1" pin="PWR_GND" pad="6"/>
-<connect gate="G$1" pin="VIN" pad="7"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="SWITCH-SPDT">
-<gates>
-<gate name="G$1" symbol="TOGGLE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SWITCH-SPDT-SMT">
-<connects>
-<connect gate="G$1" pin="O" pad="1"/>
-<connect gate="G$1" pin="P" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2 TAB"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4705,19 +4665,13 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="U$3" library="Dustin" deviceset="FERRITE" device=""/>
 <part name="C6" library="Dustin" deviceset="CAP_POL" device="" value="0.01uf"/>
 <part name="C9" library="SparkFun" deviceset="CAP" device="0805" value="0.1uf"/>
-<part name="L2" library="SparkFun" deviceset="INDUCTOR" device="0805" value="100uH"/>
 <part name="U$4" library="Dustin" deviceset="DCJACK" device="SMD"/>
-<part name="C4" library="Dustin" deviceset="CAP_POL" device="F80" value="68uf"/>
-<part name="C5" library="Dustin" deviceset="CAP_POL" device="8X10" value="120uf"/>
-<part name="SCHOTTKEY" library="Dustin" deviceset="DIODE-SCHOTTKY" device="" value=""/>
 <part name="SG2" library="SparkFun" deviceset="BUZZER" device="SMD"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0805" value="RED"/>
 <part name="R4" library="SparkFun" deviceset="TRIMPOT" device="SMD"/>
 <part name="LCDCON" library="con-harting" deviceset="CON14" device=""/>
 <part name="LED1" library="SparkFun" deviceset="LED" device="0805" value="GRN"/>
 <part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="LINK1" library="Dustin" deviceset="LINK" device=""/>
-<part name="LINK2" library="Dustin" deviceset="LINK" device=""/>
 <part name="FTDIVCCLINK" library="Dustin" deviceset="LINK" device=""/>
 <part name="FTDIDGNDLINK" library="Dustin" deviceset="LINK" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
@@ -4725,9 +4679,11 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="JP1" library="Dustin" deviceset="M14B" device=""/>
 <part name="C7" library="SparkFun" deviceset="CAP" device="0805" value="0.1uf"/>
 <part name="C8" library="SparkFun" deviceset="CAP" device="0805" value="4.7uf"/>
-<part name="SWITCHREG" library="Dustin" deviceset="LM2594" device=""/>
 <part name="LOGO1" library="ohw-logo" deviceset="OSHW_LOGO_10MIL" device="X0750-NT"/>
-<part name="S1" library="Dustin" deviceset="SWITCH-SPDT" device="" value=""/>
+<part name="U$1" library="Dustin" deviceset="IFX25001TC" device=""/>
+<part name="C4" library="Dustin" deviceset="CAP_POL" device="1210" value="22UF 16V  478-1682-1-ND"/>
+<part name="C5" library="Dustin" deviceset="CAP_POL" device="1210" value="22UF 16V  478-1682-1-ND"/>
+<part name="LDO_VCC_LINK" library="Dustin" deviceset="LINK" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4773,19 +4729,13 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <instance part="U$3" gate="G$1" x="27.94" y="149.86"/>
 <instance part="C6" gate="C$1" x="20.32" y="162.56" rot="R180"/>
 <instance part="C9" gate="G$1" x="43.18" y="132.08" rot="R90"/>
-<instance part="L2" gate="G$1" x="175.26" y="144.78" rot="R90"/>
 <instance part="U$4" gate="G$1" x="111.76" y="162.56"/>
-<instance part="C4" gate="C$1" x="134.62" y="134.62"/>
-<instance part="C5" gate="C$1" x="185.42" y="134.62"/>
-<instance part="SCHOTTKEY" gate="G$1" x="165.1" y="137.16" rot="R90"/>
 <instance part="SG2" gate="G$1" x="203.2" y="91.44" rot="R90"/>
 <instance part="LED2" gate="G$1" x="228.6" y="93.98" rot="R90"/>
 <instance part="R4" gate="R?" x="246.38" y="73.66"/>
 <instance part="LCDCON" gate="G$1" x="175.26" y="91.44" rot="R180"/>
 <instance part="LED1" gate="G$1" x="228.6" y="101.6" rot="R90"/>
 <instance part="R3" gate="G$1" x="243.84" y="101.6" rot="R180"/>
-<instance part="LINK1" gate="G$1" x="203.2" y="144.78"/>
-<instance part="LINK2" gate="G$1" x="203.2" y="129.54"/>
 <instance part="FTDIVCCLINK" gate="G$1" x="55.88" y="170.18"/>
 <instance part="FTDIDGNDLINK" gate="G$1" x="7.62" y="121.92"/>
 <instance part="P+2" gate="1" x="76.2" y="170.18"/>
@@ -4796,9 +4746,11 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <attribute name="VALUE" x="34.036" y="131.699" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="C8" gate="G$1" x="17.78" y="127"/>
-<instance part="SWITCHREG" gate="G$1" x="149.86" y="149.86"/>
 <instance part="LOGO1" gate="G$1" x="104.14" y="182.88"/>
-<instance part="S1" gate="G$1" x="109.22" y="129.54" rot="R270"/>
+<instance part="U$1" gate="G$1" x="170.18" y="152.4"/>
+<instance part="C4" gate="C$1" x="154.94" y="147.32"/>
+<instance part="C5" gate="C$1" x="185.42" y="139.7"/>
+<instance part="LDO_VCC_LINK" gate="G$1" x="195.58" y="154.94"/>
 </instances>
 <busses>
 </busses>
@@ -4856,11 +4808,6 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <label x="215.9" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LINK1" gate="G$1" pin="P$2"/>
-<wire x1="210.82" y1="144.78" x2="215.9" y2="144.78" width="0.1524" layer="91"/>
-<label x="210.82" y="144.78" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="FTDIVCCLINK" gate="G$1" pin="P$2"/>
 <wire x1="63.5" y1="170.18" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="VCC"/>
@@ -4869,6 +4816,11 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <pinref part="JP1" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="43.18" x2="226.06" y2="43.18" width="0.1524" layer="91"/>
 <label x="220.98" y="43.18" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="LDO_VCC_LINK" gate="G$1" pin="P$2"/>
+<wire x1="203.2" y1="154.94" x2="213.36" y2="154.94" width="0.1524" layer="91"/>
+<label x="210.82" y="154.94" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DTR" class="0">
@@ -4980,11 +4932,6 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <label x="254" y="101.6" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="LINK2" gate="G$1" pin="P$2"/>
-<wire x1="210.82" y1="129.54" x2="215.9" y2="129.54" width="0.1524" layer="91"/>
-<label x="210.82" y="129.54" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="FTDIDGNDLINK" gate="G$1" pin="P$1"/>
 <wire x1="0" y1="121.92" x2="0" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -4993,6 +4940,17 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <pinref part="JP1" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="45.72" x2="226.06" y2="45.72" width="0.1524" layer="91"/>
 <label x="220.98" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="170.18" y1="144.78" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="C4" gate="C$1" pin="-"/>
+<wire x1="170.18" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="137.16" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
+<junction x="170.18" y="137.16"/>
+<pinref part="C5" gate="C$1" pin="-"/>
+<wire x1="185.42" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
+<label x="162.56" y="137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -5410,37 +5368,26 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <pinref part="ATMEGAXX8" gate="G$1" pin="AREF"/>
 </segment>
 </net>
-<net name="RAW" class="0">
-<segment>
-<wire x1="111.76" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
-<label x="116.84" y="127" size="1.778" layer="95"/>
-<pinref part="S1" gate="G$1" pin="O"/>
-</segment>
-<segment>
-<wire x1="137.16" y1="157.48" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
-<label x="127" y="157.48" size="1.778" layer="95"/>
-<wire x1="134.62" y1="157.48" x2="127" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="139.7" x2="134.62" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="C4" gate="C$1" pin="+"/>
-<junction x="134.62" y="157.48"/>
-<pinref part="SWITCHREG" gate="G$1" pin="VIN"/>
-</segment>
-</net>
 <net name="RAW_IN" class="0">
 <segment>
 <wire x1="104.14" y1="137.16" x2="109.22" y2="137.16" width="0.1524" layer="91"/>
 <label x="104.14" y="137.16" size="1.778" layer="95"/>
-<wire x1="106.68" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="104.14" y1="144.78" x2="104.14" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="137.16" x2="109.22" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="9V" gate="G$1" pin="1"/>
-<wire x1="119.38" y1="144.78" x2="106.68" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="P"/>
+<wire x1="119.38" y1="144.78" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="PWR"/>
-<wire x1="127" y1="165.1" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
-<label x="121.92" y="165.1" size="1.778" layer="95"/>
+<wire x1="132.08" y1="165.1" x2="119.38" y2="165.1" width="0.1524" layer="91"/>
+<label x="134.62" y="157.48" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="IN"/>
+<wire x1="162.56" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="154.94" x2="132.08" y2="165.1" width="0.1524" layer="91"/>
+<junction x="154.94" y="154.94"/>
+<pinref part="C4" gate="C$1" pin="+"/>
+<wire x1="154.94" y1="152.4" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5496,63 +5443,11 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <wire x1="53.34" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="144.78" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
-<junction x="165.1" y="144.78"/>
-<wire x1="165.1" y1="144.78" x2="162.56" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="139.7" x2="165.1" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="SCHOTTKEY" gate="G$1" pin="C"/>
-<pinref part="SWITCHREG" gate="G$1" pin="OUTPUT"/>
-</segment>
-</net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VCCLINK" class="0">
-<segment>
-<wire x1="185.42" y1="139.7" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="185.42" y1="144.78" x2="182.88" y2="144.78" width="0.1524" layer="91"/>
-<junction x="185.42" y="144.78"/>
-<wire x1="185.42" y1="144.78" x2="195.58" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="152.4" x2="185.42" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="152.4" x2="185.42" y2="144.78" width="0.1524" layer="91"/>
-<label x="182.88" y="144.78" size="1.778" layer="95"/>
-<pinref part="C5" gate="C$1" pin="+"/>
-<pinref part="LINK1" gate="G$1" pin="P$1"/>
-<pinref part="SWITCHREG" gate="G$1" pin="FB"/>
-</segment>
-</net>
-<net name="GNDLINK" class="0">
-<segment>
-<wire x1="134.62" y1="132.08" x2="134.62" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="129.54" x2="142.24" y2="129.54" width="0.1524" layer="91"/>
-<junction x="185.42" y="129.54"/>
-<wire x1="142.24" y1="129.54" x2="144.78" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="129.54" x2="147.32" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="129.54" x2="165.1" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="165.1" y1="129.54" x2="185.42" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="129.54" x2="185.42" y2="132.08" width="0.1524" layer="91"/>
-<junction x="142.24" y="129.54"/>
-<junction x="147.32" y="129.54"/>
-<wire x1="142.24" y1="129.54" x2="142.24" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="129.54" x2="147.32" y2="139.7" width="0.1524" layer="91"/>
-<junction x="165.1" y="129.54"/>
-<wire x1="165.1" y1="129.54" x2="165.1" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="C4" gate="C$1" pin="-"/>
-<pinref part="C5" gate="C$1" pin="-"/>
-<pinref part="SCHOTTKEY" gate="G$1" pin="A"/>
-<label x="167.64" y="129.54" size="1.778" layer="95"/>
-<pinref part="LINK2" gate="G$1" pin="P$1"/>
-<pinref part="SWITCHREG" gate="G$1" pin="ON/OFF"/>
-<pinref part="SWITCHREG" gate="G$1" pin="PWR_GND"/>
 </segment>
 </net>
 <net name="FTDI-VCC" class="0">
@@ -5623,6 +5518,18 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <wire x1="10.16" y1="157.48" x2="10.16" y2="154.94" width="0.1524" layer="91"/>
 <junction x="33.02" y="121.92"/>
 <pinref part="C8" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="LDO_OUT" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="OUT"/>
+<pinref part="LDO_VCC_LINK" gate="G$1" pin="P$1"/>
+<wire x1="177.8" y1="154.94" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
+<label x="177.8" y="154.94" size="1.778" layer="95"/>
+<junction x="185.42" y="154.94"/>
+<wire x1="185.42" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="C5" gate="C$1" pin="+"/>
+<wire x1="185.42" y1="144.78" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
