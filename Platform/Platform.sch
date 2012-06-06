@@ -4223,159 +4223,6 @@ IFX25001
 </deviceset>
 </devicesets>
 </library>
-<library name="con-harting">
-<description>&lt;b&gt;Harting Ribbon Cable Connectors&lt;/b&gt;&lt;p&gt;
-This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="CON14">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<wire x1="-8.89" y1="9.525" x2="-2.54" y2="8.5852" width="0.1524" layer="51"/>
-<wire x1="8.89" y1="-4.1656" x2="-8.89" y2="-4.1656" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="8.5852" x2="1.27" y2="9.525" width="0.1524" layer="51"/>
-<wire x1="1.27" y1="9.525" x2="5.715" y2="7.9502" width="0.1524" layer="51"/>
-<wire x1="5.715" y1="7.9502" x2="8.89" y2="9.525" width="0.1524" layer="51"/>
-<wire x1="-8.89" y1="-3.4798" x2="-8.89" y2="-4.1656" width="0.1524" layer="51"/>
-<wire x1="8.89" y1="-3.4798" x2="8.89" y2="-4.1656" width="0.1524" layer="51"/>
-<wire x1="8.89" y1="3.5052" x2="8.89" y2="9.525" width="0.1524" layer="51"/>
-<wire x1="-8.89" y1="3.5052" x2="-8.89" y2="9.525" width="0.1524" layer="51"/>
-<wire x1="-8.0518" y1="-2.3368" x2="-7.1882" y2="-2.3368" width="0.1524" layer="21"/>
-<wire x1="-7.1882" y1="-2.3368" x2="-7.62" y2="-3.175" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="-3.175" x2="-8.0518" y2="-2.3368" width="0.1524" layer="21"/>
-<wire x1="-7.62" y1="-3.175" x2="-7.62" y2="-2.921" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="3.5052" x2="-8.89" y2="3.5052" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="-3.4798" x2="8.89" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="11.4046" y1="-3.4798" x2="11.4046" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="11.4046" y1="3.5052" x2="10.541" y2="3.5052" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="3.5052" x2="10.541" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="2.159" x2="11.4046" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="0.635" x2="11.4046" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="3.5052" x2="8.89" y2="3.5052" width="0.1524" layer="21"/>
-<wire x1="11.4046" y1="2.159" x2="11.4046" y2="3.5052" width="0.1524" layer="21"/>
-<wire x1="11.4046" y1="0.635" x2="11.4046" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="-2.159" x2="11.4046" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="-2.159" x2="10.541" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="11.4046" y1="-2.159" x2="11.4046" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="-0.635" x2="11.4046" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="11.4046" y1="-0.635" x2="11.4046" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="-3.4798" x2="10.541" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="0.635" x2="10.541" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="3.5052" x2="-11.43" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="-3.4798" x2="-10.541" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="-8.89" y1="3.5052" x2="-10.541" y2="3.5052" width="0.1524" layer="21"/>
-<wire x1="-10.541" y1="3.5052" x2="-10.541" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-10.541" y1="3.5052" x2="-11.43" y2="3.5052" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="2.159" x2="-10.541" y2="2.159" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="0.635" x2="-10.541" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-10.541" y1="0.635" x2="-10.541" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="-0.635" x2="-10.541" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="-2.159" x2="-10.541" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="-10.541" y1="-2.159" x2="-10.541" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="0.635" x2="-11.43" y2="-0.635" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="2.159" x2="-11.43" y2="0.635" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="-0.635" x2="-11.43" y2="-2.159" width="0.1524" layer="21"/>
-<wire x1="-11.43" y1="-2.159" x2="-11.43" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="-10.541" y1="-3.4798" x2="-8.89" y2="-3.4798" width="0.1524" layer="21"/>
-<wire x1="10.541" y1="-3.4798" x2="11.4046" y2="-3.4798" width="0.1524" layer="21"/>
-<pad name="1" x="-7.62" y="-1.27" drill="0.9144"/>
-<pad name="2" x="-7.62" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="3" x="-5.08" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="4" x="-5.08" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="5" x="-2.54" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="6" x="-2.54" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="7" x="0" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="8" x="0" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="9" x="2.54" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="10" x="2.54" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="11" x="5.08" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="12" x="5.08" y="1.27" drill="0.9144" shape="octagon"/>
-<pad name="13" x="7.62" y="-1.27" drill="0.9144" shape="octagon"/>
-<pad name="14" x="7.62" y="1.27" drill="0.9144" shape="octagon"/>
-<text x="-8.130646875" y="3.911021875" size="1.778" layer="25" ratio="10">&gt;NAME</text>
-<text x="-10.033" y="-1.905" size="1.524" layer="21" ratio="10">1</text>
-<text x="-8.1001875" y="6.272475" size="1.27" layer="51" ratio="10">R-Cable 14P</text>
-<text x="-8.89" y="-5.715" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-7.874" y1="-2.7686" x2="-7.366" y2="-2.5146" layer="21"/>
-<rectangle x1="-8.001" y1="-2.5146" x2="-7.62" y2="-2.3876" layer="21"/>
-<rectangle x1="-7.62" y1="-2.5146" x2="-7.239" y2="-2.3876" layer="21"/>
-<rectangle x1="-7.747" y1="-2.9718" x2="-7.493" y2="-2.7178" layer="21"/>
-</package>
-</packages>
-<symbols>
-<symbol name="07-2">
-<wire x1="3.81" y1="-10.16" x2="-3.81" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="10.16" x2="-3.81" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="-3.81" y1="10.16" x2="3.81" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="-10.16" x2="3.81" y2="10.16" width="0.4064" layer="94"/>
-<circle x="1.905" y="-7.62" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.905" y="-5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.905" y="-2.54" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.905" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.905" y="2.54" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.905" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="1.905" y="7.62" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="-7.62" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="-5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="-2.54" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="2.54" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="-1.905" y="7.62" radius="0.635" width="0.254" layer="94"/>
-<text x="-3.81" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-3.81" y="10.922" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="-7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="3" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="-7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="5" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="6" x="-7.62" y="-2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="7" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="8" x="-7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="9" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="10" x="-7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="11" x="7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="12" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-<pin name="13" x="7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="14" x="-7.62" y="7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="CON14" prefix="CON" uservalue="yes">
-<description>&lt;b&gt;CONNECTOR&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="07-2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="CON14">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="10" pad="10"/>
-<connect gate="G$1" pin="11" pad="11"/>
-<connect gate="G$1" pin="12" pad="12"/>
-<connect gate="G$1" pin="13" pad="13"/>
-<connect gate="G$1" pin="14" pad="14"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
-<connect gate="G$1" pin="7" pad="7"/>
-<connect gate="G$1" pin="8" pad="8"/>
-<connect gate="G$1" pin="9" pad="9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="unknown" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="ohw-logo">
 <packages>
 <package name="OSHW_10X1000_NOTEXT">
@@ -4656,7 +4503,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
 <part name="L1" library="SparkFun" deviceset="INDUCTOR" device="0805" value="10uH"/>
 <part name="U$2" library="Dustin" deviceset="EN12-VS11AF" device="TOPKNOB"/>
-<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="SPI" library="SparkFun" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="JP2" library="Dustin" deviceset="M14B" device=""/>
 <part name="9V" library="SparkFun" deviceset="M02" device="PTH"/>
@@ -4669,9 +4516,9 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <part name="SG2" library="SparkFun" deviceset="BUZZER" device="SMD"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0805" value="RED"/>
 <part name="R4" library="SparkFun" deviceset="TRIMPOT" device="SMD"/>
-<part name="LCDCON" library="con-harting" deviceset="CON14" device=""/>
+<part name="LCDCON" library="Dustin" deviceset="M14B" device=""/>
 <part name="LED1" library="SparkFun" deviceset="LED" device="0805" value="GRN"/>
-<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="FTDIVCCLINK" library="Dustin" deviceset="LINK" device=""/>
 <part name="FTDIDGNDLINK" library="Dustin" deviceset="LINK" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
@@ -4720,7 +4567,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <instance part="GND4" gate="1" x="12.7" y="38.1"/>
 <instance part="L1" gate="G$1" x="22.86" y="73.66" rot="R180"/>
 <instance part="U$2" gate="G$1" x="208.28" y="76.2"/>
-<instance part="R2" gate="G$1" x="241.3" y="93.98" rot="R180"/>
+<instance part="R3" gate="G$1" x="241.3" y="93.98" rot="R180"/>
 <instance part="SPI" gate="G$1" x="124.46" y="93.98"/>
 <instance part="JP2" gate="G$1" x="160.02" y="27.94" rot="MR180"/>
 <instance part="9V" gate="G$1" x="119.38" y="152.4" rot="R270"/>
@@ -4735,7 +4582,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <instance part="R4" gate="R?" x="246.38" y="73.66"/>
 <instance part="LCDCON" gate="G$1" x="175.26" y="91.44" rot="R180"/>
 <instance part="LED1" gate="G$1" x="228.6" y="101.6" rot="R90"/>
-<instance part="R3" gate="G$1" x="243.84" y="101.6" rot="R180"/>
+<instance part="R2" gate="G$1" x="243.84" y="101.6" rot="R180"/>
 <instance part="FTDIVCCLINK" gate="G$1" x="55.88" y="170.18"/>
 <instance part="FTDIDGNDLINK" gate="G$1" x="7.62" y="121.92"/>
 <instance part="P+2" gate="1" x="76.2" y="170.18"/>
@@ -4799,7 +4646,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="2"/>
-<wire x1="182.88" y1="99.06" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="106.68" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
 <label x="187.96" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
@@ -4897,7 +4744,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <wire x1="134.62" y1="91.44" x2="139.7" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="246.38" y1="93.98" x2="254" y2="93.98" width="0.1524" layer="91"/>
 <label x="248.92" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -4918,16 +4765,16 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="1"/>
-<wire x1="167.64" y1="99.06" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="109.22" x2="160.02" y2="99.06" width="0.1524" layer="91"/>
 <label x="160.02" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="5"/>
-<wire x1="167.64" y1="93.98" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="99.06" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
 <label x="160.02" y="93.98" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="248.92" y1="101.6" x2="256.54" y2="101.6" width="0.1524" layer="91"/>
 <label x="254" y="101.6" size="1.778" layer="95"/>
 </segment>
@@ -5174,7 +5021,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="14"/>
-<wire x1="182.88" y1="83.82" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="76.2" x2="193.04" y2="83.82" width="0.1524" layer="91"/>
 <label x="187.96" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5198,7 +5045,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="13"/>
-<wire x1="167.64" y1="83.82" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="78.74" x2="160.02" y2="83.82" width="0.1524" layer="91"/>
 <label x="160.02" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5210,7 +5057,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="12"/>
-<wire x1="182.88" y1="86.36" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="81.28" x2="193.04" y2="86.36" width="0.1524" layer="91"/>
 <label x="187.96" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5222,7 +5069,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="11"/>
-<wire x1="167.64" y1="86.36" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="83.82" x2="160.02" y2="86.36" width="0.1524" layer="91"/>
 <label x="160.02" y="86.36" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5234,7 +5081,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="6"/>
-<wire x1="182.88" y1="93.98" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="96.52" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
 <label x="187.96" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5246,7 +5093,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="4"/>
-<wire x1="182.88" y1="96.52" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="101.6" x2="193.04" y2="96.52" width="0.1524" layer="91"/>
 <label x="187.96" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5392,7 +5239,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="93.98" x2="233.68" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="C"/>
 </segment>
@@ -5405,7 +5252,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 </segment>
 <segment>
 <pinref part="LCDCON" gate="G$1" pin="3"/>
-<wire x1="167.64" y1="96.52" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="104.14" x2="160.02" y2="96.52" width="0.1524" layer="91"/>
 <label x="160.02" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
@@ -5446,7 +5293,7 @@ This library includes the former libraries ribcon.lbr and ribcon4.lbr.&lt;p&gt;
 <net name="N$7" class="0">
 <segment>
 <pinref part="LED1" gate="G$1" pin="C"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="238.76" y1="101.6" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
