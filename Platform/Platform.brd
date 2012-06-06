@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="14" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -844,34 +844,44 @@
 <elements>
 <element name="ATMEGAXX8" library="SparkFun" package="TQFP32-08" value="ATMEGA168" x="23.1496" y="32.578" smashed="yes">
 <attribute name="NAME" x="19.7206" y="29.53" size="0.8128" layer="25" ratio="10"/>
+<attribute name="DIGIKEY#" value="ATMEGA328-AU" x="23.1496" y="32.578" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R1" library="SparkFun" package="0805" value="10K" x="2.1107" y="33.6829" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.0439" y="34.3179" size="0.8128" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="1.2217" y="32.9209" size="0.6096" layer="27" ratio="15" rot="R180"/>
+<attribute name="DIGIKEY#" value="RHM10.0KAECT-ND" x="2.1107" y="33.6829" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C2" library="SparkFun" package="0805" value="0.1uF" x="4.6456" y="33.6753" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.4838" y="36.075596875" size="0.8128" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="5.6337" y="32.5298" size="0.6096" layer="27" ratio="15"/>
+<attribute name="DIGIKEY#" value="478-1395-1-ND" x="4.6456" y="33.6753" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C3" library="SparkFun" package="0805" value="0.1uF" x="4.6076" y="40.066" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.511840625" y="41.013421875" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="4.9886" y="41.717" size="0.6096" layer="27" ratio="15" rot="R90"/>
+<attribute name="DIGIKEY#" value="478-1395-1-ND" x="4.6076" y="40.066" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="Y1" library="SparkFun" package="RESONATOR-SMD" value="RESONATORSMD" x="32.7304" y="33.7388" smashed="yes" rot="R90">
 <attribute name="NAME" x="31.4604" y="32.8498" size="0.8128" layer="25" rot="R90"/>
+<attribute name="DIGIKEY#" value="490-1198-1-ND" x="32.7304" y="33.7388" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C1" library="SparkFun" package="0805" value="0.1uF" x="8.0534" y="39.978" smashed="yes" rot="R90">
 <attribute name="NAME" x="9.8949" y="39.089" size="0.8128" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="6.9104" y="38.962" size="0.6096" layer="27" ratio="15" rot="R90"/>
+<attribute name="DIGIKEY#" value="478-1395-1-ND" x="8.0534" y="39.978" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L1" library="SparkFun" package="0805" value="10uH" x="2.1234" y="40.066" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.35961875" y="37.053559375" size="0.8128" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="2.3774" y="41.59" size="0.6096" layer="27" ratio="15" rot="R90"/>
+<attribute name="DIGIKEY#" value="587-2048-1-ND" x="2.1234" y="40.066" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$2" library="Dustin" package="12MM_ROTATY_TOP" value="EN12-VS11AFTOPKNOB" x="58.486" y="1.5088" rot="R270"/>
+<element name="U$2" library="Dustin" package="12MM_ROTATY_TOP" value="EN12-VS11AFTOPKNOB" x="58.486" y="1.5088" rot="R270">
+<attribute name="DIGIKEY#" value="987-1194-ND" x="58.486" y="1.5088" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 <element name="R3" library="SparkFun" package="0805" value="220" x="40.3377" y="60.1142" smashed="yes" rot="R270">
 <attribute name="NAME" x="39.8932" y="58.3362" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="40.83808125" y="58.384459375" size="0.4064" layer="27" rot="R270"/>
+<attribute name="DIGIKEY#" value="RHM220AECT-ND" x="40.3377" y="60.1142" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SPI" library="SparkFun" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="4.0741" y="27.176" smashed="yes" rot="R270">
 <attribute name="NAME" x="8.5191" y="23.62" size="1.27" layer="25" ratio="10" rot="R90"/>
@@ -883,61 +893,78 @@
 </element>
 <element name="X1" library="SparkFun" package="USB-MINIB" value="USBSMD" x="43.3984" y="5.776" smashed="yes" rot="R90">
 <attribute name="VALUE" x="41.3664" y="2.982" size="0.8128" layer="27" ratio="10"/>
+<attribute name="DIGIKEY#" value="ED2992CT-ND" x="43.3984" y="5.776" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U1" library="Dustin" package="SSOP28" value="FT232RLSSOP" x="45.9384" y="15.682" smashed="yes">
 <attribute name="NAME" x="45.4304" y="17.206" size="0.8128" layer="25" ratio="10"/>
 <attribute name="VALUE" x="43.9064" y="14.412" size="0.6096" layer="27" ratio="15"/>
+<attribute name="DIGIKEY#" value="768-1007-1-ND" x="45.9384" y="15.682" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$3" library="Dustin" package="0805" value="FERRITE" x="58.3929" y="29.1267" smashed="yes" rot="R270">
+<element name="FB" library="Dustin" package="0805" value="FERRITE" x="58.3929" y="29.1267" smashed="yes" rot="R270">
 <attribute name="VALUE" x="56.7419" y="32.9367" size="0.8128" layer="27" ratio="10" rot="R270"/>
+<attribute name="DIGIKEY#" value="240-2399-1-ND" x="58.3929" y="29.1267" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C6" library="Dustin" package="0805POL" value="0.01uf" x="55.3661" y="29.093" smashed="yes" rot="R270">
 <attribute name="NAME" x="56.1916" y="30.363" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="54.188515625" y="26.892621875" size="0.6096" layer="27" ratio="15"/>
-</element>
-<element name="C9" library="SparkFun" package="0805" value="0.1uf" x="44.3332" y="22.2326" smashed="yes" rot="R90">
-<attribute name="NAME" x="43.5077" y="21.4706" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="45.7302" y="21.2166" size="0.6096" layer="27" ratio="15" rot="R90"/>
+<attribute name="DIGIKEY#" value="478-1383-1-ND" x="55.3661" y="29.093" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$4" library="Dustin" package="JACK-SMD" value="DCJACKSMD" x="7.5977" y="-3.0043" smashed="yes">
 <attribute name="VALUE" x="6.0277" y="0.3857" size="1.27" layer="27" rot="R90"/>
+<attribute name="DIGIKEY#" value="CP-002APJCT-ND" x="7.5977" y="-3.0043" size="1.778" layer="27" display="off"/>
 </element>
-<element name="SG2" library="SparkFun" package="BUZZER-CMT1603" value="BUZZERSMD" x="45.9588" y="33.3096" rot="R180"/>
+<element name="SG2" library="SparkFun" package="BUZZER-CMT1603" value="BUZZERSMD" x="45.9588" y="33.3096" rot="R180">
+<attribute name="DIGIKEY#" value="668-1110-1-ND" x="45.9588" y="33.3096" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
 <element name="LED2" library="SparkFun" package="LED-0805" value="RED" x="40.259" y="64.9046" smashed="yes" rot="R90">
 <attribute name="NAME" x="43.2816" y="63.3044" size="0.8128" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="41.1226" y="67.089" size="0.6096" layer="27" ratio="15" rot="R180"/>
+<attribute name="DIGIKEY#" value="475-1278-1-ND" x="40.259" y="64.9046" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R4" library="SparkFun" package="TRIMPOT-3MM" value="TRIMPOTSMD" x="29.022" y="16.2204" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.276" y="15.4584" size="0.8128" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="31.816" y="14.4424" size="0.6096" layer="27" ratio="15" rot="R180"/>
+<attribute name="DIGIKEY#" value="490-4611-1-ND" x="29.022" y="16.2204" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="LCDCON" library="Dustin" package="1X14B" value="M14B" x="35.7347" y="21.8347" smashed="yes" rot="R180">
 <attribute name="NAME" x="36.512046875" y="18.256415625" size="1.27" layer="25" ratio="12" rot="R180"/>
+<attribute name="DIGIKEY#" value="754-1131-1-ND" x="35.7347" y="21.8347" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="LED1" library="SparkFun" package="LED-0805" value="GRN" x="37.7215" y="64.9021" smashed="yes" rot="R90">
 <attribute name="NAME" x="37.106821875" y="62.539903125" size="0.8128" layer="25" ratio="10"/>
 <attribute name="VALUE" x="38.1787" y="66.8325" size="0.4064" layer="27" ratio="15" rot="R180"/>
+<attribute name="DIGIKEY#" value="754-1131-1-ND" x="37.7215" y="64.9021" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R2" library="SparkFun" package="0805" value="220" x="37.8282" y="60.0431" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.0187" y="57.2491" size="0.8128" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="38.7172" y="57.5031" size="0.4064" layer="27" ratio="15" rot="R90"/>
+<attribute name="DIGIKEY#" value="RHM220AECT-ND" x="37.8282" y="60.0431" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="FTDIVCCLINK" library="Dustin" package="ISOLATOR" value="LINK" x="33.086" y="27.1424" rot="R270"/>
 <element name="FTDIDGNDLINK" library="Dustin" package="ISOLATOR" value="LINK" x="50.7721" y="28.0721"/>
 <element name="JP1" library="Dustin" package="1X14B" value="M14B" x="34.8994" y="65.3136" smashed="yes" rot="R180"/>
-<element name="C7" library="SparkFun" package="0805" value="0.1uf" x="35.4432" y="27.3152" smashed="yes" rot="R90">
-<attribute name="NAME" x="34.6177" y="26.5532" size="0.8128" layer="25" ratio="10" rot="R90"/>
-<attribute name="VALUE" x="36.8402" y="26.2992" size="0.6096" layer="27" ratio="15" rot="R90"/>
-</element>
 <element name="C8" library="SparkFun" package="0805" value="4.7uf" x="40.5232" y="22.2326" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.963640625" y="23.068259375" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="41.4122" y="23.5026" size="0.6096" layer="27" ratio="15" rot="R270"/>
+<attribute name="DIGIKEY#" value="445-1369-1-ND" x="40.5232" y="22.2326" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="LOGO1" library="ohw-logo" package="OSHW_10X750_NOTEXT" value="OSHW_LOGO_10MILX0750-NT" x="44.3382375" y="45.196759375"/>
-<element name="U$1" library="Dustin" package="TO263-3" value="IFX25001TC" x="26.482" y="7.0764" rot="R90"/>
-<element name="C4" library="Dustin" package="1210POL" value="22UF 16V  478-1682-1-ND" x="34.8463" y="2.0066"/>
-<element name="C5" library="Dustin" package="1210POL" value="22UF 16V  478-1682-1-ND" x="34.8336" y="12.512"/>
+<element name="U$1" library="Dustin" package="TO263-3" value="IFX25001TC" x="26.482" y="7.0764" rot="R90">
+<attribute name="DIGIKEY#" value="IFX25001TC V50INCT-ND" x="26.482" y="7.0764" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C9" library="Dustin" package="1210POL" value="22UF 16V  478-1682-1-ND" x="34.8463" y="2.0066">
+<attribute name="DIGIKEY#" value="478-1682-1-ND" x="34.8463" y="2.0066" size="1.778" layer="27" display="off"/>
+</element>
+<element name="C10" library="Dustin" package="1210POL" value="22UF 16V  478-1682-1-ND" x="34.8336" y="12.512">
+<attribute name="DIGIKEY#" value="478-1682-1-ND" x="34.8336" y="12.512" size="1.778" layer="27" display="off"/>
+</element>
 <element name="LDO_VCC_LINK" library="Dustin" package="ISOLATOR" value="LINK" x="38.288" y="11.9736" rot="R90"/>
+<element name="C4" library="SparkFun" package="0805" value="0.1uF" x="35.443159375" y="27.200859375" rot="R90">
+<attribute name="DIGIKEY#" value="478-1395-1-ND" x="35.443159375" y="27.200859375" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="C5" library="SparkFun" package="0805" value="0.1uF" x="44.30268125" y="22.189440625" rot="R270">
+<attribute name="DIGIKEY#" value="478-1395-1-ND" x="44.30268125" y="22.189440625" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -1064,8 +1091,8 @@
 <contactref element="JP1" pad="1"/>
 <contactref element="U$1" pad="TAB"/>
 <contactref element="U$1" pad="2"/>
-<contactref element="C4" pad="2"/>
-<contactref element="C5" pad="2"/>
+<contactref element="C9" pad="2"/>
+<contactref element="C10" pad="2"/>
 <wire x1="37.1855" y1="57.9475" x2="29.6744" y2="50.4364" width="0.3048" layer="1"/>
 <wire x1="29.6744" y1="50.4364" x2="29.6744" y2="47.9937" width="0.3048" layer="1"/>
 <wire x1="29.6744" y1="47.9937" x2="30.4169" y2="47.2512" width="0.3048" layer="1"/>
@@ -1563,7 +1590,7 @@
 <contactref element="U$4" pad="2"/>
 <contactref element="U$4" pad="3"/>
 <contactref element="U$1" pad="1"/>
-<contactref element="C4" pad="1"/>
+<contactref element="C9" pad="1"/>
 <wire x1="17.8104" y1="7.1594" x2="19.7012" y2="5.2686" width="0.3048" layer="1"/>
 <wire x1="19.7012" y1="5.2686" x2="19.7012" y2="2.6688" width="0.3048" layer="1"/>
 <wire x1="19.7012" y1="2.6688" x2="21.1002" y2="1.2698" width="0.3048" layer="1"/>
@@ -1599,7 +1626,7 @@
 </signal>
 <signal name="VBUS">
 <contactref element="X1" pad="VBUS"/>
-<contactref element="U$3" pad="1"/>
+<contactref element="FB" pad="1"/>
 <contactref element="C6" pad="+"/>
 <wire x1="41.7984" y1="8.276" x2="40.0257" y2="6.5033" width="0.3048" layer="1"/>
 <wire x1="40.0257" y1="6.5033" x2="40.0257" y2="4.9231" width="0.3048" layer="1"/>
@@ -1642,10 +1669,10 @@
 </signal>
 <signal name="3V3OUT">
 <contactref element="U1" pad="17"/>
-<contactref element="C9" pad="2"/>
 <wire x1="48.8634" y1="19.338" x2="48.8634" y2="20.443" width="0.3048" layer="1"/>
-<wire x1="48.8634" y1="20.443" x2="46.1738" y2="23.1326" width="0.3048" layer="1"/>
-<wire x1="46.1738" y1="23.1326" x2="44.3332" y2="23.1326" width="0.3048" layer="1"/>
+<wire x1="48.8634" y1="20.443" x2="46.229678125" y2="23.084340625" width="0.3048" layer="1"/>
+<contactref element="C5" pad="1"/>
+<wire x1="46.229678125" y1="23.084340625" x2="44.30268125" y2="23.089440625" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="LED1" pad="C"/>
@@ -1658,11 +1685,10 @@
 <wire x1="38.3264" y1="64.9956" x2="37.7215" y2="64.9956" width="0.3048" layer="1"/>
 </signal>
 <signal name="FTDI-VCC">
-<contactref element="U$3" pad="2"/>
+<contactref element="FB" pad="2"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="20"/>
 <contactref element="FTDIVCCLINK" pad="P$1"/>
-<contactref element="C7" pad="2"/>
 <contactref element="C8" pad="1"/>
 <wire x1="40.5232" y1="27.7842" x2="43.9152" y2="27.7842" width="0.3048" layer="1"/>
 <wire x1="43.9152" y1="27.7842" x2="51.3626" y2="35.2316" width="0.3048" layer="1"/>
@@ -1687,10 +1713,11 @@
 <wire x1="43.6634" y1="15.2752" x2="43.6634" y2="12.026" width="0.3048" layer="1"/>
 <wire x1="33.968" y1="27.7465" x2="34.4367" y2="28.2152" width="0.3048" layer="1"/>
 <wire x1="33.81" y1="27.9044" x2="33.968" y2="27.7465" width="0.3048" layer="1"/>
-<wire x1="35.4432" y1="28.2152" x2="36.4497" y2="28.2152" width="0.3048" layer="1"/>
-<wire x1="35.4432" y1="28.2152" x2="34.4367" y2="28.2152" width="0.3048" layer="1"/>
 <wire x1="33.086" y1="27.9044" x2="33.81" y2="27.9044" width="0.3048" layer="1"/>
 <wire x1="40.5232" y1="23.1326" x2="40.5232" y2="23.9391" width="0.3048" layer="1"/>
+<contactref element="C4" pad="2"/>
+<wire x1="34.4367" y1="28.2152" x2="36.4497" y2="28.2152" width="0.3048" layer="1"/>
+<wire x1="36.4497" y1="28.2152" x2="35.443159375" y2="28.100859375" width="0.3048" layer="1"/>
 </signal>
 <signal name="FTDI-GND">
 <contactref element="U1" pad="26"/>
@@ -1698,9 +1725,7 @@
 <contactref element="U1" pad="18"/>
 <contactref element="U1" pad="7"/>
 <contactref element="U1" pad="21"/>
-<contactref element="C9" pad="1"/>
 <contactref element="FTDIDGNDLINK" pad="P$2"/>
-<contactref element="C7" pad="1"/>
 <contactref element="X1" pad="GND"/>
 <contactref element="C6" pad="-"/>
 <contactref element="C8" pad="2"/>
@@ -1728,25 +1753,28 @@
 <wire x1="44.0541" y1="20.5261" x2="44.3332" y2="20.5261" width="0.3048" layer="1"/>
 <wire x1="43.6634" y1="20.1354" x2="43.398" y2="20.1354" width="0.3048" layer="1"/>
 <wire x1="43.398" y1="20.1354" x2="43.0134" y2="19.7508" width="0.3048" layer="1"/>
-<wire x1="44.3332" y1="21.3326" x2="44.3332" y2="20.5261" width="0.3048" layer="1"/>
 <wire x1="43.6634" y1="19.338" x2="43.6634" y2="20.1354" width="0.3048" layer="1"/>
 <wire x1="43.0134" y1="19.338" x2="43.0134" y2="19.7508" width="0.3048" layer="1"/>
 <wire x1="40.5232" y1="21.3326" x2="39.5167" y2="21.3326" width="0.3048" layer="1"/>
-<wire x1="35.4432" y1="26.4152" x2="35.4432" y2="25.6087" width="0.3048" layer="1"/>
 <wire x1="39.5167" y1="21.3326" x2="39.5167" y2="21.5352" width="0.3048" layer="1"/>
 <wire x1="39.5167" y1="21.5352" x2="35.4432" y2="25.6087" width="0.3048" layer="1"/>
 <wire x1="46.2634" y1="19.338" x2="46.2634" y2="20.3033" width="0.3048" layer="1"/>
 <wire x1="51.5341" y1="28.0721" x2="51.5341" y2="27.3481" width="0.3048" layer="1"/>
-<wire x1="44.3332" y1="21.3326" x2="44.3332" y2="22.1391" width="0.3048" layer="1"/>
 <wire x1="51.5341" y1="28.0721" x2="54.2387" y2="28.0721" width="0.3048" layer="1"/>
 <wire x1="54.2387" y1="28.0721" x2="54.3596" y2="28.193" width="0.3048" layer="1"/>
 <wire x1="55.3661" y1="28.193" x2="54.3596" y2="28.193" width="0.3048" layer="1"/>
 <wire x1="44.9984" y1="8.276" x2="44.9984" y2="9.9325" width="0.3048" layer="1"/>
+<contactref element="C4" pad="1"/>
+<contactref element="C5" pad="2"/>
+<wire x1="44.3332" y1="22.1391" x2="44.3332" y2="21.59" width="0.3048" layer="1"/>
+<wire x1="44.3332" y1="21.59" x2="44.3332" y2="20.5261" width="0.3048" layer="1"/>
+<wire x1="35.4432" y1="25.6087" x2="35.443159375" y2="26.300859375" width="0.3048" layer="1"/>
+<wire x1="44.30268125" y1="21.289440625" x2="44.3332" y2="21.59" width="0.3048" layer="1"/>
 </signal>
 <signal name="LDO_OUT">
 <contactref element="U$1" pad="3"/>
 <contactref element="LDO_VCC_LINK" pad="P$1"/>
-<contactref element="C5" pad="1"/>
+<contactref element="C10" pad="1"/>
 <wire x1="34.8132" y1="9.6164" x2="36.2992" y2="9.6164" width="0.3048" layer="1"/>
 <wire x1="38.288" y1="11.2116" x2="37.564" y2="11.2116" width="0.3048" layer="1"/>
 <wire x1="37.564" y1="11.2116" x2="36.2992" y2="9.9468" width="0.3048" layer="1"/>

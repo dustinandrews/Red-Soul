@@ -4482,6 +4482,7 @@ IFX25001
 </library>
 </libraries>
 <attributes>
+<attribute name="DIGIKEY#" value=""/>
 </attributes>
 <variantdefs>
 </variantdefs>
@@ -4490,47 +4491,99 @@ IFX25001
 </class>
 </classes>
 <parts>
-<part name="ATMEGAXX8" library="SparkFun" deviceset="ATMEGA168" device=""/>
+<part name="ATMEGAXX8" library="SparkFun" deviceset="ATMEGA168" device="">
+<attribute name="DIGIKEY#" value="ATMEGA328-AU"/>
+</part>
 <part name="P+1" library="SparkFun" deviceset="VCC" device=""/>
-<part name="R1" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="C2" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF"/>
-<part name="C3" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="R1" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="10K">
+<attribute name="DIGIKEY#" value="RHM10.0KAECT-ND"/>
+</part>
+<part name="C2" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="DIGIKEY#" value="478-1395-1-ND"/>
+</part>
+<part name="C3" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="DIGIKEY#" value="478-1395-1-ND"/>
+</part>
 <part name="GND1" library="SparkFun" deviceset="GND" device=""/>
-<part name="Y1" library="SparkFun" deviceset="RESONATOR" device="SMD"/>
+<part name="Y1" library="SparkFun" deviceset="RESONATOR" device="SMD">
+<attribute name="DIGIKEY#" value="490-1198-1-ND"/>
+</part>
 <part name="GND2" library="SparkFun" deviceset="GND" device=""/>
 <part name="P+3" library="SparkFun" deviceset="VCC" device=""/>
-<part name="C1" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C1" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="DIGIKEY#" value="478-1395-1-ND"/>
+</part>
 <part name="GND4" library="SparkFun" deviceset="GND" device=""/>
-<part name="L1" library="SparkFun" deviceset="INDUCTOR" device="0805" value="10uH"/>
-<part name="U$2" library="Dustin" deviceset="EN12-VS11AF" device="TOPKNOB"/>
-<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="L1" library="SparkFun" deviceset="INDUCTOR" device="0805" value="10uH">
+<attribute name="DIGIKEY#" value="587-2048-1-ND"/>
+</part>
+<part name="U$2" library="Dustin" deviceset="EN12-VS11AF" device="TOPKNOB">
+<attribute name="DIGIKEY#" value="987-1194-ND"/>
+</part>
+<part name="R3" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220">
+<attribute name="DIGIKEY#" value="RHM220AECT-ND"/>
+</part>
 <part name="SPI" library="SparkFun" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="JP2" library="Dustin" deviceset="M14B" device=""/>
 <part name="9V" library="SparkFun" deviceset="M02" device="PTH"/>
-<part name="X1" library="SparkFun" deviceset="USB" device="SMD"/>
-<part name="U1" library="Dustin" deviceset="FT232RL" device="SSOP"/>
-<part name="U$3" library="Dustin" deviceset="FERRITE" device=""/>
-<part name="C6" library="Dustin" deviceset="CAP_POL" device="" value="0.01uf"/>
-<part name="C9" library="SparkFun" deviceset="CAP" device="0805" value="0.1uf"/>
-<part name="U$4" library="Dustin" deviceset="DCJACK" device="SMD"/>
-<part name="SG2" library="SparkFun" deviceset="BUZZER" device="SMD"/>
-<part name="LED2" library="SparkFun" deviceset="LED" device="0805" value="RED"/>
-<part name="R4" library="SparkFun" deviceset="TRIMPOT" device="SMD"/>
-<part name="LCDCON" library="Dustin" deviceset="M14B" device=""/>
-<part name="LED1" library="SparkFun" deviceset="LED" device="0805" value="GRN"/>
-<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220"/>
+<part name="X1" library="SparkFun" deviceset="USB" device="SMD">
+<attribute name="DIGIKEY#" value="ED2992CT-ND"/>
+</part>
+<part name="U1" library="Dustin" deviceset="FT232RL" device="SSOP">
+<attribute name="DIGIKEY#" value="768-1007-1-ND"/>
+</part>
+<part name="FB" library="Dustin" deviceset="FERRITE" device="">
+<attribute name="DIGIKEY#" value="240-2399-1-ND"/>
+</part>
+<part name="C6" library="Dustin" deviceset="CAP_POL" device="" value="0.01uf">
+<attribute name="DIGIKEY#" value="478-1383-1-ND"/>
+</part>
+<part name="U$4" library="Dustin" deviceset="DCJACK" device="SMD">
+<attribute name="DIGIKEY#" value="CP-002APJCT-ND"/>
+</part>
+<part name="SG2" library="SparkFun" deviceset="BUZZER" device="SMD">
+<attribute name="DIGIKEY#" value="668-1110-1-ND"/>
+</part>
+<part name="LED2" library="SparkFun" deviceset="LED" device="0805" value="RED">
+<attribute name="DIGIKEY#" value="475-1278-1-ND"/>
+</part>
+<part name="R4" library="SparkFun" deviceset="TRIMPOT" device="SMD">
+<attribute name="DIGIKEY#" value="490-4611-1-ND"/>
+</part>
+<part name="LCDCON" library="Dustin" deviceset="M14B" device="">
+<attribute name="DIGIKEY#" value="754-1131-1-ND"/>
+</part>
+<part name="LED1" library="SparkFun" deviceset="LED" device="0805" value="GRN">
+<attribute name="DIGIKEY#" value="754-1131-1-ND"/>
+</part>
+<part name="R2" library="SparkFun" deviceset="RESISTOR" device="0805-RES" value="220">
+<attribute name="DIGIKEY#" value="RHM220AECT-ND"/>
+</part>
 <part name="FTDIVCCLINK" library="Dustin" deviceset="LINK" device=""/>
 <part name="FTDIDGNDLINK" library="Dustin" deviceset="LINK" device=""/>
 <part name="P+2" library="SparkFun" deviceset="VCC" device=""/>
 <part name="GND3" library="SparkFun" deviceset="GND" device=""/>
 <part name="JP1" library="Dustin" deviceset="M14B" device=""/>
-<part name="C7" library="SparkFun" deviceset="CAP" device="0805" value="0.1uf"/>
-<part name="C8" library="SparkFun" deviceset="CAP" device="0805" value="4.7uf"/>
+<part name="C8" library="SparkFun" deviceset="CAP" device="0805" value="4.7uf">
+<attribute name="DIGIKEY#" value="445-1369-1-ND"/>
+</part>
 <part name="LOGO1" library="ohw-logo" deviceset="OSHW_LOGO_10MIL" device="X0750-NT"/>
-<part name="U$1" library="Dustin" deviceset="IFX25001TC" device=""/>
-<part name="C4" library="Dustin" deviceset="CAP_POL" device="1210" value="22UF 16V  478-1682-1-ND"/>
-<part name="C5" library="Dustin" deviceset="CAP_POL" device="1210" value="22UF 16V  478-1682-1-ND"/>
+<part name="U$1" library="Dustin" deviceset="IFX25001TC" device="">
+<attribute name="DIGIKEY#" value="IFX25001TC V50INCT-ND"/>
+</part>
+<part name="C9" library="Dustin" deviceset="CAP_POL" device="1210" value="22UF 16V  478-1682-1-ND">
+<attribute name="DIGIKEY#" value="478-1682-1-ND"/>
+</part>
+<part name="C10" library="Dustin" deviceset="CAP_POL" device="1210" value="22UF 16V  478-1682-1-ND">
+<attribute name="DIGIKEY#" value="478-1682-1-ND"/>
+</part>
 <part name="LDO_VCC_LINK" library="Dustin" deviceset="LINK" device=""/>
+<part name="C4" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="DIGIKEY#" value="478-1395-1-ND"/>
+</part>
+<part name="C5" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="DIGIKEY#" value="478-1395-1-ND"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -4551,53 +4604,101 @@ IFX25001
 <rectangle x1="155.956" y1="5.588" x2="239.776" y2="58.928" layer="209"/>
 </plain>
 <instances>
-<instance part="ATMEGAXX8" gate="G$1" x="99.06" y="55.88"/>
+<instance part="ATMEGAXX8" gate="G$1" x="99.06" y="55.88">
+<attribute name="DIGIKEY#" x="99.06" y="55.88" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+1" gate="1" x="50.8" y="73.66"/>
-<instance part="R1" gate="G$1" x="76.2" y="86.36" rot="R90"/>
-<instance part="C2" gate="G$1" x="63.5" y="86.36" rot="R90"/>
+<instance part="R1" gate="G$1" x="76.2" y="86.36" rot="R90">
+<attribute name="DIGIKEY#" x="76.2" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="63.5" y="86.36" rot="R90">
+<attribute name="DIGIKEY#" x="63.5" y="86.36" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
 <instance part="C3" gate="G$1" x="22.86" y="60.96" smashed="yes" rot="R180">
 <attribute name="NAME" x="21.336" y="58.039" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="31.496" y="58.039" size="1.778" layer="96" rot="R180"/>
+<attribute name="DIGIKEY#" x="22.86" y="60.96" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="GND1" gate="1" x="53.34" y="48.26"/>
-<instance part="Y1" gate="G$1" x="68.58" y="53.34" rot="R270"/>
+<instance part="Y1" gate="G$1" x="68.58" y="53.34" rot="R270">
+<attribute name="DIGIKEY#" x="68.58" y="53.34" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 <instance part="GND2" gate="1" x="71.12" y="20.32"/>
 <instance part="P+3" gate="1" x="12.7" y="86.36"/>
-<instance part="C1" gate="G$1" x="12.7" y="66.04" rot="R180"/>
+<instance part="C1" gate="G$1" x="12.7" y="66.04" rot="R180">
+<attribute name="DIGIKEY#" x="12.7" y="66.04" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="GND4" gate="1" x="12.7" y="38.1"/>
-<instance part="L1" gate="G$1" x="22.86" y="73.66" rot="R180"/>
-<instance part="U$2" gate="G$1" x="208.28" y="76.2"/>
-<instance part="R3" gate="G$1" x="241.3" y="93.98" rot="R180"/>
+<instance part="L1" gate="G$1" x="22.86" y="73.66" rot="R180">
+<attribute name="DIGIKEY#" x="22.86" y="73.66" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$2" gate="G$1" x="208.28" y="76.2">
+<attribute name="DIGIKEY#" x="208.28" y="76.2" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R3" gate="G$1" x="241.3" y="93.98" rot="R180">
+<attribute name="DIGIKEY#" x="241.3" y="93.98" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="SPI" gate="G$1" x="124.46" y="93.98"/>
 <instance part="JP2" gate="G$1" x="160.02" y="27.94" rot="MR180"/>
 <instance part="9V" gate="G$1" x="119.38" y="152.4" rot="R270"/>
-<instance part="X1" gate="G$1" x="7.62" y="149.86" rot="R180"/>
-<instance part="U1" gate="G$1" x="66.04" y="134.62"/>
-<instance part="U$3" gate="G$1" x="27.94" y="149.86"/>
-<instance part="C6" gate="C$1" x="20.32" y="162.56" rot="R180"/>
-<instance part="C9" gate="G$1" x="43.18" y="132.08" rot="R90"/>
-<instance part="U$4" gate="G$1" x="111.76" y="162.56"/>
-<instance part="SG2" gate="G$1" x="203.2" y="91.44" rot="R90"/>
-<instance part="LED2" gate="G$1" x="228.6" y="93.98" rot="R90"/>
-<instance part="R4" gate="R?" x="246.38" y="73.66"/>
-<instance part="LCDCON" gate="G$1" x="175.26" y="91.44" rot="R180"/>
-<instance part="LED1" gate="G$1" x="228.6" y="101.6" rot="R90"/>
-<instance part="R2" gate="G$1" x="243.84" y="101.6" rot="R180"/>
+<instance part="X1" gate="G$1" x="7.62" y="149.86" rot="R180">
+<attribute name="DIGIKEY#" x="7.62" y="149.86" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U1" gate="G$1" x="66.04" y="134.62">
+<attribute name="DIGIKEY#" x="66.04" y="134.62" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="FB" gate="G$1" x="27.94" y="149.86">
+<attribute name="DIGIKEY#" x="27.94" y="149.86" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C6" gate="C$1" x="20.32" y="162.56" rot="R180">
+<attribute name="DIGIKEY#" x="20.32" y="162.56" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="U$4" gate="G$1" x="111.76" y="162.56">
+<attribute name="DIGIKEY#" x="111.76" y="162.56" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="SG2" gate="G$1" x="203.2" y="91.44" rot="R90">
+<attribute name="DIGIKEY#" x="203.2" y="91.44" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="LED2" gate="G$1" x="228.6" y="93.98" rot="R90">
+<attribute name="DIGIKEY#" x="228.6" y="93.98" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R4" gate="R?" x="246.38" y="73.66">
+<attribute name="DIGIKEY#" x="246.38" y="73.66" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="LCDCON" gate="G$1" x="175.26" y="91.44" rot="R180">
+<attribute name="DIGIKEY#" x="175.26" y="91.44" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="LED1" gate="G$1" x="228.6" y="101.6" rot="R90">
+<attribute name="DIGIKEY#" x="228.6" y="101.6" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="243.84" y="101.6" rot="R180">
+<attribute name="DIGIKEY#" x="243.84" y="101.6" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 <instance part="FTDIVCCLINK" gate="G$1" x="55.88" y="170.18"/>
 <instance part="FTDIDGNDLINK" gate="G$1" x="7.62" y="121.92"/>
 <instance part="P+2" gate="1" x="76.2" y="170.18"/>
 <instance part="GND3" gate="1" x="0" y="116.84"/>
 <instance part="JP1" gate="G$1" x="200.66" y="27.94" rot="MR180"/>
-<instance part="C7" gate="G$1" x="25.4" y="129.54" smashed="yes" rot="R180">
-<attribute name="NAME" x="31.496" y="126.619" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="34.036" y="131.699" size="1.778" layer="96" rot="R180"/>
+<instance part="C8" gate="G$1" x="17.78" y="127">
+<attribute name="DIGIKEY#" x="17.78" y="127" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C8" gate="G$1" x="17.78" y="127"/>
 <instance part="LOGO1" gate="G$1" x="104.14" y="182.88"/>
-<instance part="U$1" gate="G$1" x="170.18" y="152.4"/>
-<instance part="C4" gate="C$1" x="154.94" y="147.32"/>
-<instance part="C5" gate="C$1" x="185.42" y="139.7"/>
+<instance part="U$1" gate="G$1" x="170.18" y="152.4">
+<attribute name="DIGIKEY#" x="170.18" y="152.4" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C9" gate="C$1" x="154.94" y="147.32">
+<attribute name="DIGIKEY#" x="154.94" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C10" gate="C$1" x="185.42" y="139.7">
+<attribute name="DIGIKEY#" x="185.42" y="139.7" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="LDO_VCC_LINK" gate="G$1" x="195.58" y="154.94"/>
+<instance part="C4" gate="G$1" x="25.4" y="129.54" rot="R180">
+<attribute name="DIGIKEY#" x="25.4" y="129.54" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C5" gate="G$1" x="40.64" y="132.08" rot="R270">
+<attribute name="DIGIKEY#" x="40.64" y="132.08" size="1.778" layer="96" rot="R270" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4791,11 +4892,11 @@ IFX25001
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="170.18" y1="144.78" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="C4" gate="C$1" pin="-"/>
+<pinref part="C9" gate="C$1" pin="-"/>
 <wire x1="170.18" y1="137.16" x2="154.94" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="137.16" x2="154.94" y2="144.78" width="0.1524" layer="91"/>
 <junction x="170.18" y="137.16"/>
-<pinref part="C5" gate="C$1" pin="-"/>
+<pinref part="C10" gate="C$1" pin="-"/>
 <wire x1="185.42" y1="137.16" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
 <label x="162.56" y="137.16" size="1.778" layer="95"/>
 </segment>
@@ -5233,7 +5334,7 @@ IFX25001
 <wire x1="154.94" y1="154.94" x2="132.08" y2="154.94" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="154.94" x2="132.08" y2="165.1" width="0.1524" layer="91"/>
 <junction x="154.94" y="154.94"/>
-<pinref part="C4" gate="C$1" pin="+"/>
+<pinref part="C9" gate="C$1" pin="+"/>
 <wire x1="154.94" y1="152.4" x2="154.94" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5261,7 +5362,7 @@ IFX25001
 <pinref part="X1" gate="G$1" pin="VBUS"/>
 <wire x1="10.16" y1="147.32" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="147.32" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="FB" gate="G$1" pin="P$1"/>
 <wire x1="17.78" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 <junction x="17.78" y="149.86"/>
 <pinref part="C6" gate="C$1" pin="+"/>
@@ -5286,8 +5387,8 @@ IFX25001
 <net name="3V3OUT" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="3V3OUT"/>
-<pinref part="C9" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="132.08" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5299,7 +5400,7 @@ IFX25001
 </net>
 <net name="FTDI-VCC" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
+<pinref part="FB" gate="G$1" pin="P$2"/>
 <wire x1="38.1" y1="149.86" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 <junction x="48.26" y="149.86"/>
 <pinref part="U1" gate="G$1" pin="VCCIO"/>
@@ -5315,7 +5416,6 @@ IFX25001
 <wire x1="45.72" y1="170.18" x2="45.72" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
 <junction x="48.26" y="162.56"/>
-<pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="25.4" y1="132.08" x2="25.4" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="134.62" x2="17.78" y2="134.62" width="0.1524" layer="91"/>
 <junction x="17.78" y="134.62"/>
@@ -5323,6 +5423,7 @@ IFX25001
 <wire x1="17.78" y1="132.08" x2="17.78" y2="134.62" width="0.1524" layer="91"/>
 <label x="30.48" y="170.18" size="1.778" layer="95"/>
 <pinref part="C8" gate="G$1" pin="1"/>
+<pinref part="C4" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="FTDI-GND" class="0">
@@ -5337,7 +5438,6 @@ IFX25001
 <junction x="45.72" y="124.46"/>
 <pinref part="U1" gate="G$1" pin="GND"/>
 <wire x1="53.34" y1="124.46" x2="45.72" y2="124.46" width="0.1524" layer="91"/>
-<pinref part="C9" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="124.46" x2="38.1" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="124.46" x2="38.1" y2="132.08" width="0.1524" layer="91"/>
 <label x="27.94" y="121.92" size="1.778" layer="95"/>
@@ -5348,7 +5448,6 @@ IFX25001
 <wire x1="17.78" y1="121.92" x2="25.4" y2="121.92" width="0.1524" layer="91"/>
 <junction x="25.4" y="121.92"/>
 <wire x1="25.4" y1="121.92" x2="33.02" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="121.92" x2="45.72" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="121.92" x2="25.4" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="GND"/>
@@ -5365,6 +5464,8 @@ IFX25001
 <wire x1="10.16" y1="157.48" x2="10.16" y2="154.94" width="0.1524" layer="91"/>
 <junction x="33.02" y="121.92"/>
 <pinref part="C8" gate="G$1" pin="2"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="LDO_OUT" class="0">
@@ -5375,7 +5476,7 @@ IFX25001
 <label x="177.8" y="154.94" size="1.778" layer="95"/>
 <junction x="185.42" y="154.94"/>
 <wire x1="185.42" y1="154.94" x2="187.96" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="C5" gate="C$1" pin="+"/>
+<pinref part="C10" gate="C$1" pin="+"/>
 <wire x1="185.42" y1="144.78" x2="185.42" y2="154.94" width="0.1524" layer="91"/>
 </segment>
 </net>
