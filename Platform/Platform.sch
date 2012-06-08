@@ -3830,6 +3830,32 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-0.826171875" y1="1.169515625" x2="-0.826171875" y2="-1.244621875" width="0.127" layer="21"/>
 <text x="-2.907690625" y="-0.2682375" size="0.6096" layer="21" ratio="20">+</text>
 </package>
+<package name="LCD16X2">
+<rectangle x1="7" y1="5.5" x2="59" y2="21.5" layer="201"/>
+<rectangle x1="0" y1="0" x2="66" y2="26" layer="200"/>
+<rectangle x1="5" y1="3.5" x2="61" y2="24" layer="206"/>
+<circle x="3" y="2" radius="0.5" width="0.127" layer="51"/>
+<dimension x1="33" y1="24" x2="33" y2="3.5" x3="33" y3="3.5" layer="51" dtype="diameter"/>
+<circle x="5.54" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="8.08" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="15.7" y="2" radius="0.5" width="0.127" layer="1"/>
+<circle x="15.7" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="18.24" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="23.32" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="25.86" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="20.78" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="28.4" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="30.94" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="33.48" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="36.02" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="38.56" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="13.16" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="10.62" y="2" radius="0.5" width="0.127" layer="51"/>
+<dimension x1="64" y1="26" x2="64" y2="0" x3="64" y3="0" layer="51" dtype="diameter"/>
+<circle x="41.1" y="2" radius="0.5" width="0.127" layer="51"/>
+<circle x="0" y="12.7" radius="2" width="0.127" layer="51"/>
+<circle x="66.04" y="12.7" radius="2" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ROTARYENCODER_SWITCH">
@@ -3978,6 +4004,18 @@ USB to serial UART interface</description>
 <text x="-3.81" y="2.286" size="1.27" layer="94">In</text>
 <text x="0.508" y="2.286" size="1.27" layer="94">Out</text>
 <text x="-1.524" y="-1.524" size="1.27" layer="94">GND</text>
+</symbol>
+<symbol name="LCD16X2_LUMEX">
+<wire x1="0" y1="0" x2="33.02" y2="0" width="0.254" layer="94"/>
+<wire x1="33.02" y1="0" x2="33.02" y2="12.7" width="0.254" layer="94"/>
+<wire x1="33.02" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="2.54" x2="30.48" y2="2.54" width="0.254" layer="94"/>
+<wire x1="30.48" y1="2.54" x2="30.48" y2="10.16" width="0.254" layer="94"/>
+<wire x1="30.48" y1="10.16" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<text x="7.62" y="5.08" size="1.27" layer="94">16x2 LCD Dimensions</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4215,6 +4253,18 @@ IFX25001
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LCM-S01602DTR">
+<gates>
+<gate name="G$1" symbol="LCD16X2_LUMEX" x="-17.78" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="LCD16X2">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -4551,7 +4601,7 @@ IFX25001
 <attribute name="DIGIKEY#" value="490-4611-1-ND"/>
 </part>
 <part name="LCDCON" library="Dustin" deviceset="M14B" device="">
-<attribute name="DIGIKEY#" value="754-1131-1-ND"/>
+<attribute name="DIGIKEY#" value="67-1781-ND"/>
 </part>
 <part name="LED1" library="SparkFun" deviceset="LED" device="0805" value="GRN">
 <attribute name="DIGIKEY#" value="754-1131-1-ND"/>
@@ -4584,6 +4634,7 @@ IFX25001
 <part name="C5" library="SparkFun" deviceset="CAP" device="0805" value="0.1uF">
 <attribute name="DIGIKEY#" value="478-1395-1-ND"/>
 </part>
+<part name="U$3" library="Dustin" deviceset="LCM-S01602DTR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4699,6 +4750,7 @@ IFX25001
 <instance part="C5" gate="G$1" x="40.64" y="132.08" rot="R270">
 <attribute name="DIGIKEY#" x="40.64" y="132.08" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
+<instance part="U$3" gate="G$1" x="226.06" y="116.84"/>
 </instances>
 <busses>
 </busses>
