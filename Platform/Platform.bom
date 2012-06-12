@@ -1,0 +1,39 @@
+Partlist exported from C:/Users/a-duandr/Documents/GitHub/Red-Soul/Platform/Platform.sch at 6/6/2012 2:10:56 PM
+
+Assembly variant: 
+
+Part         Value                   Device                  Package            Description                    
+9V                                   M02PTH                  1X02               Header 2                       
+ATMEGAXX8    ATMEGA168               ATMEGA168               TQFP32-08                                         
+C1           0.1uF                   CAP0805                 0805               Capacitor                      
+C2           0.1uF                   CAP0805                 0805               Capacitor                      
+C3           0.1uF                   CAP0805                 0805               Capacitor                      
+C4           22UF 16V  478-1682-1-ND CAP_POL1210             1210POL            Polarized Capacitor            
+C5           22UF 16V  478-1682-1-ND CAP_POL1210             1210POL            Polarized Capacitor            
+C6           0.01uf                  CAP_POL                 0805POL            Polarized Capacitor            
+C7           0.1uf                   CAP0805                 0805               Capacitor                      
+C8           4.7uf                   CAP0805                 0805               Capacitor                      
+C9           0.1uf                   CAP0805                 0805               Capacitor                      
+FTDIDGNDLINK LINK                    LINK                    ISOLATOR                                          
+FTDIVCCLINK  LINK                    LINK                    ISOLATOR                                          
+JP1          M14B                    M14B                    1X14B                                             
+JP2          M14B                    M14B                    1X14B                                             
+L1           10uH                    INDUCTOR0805            0805               Inductors                      
+LCDCON       M14B                    M14B                    1X14B                                             
+LDO_VCC_LINK LINK                    LINK                    ISOLATOR                                          
+LED1         GRN                     LED0805                 LED-0805           LEDs                           
+LED2         RED                     LED0805                 LED-0805           LEDs                           
+LOGO1        OSHW_LOGO_10MILX0750-NT OSHW_LOGO_10MILX0750-NT OSHW_10X750_NOTEXT                                
+R1           10K                     RESISTOR0805-RES        0805               Resistor                       
+R2           220                     RESISTOR0805-RES        0805               Resistor                       
+R3           220                     RESISTOR0805-RES        0805               Resistor                       
+R4           TRIMPOTSMD              TRIMPOTSMD              TRIMPOT-3MM                                       
+SG2          BUZZERSMD               BUZZERSMD               BUZZER-CMT1603     Buzzer 12mm                    
+SPI          AVR_SPI_PRG_6NS         AVR_SPI_PRG_6NS         2X3-NS             AVR ISP 6 Pin                  
+U$1          IFX25001TC              IFX25001TC              TO263-3            IC REG LDO 5.0V 400MA TO263-3  
+U$2          EN12-VS11AFTOPKNOB      EN12-VS11AFTOPKNOB      12MM_ROTATY_TOP    12mm Rotary Encoder with switch
+U$3          FERRITE                 FERRITE                 0805                                              
+U$4          DCJACKSMD               DCJACKSMD               JACK-SMD                                          
+U1           FT232RLSSOP             FT232RLSSOP             SSOP28             FT232RL                        
+X1           USBSMD                  USBSMD                  USB-MINIB          USB Connectors                 
+Y1           RESONATORSMD            RESONATORSMD            RESONATOR-SMD      Resonator                      
