@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -113,23 +113,23 @@
 <wire x1="0.0660375" y1="67.243959375" x2="0.0660375" y2="0.060959375" width="0" layer="20"/>
 <rectangle x1="15.100296875" y1="25.554940625" x2="30.340296875" y2="39.270940625" layer="43"/>
 <text x="17.393915625" y="10.0838" size="1.778" layer="25">+</text>
-<text x="35.425378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">GND</text>
-<text x="32.885378125" y="58.049165625" size="0.8128" layer="25" ratio="10" rot="R270">5v</text>
-<text x="30.599378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A1</text>
-<text x="27.805378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A2</text>
-<text x="25.265378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A3</text>
-<text x="22.725378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A4</text>
-<text x="20.439378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A5</text>
-<text x="17.899378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A6</text>
-<text x="15.359378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">A7</text>
-<text x="12.565378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D0/RX</text>
-<text x="10.025378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D1/TX</text>
-<text x="7.739378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D3 (PWM)</text>
-<text x="5.199378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D13</text>
+<text x="34.790378125" y="57.820565625" size="0.8128" layer="25" ratio="10" rot="R270">GND</text>
+<text x="32.224978125" y="57.972965625" size="0.8128" layer="25" ratio="10" rot="R270">5v</text>
+<text x="29.710378125" y="57.871365625" size="0.8128" layer="25" ratio="10" rot="R270">A1</text>
+<text x="27.246578125" y="58.023765625" size="0.8128" layer="25" ratio="10" rot="R270">A2</text>
+<text x="24.808178125" y="57.972965625" size="0.8128" layer="25" ratio="10" rot="R270">A3</text>
+<text x="22.064978125" y="57.998365625" size="0.8128" layer="25" ratio="10" rot="R270">A4</text>
+<text x="19.651978125" y="58.099965625" size="0.8128" layer="25" ratio="10" rot="R270">A5</text>
+<text x="16.934178125" y="58.074565625" size="0.8128" layer="25" ratio="10" rot="R270">A6</text>
+<text x="14.546578125" y="58.176165625" size="0.8128" layer="25" ratio="10" rot="R270">A7</text>
+<text x="11.955778125" y="58.277765625" size="0.8128" layer="25" ratio="10" rot="R270">D0/RX</text>
+<text x="9.364978125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D1/TX</text>
+<text x="6.672578125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D3 (PWM)</text>
+<text x="4.132578125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">D13</text>
 <text x="1.389378125" y="58.303165625" size="0.8128" layer="25" ratio="10" rot="R270">RESET</text>
 <rectangle x1="39.0804375" y1="10.093959375" x2="52.5424375" y2="21.523959375" layer="43"/>
 <text x="40.8584375" y="32.699959375" size="1.778" layer="21">Buzzer</text>
-<text x="50.6882375" y="65.237359375" size="1.016" layer="25" ratio="15">2012-06-14</text>
+<text x="50.6882375" y="65.237359375" size="1.016" layer="25" ratio="15">2012-07-08</text>
 <text x="47.29225625" y="42.542459375" size="0.8128" layer="25" ratio="10">http://on.fb.me/JXJ9oD</text>
 <text x="37.4421375" y="43.748959375" size="0.8128" layer="25" ratio="15">http://creativecommons.org/licenses/by/2.0/</text>
 <text x="50.7644375" y="56.321959375" size="1.778" layer="26" rot="MR0">Robotic Minion Starter Kit</text>
@@ -155,7 +155,6 @@
 <hole x="8.89" y="15.24" drill="3.2"/>
 <hole x="3.81" y="50.8" drill="3.2"/>
 <hole x="55.88" y="53.34" drill="3.2"/>
-<hole x="65.5828" y="31.5468" drill="3.2"/>
 <dimension x1="60.3504" y1="18.6944" x2="60.3504" y2="0" x3="55.5498" y3="9.3472" layer="51"/>
 <dimension x1="60.5" y1="42" x2="4.5" y2="42" x3="32.59244375" y3="44.838446875" layer="51"/>
 <dimension x1="3.0124375" y1="0.060959375" x2="12.1666" y2="0.0508" x3="7.5874" y3="-1.853640625" layer="51"/>
@@ -170,6 +169,22 @@
 <dimension x1="58.5216" y1="0.1778" x2="67.0052" y2="0.2032" x3="62.7609" y3="1.02534375" layer="51"/>
 <dimension x1="66.9798" y1="9.017" x2="67.0052" y2="-0.0254" x3="65.5171" y3="4.491653125" layer="51"/>
 <dimension x1="0.0660375" y1="67.243959375" x2="40.2844" y2="67.2338" x3="20.175878125" y3="69.85444375" layer="51"/>
+<text x="6.4008" y="29.972" size="0.6096" layer="25" ratio="15">VCC</text>
+<text x="6.477" y="23.7744" size="0.6096" layer="25" ratio="15">GND</text>
+<text x="35.3568" y="19.2532" size="0.6096" layer="25" ratio="15" rot="R270">GND</text>
+<text x="32.7406" y="19.3802" size="0.6096" layer="25" ratio="15" rot="R270">VCC</text>
+<text x="28.2956" y="22.4028" size="0.6096" layer="25" ratio="15" rot="R90">D10</text>
+<text x="23.114" y="18.1356" size="0.6096" layer="25" ratio="15" rot="R90">D9</text>
+<text x="10.4902" y="17.9832" size="0.6096" layer="25" ratio="15" rot="R90">D8</text>
+<text x="5.4102" y="18.1864" size="0.6096" layer="25" ratio="15" rot="R90">D6</text>
+<text x="2.7178" y="18.2626" size="0.6096" layer="25" ratio="15" rot="R90">D4</text>
+<text x="7.7978" y="18.1356" size="0.6096" layer="25" ratio="15" rot="R90">D7</text>
+<text x="6.5786" y="26.2382" size="0.6096" layer="25" ratio="15">D11</text>
+<text x="1.27" y="23.3934" size="0.6096" layer="25" ratio="15" rot="R90">RST</text>
+<text x="1.27" y="23.3934" size="0.6096" layer="25" ratio="15" rot="R90">RST</text>
+<text x="1.27" y="25.8064" size="0.6096" layer="25" ratio="15" rot="R90">D13</text>
+<text x="1.27" y="28.3464" size="0.6096" layer="25" ratio="15" rot="R90">D12</text>
+<text x="31.4706" y="15.9512" size="0.6096" layer="25" ratio="15">Contrast</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -925,7 +940,7 @@
 <attribute name="DIGIKEY#" value="RHM220AECT-ND" x="44.8843" y="60.1142" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="SPI" library="SparkFun" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="3.81" y="26.67" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.072121875" y="25.483821875" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="9.646921875" y="24.417021875" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
 <element name="JP2" library="Dustin" package="1X14B" value="M14B" x="34.8994" y="60.2336" smashed="yes" rot="R180"/>
 <element name="9V" library="SparkFun" package="1X02" value="" x="17.8104" y="7.1594" smashed="yes" rot="R270">
@@ -942,11 +957,11 @@
 <attribute name="DIGIKEY#" value="768-1007-1-ND" x="45.9384" y="15.682" size="1.778" layer="27" display="off"/>
 </element>
 <element name="FB" library="Dustin" package="0805" value="FERRITE" x="58.3929" y="29.1267" smashed="yes" rot="R270">
-<attribute name="VALUE" x="59.246340625" y="31.308559375" size="0.8128" layer="27" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="59.246340625" y="31.308559375" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="DIGIKEY#" value="240-2399-1-ND" x="58.3929" y="29.1267" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C6" library="Dustin" package="0805POL" value="0.01uf" x="55.3661" y="29.093" smashed="yes" rot="R270">
-<attribute name="NAME" x="53.2411" y="29.628278125" size="0.8128" layer="25" ratio="10"/>
+<attribute name="NAME" x="56.272878125" y="30.5027" size="0.8128" layer="25" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="54.188515625" y="26.892621875" size="0.6096" layer="27" ratio="15"/>
 <attribute name="DIGIKEY#" value="478-1383-1-ND" x="55.3661" y="29.093" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -1002,11 +1017,15 @@
 <attribute name="NAME" x="33.909140625" y="14.04578125" size="0.8128" layer="25" ratio="15"/>
 </element>
 <element name="LDO_VCC_LINK" library="Dustin" package="ISOLATOR" value="LINK" x="38.288" y="11.9736" rot="R90"/>
-<element name="C4" library="SparkFun" package="0805" value="0.1uF" x="35.4432" y="27.2009" rot="R90">
+<element name="C4" library="SparkFun" package="0805" value="0.1uF" x="35.4432" y="27.2009" smashed="yes" rot="R90">
 <attribute name="DIGIKEY#" value="478-1395-1-ND" x="35.4432" y="27.2009" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="34.6177" y="26.4389" size="0.8128" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="36.8402" y="26.1849" size="0.6096" layer="27" ratio="15" rot="R90"/>
 </element>
-<element name="C5" library="SparkFun" package="0805" value="0.1uF" x="44.3027" y="22.1894" rot="R270">
+<element name="C5" library="SparkFun" package="0805" value="0.1uF" x="44.3027" y="22.1894" smashed="yes" rot="R270">
 <attribute name="DIGIKEY#" value="478-1395-1-ND" x="44.3027" y="22.1894" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="45.1282" y="22.9514" size="0.8128" layer="25" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="42.9057" y="23.2054" size="0.6096" layer="27" ratio="15" rot="R270"/>
 </element>
 <element name="U$3" library="Dustin" package="LCD16X2" value="LCM-S01602DTR" x="-0.472440625" y="18.84171875"/>
 </elements>
