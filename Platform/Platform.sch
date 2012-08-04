@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -7947,7 +7947,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="U1" library="Dustin" deviceset="FT232RL" device="SSOP">
 <attribute name="DIGIKEY#" value="768-1007-1-ND"/>
 </part>
-<part name="FB" library="Dustin" deviceset="FERRITE" device="">
+<part name="GND" library="Dustin" deviceset="FERRITE" device="">
 <attribute name="DIGIKEY#" value="240-2399-1-ND"/>
 </part>
 <part name="SG2" library="SparkFun" deviceset="BUZZER" device="SMD">
@@ -8064,7 +8064,7 @@ Source: AVX .. aphvc.pdf</description>
 <instance part="U1" gate="G$1" x="66.04" y="134.62">
 <attribute name="DIGIKEY#" x="66.04" y="134.62" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="FB" gate="G$1" x="27.94" y="149.86">
+<instance part="GND" gate="G$1" x="27.94" y="149.86">
 <attribute name="DIGIKEY#" x="27.94" y="149.86" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="SG2" gate="G$1" x="203.2" y="91.44" rot="R90">
@@ -8786,7 +8786,7 @@ Source: AVX .. aphvc.pdf</description>
 <pinref part="X1" gate="G$1" pin="VBUS"/>
 <wire x1="10.16" y1="147.32" x2="17.78" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="147.32" x2="17.78" y2="149.86" width="0.1524" layer="91"/>
-<pinref part="FB" gate="G$1" pin="P$1"/>
+<pinref part="GND" gate="G$1" pin="P$1"/>
 <wire x1="17.78" y1="149.86" x2="20.32" y2="149.86" width="0.1524" layer="91"/>
 <junction x="17.78" y="149.86"/>
 <wire x1="20.32" y1="157.48" x2="17.78" y2="157.48" width="0.1524" layer="91"/>
@@ -8824,7 +8824,7 @@ Source: AVX .. aphvc.pdf</description>
 </net>
 <net name="FTDI-VCC" class="0">
 <segment>
-<pinref part="FB" gate="G$1" pin="P$2"/>
+<pinref part="GND" gate="G$1" pin="P$2"/>
 <wire x1="38.1" y1="149.86" x2="48.26" y2="149.86" width="0.1524" layer="91"/>
 <junction x="48.26" y="149.86"/>
 <pinref part="U1" gate="G$1" pin="VCCIO"/>

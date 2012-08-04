@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.2">
+<eagle version="6.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -8,7 +8,7 @@
 </settings>
 <grid distance="10" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="0.1" altunitdist="mil" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="12" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,38 +23,38 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="9" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="5" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="13" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="13" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="13" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="15" fill="1" visible="no" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
-<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
-<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="8" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="13" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="7" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
@@ -72,24 +72,24 @@
 <layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
-<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
-<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
-<layer number="104" name="Name" color="16" fill="1" visible="no" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
-<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
-<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
-<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
-<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
-<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
-<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
-<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="16" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="no" active="yes"/>
 <layer number="202" name="202bmp" color="3" fill="10" visible="no" active="yes"/>
@@ -100,13 +100,13 @@
 <layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
 <layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
 <layer number="209" name="209bmp" color="15" fill="0" visible="no" active="yes"/>
-<layer number="210" name="210bmp" color="15" fill="1" visible="no" active="yes"/>
-<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
-<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
 <layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
@@ -117,14 +117,14 @@
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
 <plain>
-<wire x1="0.0660375" y1="0.060959375" x2="67.0204375" y2="0.060959375" width="0" layer="20"/>
-<wire x1="67.0204375" y1="0.060959375" x2="67.0204375" y2="67.243959375" width="0" layer="20"/>
-<wire x1="67.0204375" y1="67.243959375" x2="0.0660375" y2="67.243959375" width="0" layer="20"/>
-<wire x1="0.0660375" y1="67.243959375" x2="0.0660375" y2="0.060959375" width="0" layer="20"/>
+<wire x1="0" y1="0.060959375" x2="67.0204375" y2="0.060959375" width="0" layer="20"/>
+<wire x1="67.0204375" y1="0.060959375" x2="67.0204375" y2="67.437" width="0" layer="20"/>
+<wire x1="67.0204375" y1="67.437" x2="0" y2="67.437" width="0" layer="20"/>
+<wire x1="0" y1="67.437" x2="0" y2="0.060959375" width="0" layer="20"/>
 <text x="63.621915625" y="34.0868" size="1.27" layer="25" ratio="15">+</text>
 <text x="34.536378125" y="55.026565625" size="1.016" layer="25" ratio="15" rot="R270">GND</text>
 <text x="31.970978125" y="55.178965625" size="1.016" layer="25" ratio="15" rot="R270">5v</text>
@@ -184,7 +184,7 @@
 <text x="6.5786" y="32.1818" size="1.016" layer="25" ratio="15">VCC</text>
 <text x="6.5278" y="26.8732" size="1.016" layer="25" ratio="15">GND</text>
 <text x="35.7378" y="18.7452" size="1.016" layer="25" ratio="15" rot="R270">GND</text>
-<text x="33.2486" y="18.7452" size="1.016" layer="25" ratio="15" rot="R270">VCC</text>
+<text x="33.370521875" y="18.793459375" size="1.016" layer="25" ratio="15" rot="R270">VCC</text>
 <text x="28.2956" y="22.4028" size="1.016" layer="25" ratio="15" rot="R90">D10</text>
 <text x="23.114" y="17.3736" size="1.016" layer="25" ratio="15" rot="R90">D9</text>
 <text x="10.4902" y="17.2212" size="1.016" layer="25" ratio="15" rot="R90">D8</text>
@@ -1808,31 +1808,32 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </class>
 </classes>
 <designrules>
-<description language="en">
+<description language="en">&lt;b&gt;EAGLE Design Rules for *2* Layer Designs (DS)&lt;/b&gt;
+&lt;p&gt;
+This Sunstone Circuits 2 Layer .DRU has been set to cover our minimum requirements for our double sided products. For questions, comments, suggestions, please contact Sunstone Customer Support: &lt;p&gt;&lt;b&gt;Email:&lt;/b&gt;  mailto:support@sunstone.com&lt;br&gt;&lt;b&gt;Phone:&lt;/b&gt; 800-228-8198.&lt;p&gt; v1.1Mod10/16/07~Layers-core reversal.Distance C/D.Restring%.Supply G%.&lt;p&gt; v1.2 Mod12/06/07~Distance C/D to 20mils.&lt;p&gt;v1.3Mod12/12/07~Supply/Annulus Value to 12.5mils&lt;p&gt;1/15/08 SSC-EAGLE-2Lyr_v1.0.0.3~For Release&lt;p&gt;10/3/08 Description Edit.&lt;p&gt;
 
-&lt;b&gt;Toner Transfer Design rules&lt;/b&gt;
-
-</description>
+&lt;p&gt;
+&lt;i&gt;Attention: Upon running the design check and making modifications, please remember to save any changes before closing the application and sending in your board file to Sunstone Circuits for conversion.&lt;i&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.0178mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0356mm 0.0178mm"/>
 <param name="mtIsolate" value="59mil 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm 0.1499mm 0.2007mm"/>
-<param name="mdWireWire" value="8mil"/>
-<param name="mdWirePad" value="8mil"/>
-<param name="mdWireVia" value="8mil"/>
-<param name="mdPadPad" value="8mil"/>
-<param name="mdPadVia" value="8mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="0mil"/>
-<param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="0mil"/>
+<param name="mdWireWire" value="6mil"/>
+<param name="mdWirePad" value="6mil"/>
+<param name="mdWireVia" value="6mil"/>
+<param name="mdPadPad" value="6mil"/>
+<param name="mdPadVia" value="6mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="15mil"/>
+<param name="mdCopperDimension" value="20mil"/>
 <param name="mdDrill" value="16mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="12mil"/>
-<param name="msDrill" value="15mil"/>
-<param name="msMicroVia" value="35mil"/>
+<param name="msWidth" value="6mil"/>
+<param name="msDrill" value="14mil"/>
+<param name="msMicroVia" value="9.9898mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -1847,10 +1848,10 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <param name="rlMaxPadInner" value="0mil"/>
 <param name="rlMinPadBottom" value="8mil"/>
 <param name="rlMaxPadBottom" value="999mil"/>
-<param name="rlMinViaOuter" value="7mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="999mil"/>
-<param name="rlMinViaInner" value="7mil"/>
-<param name="rlMaxViaInner" value="999mil"/>
+<param name="rlMinViaInner" value="0mil"/>
+<param name="rlMaxViaInner" value="0mil"/>
 <param name="rlMinMicroViaOuter" value="8mil"/>
 <param name="rlMaxMicroViaOuter" value="999mil"/>
 <param name="rlMinMicroViaInner" value="0mil"/>
@@ -1861,11 +1862,11 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
-<param name="mvCreamFrame" value="0.05"/>
+<param name="mvCreamFrame" value="0"/>
 <param name="mlMinStopFrame" value="3mil"/>
 <param name="mlMaxStopFrame" value="3mil"/>
-<param name="mlMinCreamFrame" value="1mil"/>
-<param name="mlMaxCreamFrame" value="10mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
 <param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
@@ -2004,7 +2005,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </element>
 <element name="L1" library="SparkFun" package="0805" value="10uH" x="31.3436" y="31.7246" smashed="yes" rot="R90">
 <attribute name="NAME" x="30.94998125" y="30.248859375" size="1.016" layer="25" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="30.3022" y="33.32741875" size="0.6096" layer="27" ratio="15"/>
+<attribute name="VALUE" x="32.3342" y="30.27941875" size="0.6096" layer="27" ratio="15"/>
 <attribute name="DIGIKEY#" value="587-2048-1-ND" x="31.3436" y="31.7246" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$2" library="Dustin" package="12MM_ROTATY_TOP" value="EN12-VS11AFTOPKNOB" x="58.486" y="1.5088" rot="R270">
@@ -2032,7 +2033,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <attribute name="VALUE" x="43.373" y="15.6058" size="0.6096" layer="27" ratio="15"/>
 <attribute name="DIGIKEY#" value="768-1007-1-ND" x="45.405" y="16.8758" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FB" library="Dustin" package="0805" value="FERRITE" x="38.8637" y="12.1483" smashed="yes" rot="R90">
+<element name="GND" library="Dustin" package="0805" value="FERRITE" x="38.8637" y="12.1483" smashed="yes" rot="R90">
 <attribute name="VALUE" x="38.137259375" y="9.966440625" size="1.016" layer="25" ratio="15" rot="R90"/>
 <attribute name="DIGIKEY#" value="240-2399-1-ND" x="38.8637" y="12.1483" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -2087,7 +2088,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <element name="C4" library="SparkFun" package="0805" value="0.1uF" x="44.0436" y="11.43" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="478-1395-1-ND" x="44.0436" y="11.43" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="46.0756" y="10.9855" size="1.016" layer="25" ratio="15"/>
-<attribute name="VALUE" x="45.0596" y="12.827" size="0.6096" layer="27" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="50.9016" y="11.811" size="0.6096" layer="27" ratio="15" rot="R180"/>
 </element>
 <element name="C5" library="SparkFun" package="0805" value="0.1uF" x="47.0052" y="22.3977" smashed="yes" rot="R180">
 <attribute name="DIGIKEY#" value="478-1395-1-ND" x="47.0052" y="22.3977" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2107,7 +2108,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </element>
 <element name="C6" library="rcl" package="C0805" value="10nF" x="38.735" y="17.78" smashed="yes" rot="R270">
 <attribute name="NAME" x="37.846" y="19.812" size="1.016" layer="25" ratio="15"/>
-<attribute name="VALUE" x="37.846" y="21.463" size="0.8128" layer="27" ratio="15"/>
+<attribute name="VALUE" x="37.12718125" y="21.376640625" size="0.8128" layer="27" ratio="15"/>
 </element>
 </elements>
 <signals>
@@ -2316,6 +2317,25 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <vertex x="66.802" y="0.254"/>
 <vertex x="0.254" y="0.254"/>
 </polygon>
+<via x="28.448" y="49.022" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="26.162" y="49.022" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="23.114" y="49.022" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="19.812" y="49.022" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="16.002" y="49.022" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="13.462" y="49.022" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="10.922" y="51.816" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="10.668" y="48.641" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="8.128" y="48.641" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="5.08" y="48.641" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="5.08" y="38.608" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="41.91" y="29.21" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="36.322" y="28.448" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="31.242" y="24.638" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="26.67" y="24.638" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="21.59" y="23.622" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="14.732" y="23.622" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="14.478" y="26.162" extent="1-16" drill="0.381" diameter="0.254"/>
+<via x="52.07" y="2.286" extent="1-16" drill="0.381" diameter="0.254"/>
 </signal>
 <signal name="XTAL1">
 <contactref element="Y1" pad="1"/>
@@ -2583,12 +2603,12 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <contactref element="SPI" pad="5"/>
 <contactref element="JP2" pad="14"/>
 <contactref element="JP1" pad="14"/>
-<wire x1="1.7043" y1="40.7935" x2="18.8791" y2="40.7935" width="0.3048" layer="16"/>
+<wire x1="1.396959375" y1="40.77571875" x2="18.8791" y2="40.7935" width="0.3048" layer="16"/>
 <wire x1="2.5908" y1="27.2288" x2="0.6345" y2="29.1851" width="0.3048" layer="16"/>
 <wire x1="0.6345" y1="29.1851" x2="0.6345" y2="39.7237" width="0.3048" layer="16"/>
-<wire x1="0.6345" y1="39.7237" x2="1.7043" y2="40.7935" width="0.3048" layer="16"/>
-<wire x1="1.7043" y1="40.7935" x2="1.7043" y2="60.0585" width="0.3048" layer="16"/>
-<wire x1="1.7043" y1="60.0585" x2="1.8794" y2="60.2336" width="0.3048" layer="16"/>
+<wire x1="0.6345" y1="39.7237" x2="1.396959375" y2="40.77571875" width="0.3048" layer="16"/>
+<wire x1="1.396959375" y1="40.77571875" x2="1.396959375" y2="60.04071875" width="0.3048" layer="16"/>
+<wire x1="1.396959375" y1="60.04071875" x2="1.8794" y2="60.2336" width="0.3048" layer="16"/>
 <wire x1="20.8255" y1="39.7121" x2="19.8698" y2="39.7121" width="0.3048" layer="1"/>
 <wire x1="18.8791" y1="40.7935" x2="19.8698" y2="39.8028" width="0.3048" layer="1"/>
 <wire x1="19.8698" y1="39.8028" x2="19.8698" y2="39.7121" width="0.3048" layer="1"/>
@@ -2685,7 +2705,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </signal>
 <signal name="VBUS">
 <contactref element="X1" pad="VBUS"/>
-<contactref element="FB" pad="1"/>
+<contactref element="GND" pad="1"/>
 <contactref element="C6" pad="2"/>
 <wire x1="38.8637" y1="11.2483" x2="38.8637" y2="10.4926" width="0.3048" layer="1"/>
 <wire x1="38.8637" y1="11.2483" x2="37.9076" y2="12.2044" width="0.3048" layer="1"/>
@@ -2736,7 +2756,7 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 <wire x1="42.7404" y1="65.0464" x2="42.2681" y2="65.0464" width="0.3048" layer="1"/>
 </signal>
 <signal name="FTDI-VCC">
-<contactref element="FB" pad="2"/>
+<contactref element="GND" pad="2"/>
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="20"/>
 <contactref element="FTDIVCCLINK" pad="P$1"/>

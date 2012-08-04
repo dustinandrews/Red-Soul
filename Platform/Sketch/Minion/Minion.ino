@@ -84,7 +84,9 @@ void setup()
   p_menuEntryRoot = new MenuEntry("Robotic Minion", NULL, NULL);
   g_menuManager.addMenuRoot( p_menuEntryRoot );
 
+  g_menuManager.addChild( new MenuEntry("Run Tests", NULL, TestCallback) );
   g_menuManager.addChild( new MenuEntry("Say Hello", NULL, HelloCallback) );
+  
   g_menuManager.addChild( new MenuEntry("Tell us more", NULL, MoreCallback) );
   g_menuManager.addChild( new MenuEntry("Show Examples", NULL, MoreCallback) );
   g_menuManager.MenuSelect();
@@ -104,6 +106,39 @@ void setup()
 int d = 2200;
 int dl = 3000;
 
+void TestCallback( char* pMenuText, void *pUserData)
+{
+  Test(); 
+}
+void Test()
+{
+  doit("Flash Pin 13 LED","", d - 1000);
+  for(int i=0; i<5; i++)
+  {
+    digitalWrite(LEDPIN, HIGH);
+    delay(125);
+    digitalWrite(LEDPIN, LOW);
+    delay(125);
+  }
+  
+  doit("Play a tone", "on speaker", d - 1000);
+  tone(SPEAKER, 349, 1000);
+  
+  doit("Ensure input","up/down", d - 1000);
+  
+  char *pLabel = "Input a number";
+  int iNumLabelLines = 1;
+  int iMin = 1;
+  int iMax = 100;
+  int iStart = 50;
+  //Each user input action (such as a turn of rotary enocoder or push of button
+  //will step this amount
+  int iStep = 1;
+  
+  int i;
+  g_menuManager.DoIntInput( iMin, iMax, iStart, iStep, &pLabel, iNumLabelLines, &i );
+}
+
 void More()
 {
   doit( "I'm an Adruino", "compatible", d );
@@ -115,9 +150,6 @@ void More()
   doit( "Arduino project","beyond your desk", dl);
   doit( "because I am ","rugged and ", d);
   doit( "versatile."," ", d);
-  //doit( "I run on a 9volt","or USB power.", dl);
-  //doit( "I give you 11","I/O pins to use.", dl);
-  //doit( "plus power,", "ground and reset.", dl);
   doit( "I come with", "a menu library", dl);
   doit( "so you can write","apps controlled", dl);
   doit( "with my rotary", "encoder (knob).",dl);
@@ -236,162 +268,113 @@ void MusicCallback( char *, void *)
   int ch = 0;
 
   g_menuLCD.ClearLCD();
-  int tonePin = 5;
+
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 261, 512);
+  tone(SPEAKER, 261, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
+  tone(SPEAKER, 391, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
+  tone(SPEAKER, 391, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 440, 512);
+  tone(SPEAKER, 440, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 440, 512);
+  tone(SPEAKER, 440, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 1024);
+  tone(SPEAKER, 391, 1024);
   delay(1029);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
+  tone(SPEAKER, 349, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
+  tone(SPEAKER, 349, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
+  tone(SPEAKER, 329, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
+  tone(SPEAKER, 329, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 293, 512);
+  tone(SPEAKER, 293, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 293, 512);
+  tone(SPEAKER, 293, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 261, 1024);
+  tone(SPEAKER, 261, 1024);
   delay(1029);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
+  tone(SPEAKER, 391, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
+  tone(SPEAKER, 391, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
+  tone(SPEAKER, 349, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
+  tone(SPEAKER, 349, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
+  tone(SPEAKER, 329, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
+  tone(SPEAKER, 329, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 293, 1024);
+  tone(SPEAKER, 293, 1024);
   delay(1029);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
+  tone(SPEAKER, 391, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
+  tone(SPEAKER, 391, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
+  tone(SPEAKER, 349, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
+  tone(SPEAKER, 349, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
+  tone(SPEAKER, 329, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
+  tone(SPEAKER, 329, 512);
   delay(517);
   g_menuLCD.getLCD()->setCursor( ++col, row );
   g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 293, 1024);
+  tone(SPEAKER, 293, 1024);
   delay(1029);
-/*  g_menuLCD.getLCD()->setCursor( (col=0), (row=1) );
-  g_menuLCD.getLCD()->print( (char)(ch%2) );
-  tone(tonePin, 261, 512);
-  delay(517);
-  tone(tonePin, 261, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 512);
-  delay(517);
-  tone(tonePin, 391, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 440, 512);
-  delay(517);
-  tone(tonePin, 440, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 391, 1024);
-  delay(1029);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 349, 512);
-  delay(517);
-  tone(tonePin, 329, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 329, 512);
-  delay(517);
-  tone(tonePin, 293, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 293, 512);
-  delay(517);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  tone(tonePin, 261, 1024);
-  delay(1029);
-  g_menuLCD.getLCD()->setCursor( ++col, row );
-  g_menuLCD.getLCD()->print( (char)(++ch%2) );
-  delay(1029); */
 }
